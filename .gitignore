@@ -1,0 +1,73 @@
+# Git ignore for KernelTeck Website (PHP web project)
+# -----------------------------------------------------------------------------
+# Notes:
+# - `vendor/` exists in this repo right now. Adding it here will not remove already-
+#   tracked files. To stop tracking and remove from the repo while keeping files locally:
+#     git rm -r --cached vendor
+#     git commit -m "Remove vendor from repo"
+# - Adjust entries below if you intentionally track e.g. build artifacts or vendor.
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+*.swp
+*~
+
+# Node (in case frontend tools are added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# PHP / Composer
+/vendor/
+composer.phar
+# Composer lock is recommended to commit for applications; do not ignore by default
+
+# Environment / secrets
+.env
+.env.*
+*.secret
+
+# Logs, cache, runtime files
+*.log
+logs/
+cache/
+tmp/
+temp/
+sessions/
+.phpunit.result.cache
+
+# Build / distribution
+/dist/
+build/
+public/build/
+
+# Asset pipeline caches
+.sass-cache/
+.cache/
+
+# Coverage
+coverage/
+
+# Misc
+Thumbs.db
+.DS_Store
+*.local
+
+# Backup files
+*.bak
+*.orig
+
+# If you use composer vendor-bin or similar
+vendor-bin/
