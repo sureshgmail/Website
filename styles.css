@@ -34,7 +34,7 @@ ol {
 html {
   font-size: 62.5%;
   line-height: 1.5;
-  scroll-behavior: auto !important;
+  scroll-behavior: smooth !important;
 }
 
 main {
@@ -391,6 +391,41 @@ textarea:focus {
     bottom: -14px !important;
   }
 }
+#page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Semi-transparent white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top */
+}
+#page-loader .img-wrapper {
+  width: 20%;
+  height: 20%;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  transform-origin: center center;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#overlay .overlay-wrapper video {
+  width: 100%;
+  height: 100vh;
+}
+
 .home-section {
   width: 100%;
   height: 100vh;
@@ -432,12 +467,11 @@ textarea:focus {
   min-height: 10.5rem;
 }
 .home-section__wrapper a {
-  width: 30%;
+  width: 27%;
   margin: 0 auto;
 }
-.home-section__wrapper a button span {
-  margin-right: 1.6rem;
-  margin-left: 1rem;
+.home-section__wrapper a button {
+  gap: 3%;
 }
 .home-section__wrapper h2 {
   font-size: 6rem;
@@ -456,15 +490,40 @@ textarea:focus {
   font-size: 2.8rem;
   color: #fff;
   margin-top: 4.4rem;
+  margin-bottom: 2%;
 }
 .home-section__wrapper button {
   width: 100%;
-  color: #000;
+  color: #fff;
   font-size: 2.2rem;
-  background-color: #fff;
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  align-items: center;
   margin-top: 4.4rem;
+  transition: 0.3s ease;
+}
+.home-section__wrapper button span svg g path {
+  transition: 0.3s ease;
+  fill: #fff;
+}
+.home-section__wrapper button:hover {
+  background-color: #fff;
+  transition: 0.3s ease;
+  color: #000;
+}
+.home-section__wrapper button:hover span svg g path {
+  transition: 0.3s ease;
+  fill: #000;
+}
+.home-section__wrapper__scroll-down {
+  width: 5% !important;
+  display: flex;
+  margin-top: 3% !important;
+}
+.home-section__wrapper__scroll-down:hover {
+  cursor: pointer;
 }
 
 .about-us {
@@ -479,10 +538,21 @@ textarea:focus {
   background-color: #fff;
 }
 .about-us__wrapper__description {
+  background-image: url("./assets/images/naics-pattern.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: top right;
   width: 50%;
   padding: 5.6rem;
 }
-.about-us__wrapper__description__section h1 {
+.about-us__wrapper__description__section__heading {
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.about-us__wrapper__description__section__heading .img-wrapper {
+  width: 20%;
+}
+.about-us__wrapper__description__section__heading h1 {
   padding-bottom: 4.6rem;
   font-size: 6.7rem;
 }
@@ -510,7 +580,7 @@ textarea:focus {
   z-index: 2;
   align-self: end;
   gap: 1.2rem;
-  visibility: visible;
+  visibility: hidden;
 }
 .about-us__wrapper__mission-section__about-logo-container__missionlogo-wraper {
   width: 9.7rem;
@@ -687,9 +757,6 @@ textarea:focus {
   padding: 18%;
   border-radius: 50%;
 }
-.technology-section__content-container__contents__image-section__containers__image-wrapper .image-sizer img {
-  transition: 0.3s ease;
-}
 .technology-section__content-container__contents__image-section__containers__heading-description {
   text-align: center;
   height: 50%;
@@ -702,11 +769,6 @@ textarea:focus {
 .technology-section__content-container__contents__image-section__containers__heading-description p {
   font-size: 1.6rem;
   color: #f2f2f2;
-}
-
-.image-sizer:hover.image-sizer > img {
-  transform: rotateY(180deg);
-  transition: 0.3s ease;
 }
 
 .services-section {
@@ -877,12 +939,18 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  transition: 0.3s ease;
 }
 .naics-section__naics-wrapper__parent-container__naics-coin p {
   color: #fff;
   font-size: 2.5rem;
   font-family: "InterBold";
   font-weight: 700;
+}
+.naics-section__naics-wrapper__parent-container__naics-coin:hover {
+  scale: 1.05;
+  transition: 0.3s ease;
 }
 .naics-section__naics-wrapper__parent-container__description {
   background-image: url("./assets/images/updated-nais.png");
@@ -904,7 +972,7 @@ textarea:focus {
 .certificate-sections {
   padding-left: 4.5%;
   padding-top: 6.5%;
-  padding-bottom: 12%;
+  padding-bottom: 7%;
 }
 .certificate-sections__wrapper {
   width: 82%;
@@ -986,6 +1054,9 @@ textarea:focus {
   font-weight: 600;
   font-family: "Inter-semi-bold", sans-serif;
 }
+.certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__mobile-table {
+  display: none;
+}
 
 .footer-section {
   z-index: 2;
@@ -1057,6 +1128,11 @@ textarea:focus {
 .footer-section__footer-wrapper__footer-menu ul li .logo-parent {
   min-height: 6.6rem;
   min-width: 6.6rem;
+  max-height: 6.6rem;
+  max-width: 6.6rem;
+}
+.footer-section__footer-wrapper__footer-menu ul li span a {
+  color: #fff;
 }
 .footer-section__copy-rights {
   position: relative;
@@ -1119,6 +1195,9 @@ textarea:focus {
   border: 1px solid #d9d9d9;
   border-radius: 1rem;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .footer-section__get-in-touch__form-container form .captcha-container .reset-wrapper {
   align-self: flex-end;
@@ -1139,18 +1218,17 @@ textarea:focus {
   margin-top: 3rem;
   border-radius: 1rem;
   color: #000;
-  opacity: 0.5;
   padding-left: 1.3rem;
   font-size: 1.8rem;
 }
 .footer-section__get-in-touch__form-container form input::-moz-placeholder, .footer-section__get-in-touch__form-container form textarea::-moz-placeholder {
   font-size: 1.3rem;
-  color: #000;
+  color: #666;
 }
 .footer-section__get-in-touch__form-container form input::placeholder,
 .footer-section__get-in-touch__form-container form textarea::placeholder {
   font-size: 1.3rem;
-  color: #000;
+  color: #666;
 }
 .footer-section__get-in-touch__form-container form textarea {
   margin-bottom: 2rem;
@@ -1205,7 +1283,7 @@ textarea:focus {
 
 .industry-section {
   position: relative;
-  background-image: url("./assets/images/line-image.webp");
+  background-image: url("./assets/images/line-art-image.gif");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 5%;
@@ -1241,7 +1319,7 @@ textarea:focus {
   min-height: 270px;
   flex-shrink: 0;
 }
-.industry-section .industry-card-container .industry-card img {
+.industry-section .industry-card-container .industry-card .img-wrapper {
   width: 25%;
   margin-bottom: 5%;
 }
@@ -1255,6 +1333,9 @@ textarea:focus {
   font-size: 0.68vw;
   color: #fff;
   width: 85%;
+}
+.industry-section .industry-card-container .industry-card:hover .img-wrapper > img {
+  transition: 0.3s ease;
 }
 .industry-section .industry-card-container .industry-card-1 {
   transform: translateY(12.135vw);
@@ -1276,6 +1357,10 @@ textarea:focus {
 }
 .industry-section .industry-card-container .industry-card-6 h3 {
   width: 90%;
+}
+
+#contact {
+  padding-top: 5%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1325,6 +1410,13 @@ textarea:focus {
   .industry-section .industry-card-container .industry-card .industry-card-desc {
     font-size: 11px;
     width: 90%;
+  }
+  .industry-section .industry-card-container .industry-card img {
+    transition: 0s;
+  }
+  .industry-section .industry-card-container .industry-card:hover > img {
+    transform: rotateY(0deg);
+    transition: 0s;
   }
   .industry-section .industry-card-container .industry-card-1 {
     transform: translate(0);
@@ -1383,7 +1475,7 @@ textarea:focus {
     padding-left: 15px;
     padding-bottom: 20px;
   }
-  .industry-section .industry-card-container .industry-card img {
+  .industry-section .industry-card-container .industry-card .img-wrapper {
     width: 15%;
   }
   .industry-section .industry-card-container {
@@ -1408,7 +1500,7 @@ textarea:focus {
     padding-right: 5%;
   }
   .about-us__wrapper {
-    height: 776px;
+    height: 790px;
   }
   .about-us__wrapper__tabs-section {
     padding-top: 0;
@@ -1428,10 +1520,16 @@ textarea:focus {
   .home-section__wrapper a button {
     padding-right: 3%;
     padding-left: 3%;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    padding: 1rem 3%;
+  }
+  .home-section__wrapper a button span svg {
+    height: 75%;
   }
   .about-us__wrapper {
     width: 90%;
-    height: 756px;
+    height: 770px;
   }
   .about-us__wrapper__description__section h1 {
     font-size: 6.4rem;
@@ -1535,6 +1633,12 @@ textarea:focus {
   .certificate-sections__wrapper__certificate-header p {
     margin-bottom: 3%;
   }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
+    font-size: 4.1rem;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
+    font-size: 4.1rem;
+  }
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
     top: 8%;
   }
@@ -1567,9 +1671,6 @@ textarea:focus {
     padding-bottom: 2rem;
     margin-top: 3rem;
   }
-  .tab button {
-    margin-right: 3rem;
-  }
   .naics-section__naics-wrapper__parent-container__naics-coin {
     width: 15.6rem;
     height: 15.6rem;
@@ -1594,7 +1695,7 @@ textarea:focus {
   }
   .about-us__wrapper {
     width: 90%;
-    height: 686px;
+    height: 700px;
   }
   .about-us__wrapper__description {
     width: 60%;
@@ -1692,6 +1793,14 @@ textarea:focus {
     margin-bottom: 3%;
     font-size: 2rem;
   }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
+    font-size: 3.8rem;
+    font-weight: 600;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
+    font-size: 3.8rem;
+    font-weight: 600;
+  }
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
     top: 8%;
   }
@@ -1767,7 +1876,7 @@ textarea:focus {
   }
   .about-us__wrapper {
     width: 90%;
-    height: 661px;
+    height: 675px;
   }
   .about-us__wrapper__description {
     width: 50%;
@@ -1842,6 +1951,14 @@ textarea:focus {
     margin-bottom: 3%;
     font-size: 2rem;
   }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
+    font-size: 3.8rem;
+    font-weight: 600;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
+    font-size: 3.8rem;
+    font-weight: 600;
+  }
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
     top: 8%;
   }
@@ -1894,7 +2011,6 @@ textarea:focus {
   }
   .tab button {
     font-size: 2rem;
-    margin-right: 3rem;
   }
   .technology-section .technology-content-wrapper {
     position: absolute;
@@ -1907,7 +2023,7 @@ textarea:focus {
 }
 @media screen and (max-width: 1280px) {
   .about-us__wrapper {
-    height: 686px;
+    height: 700px;
   }
   .home-section__wrapper a button {
     font-size: 1.4rem;
@@ -2011,6 +2127,13 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 1024px) {
+  .home-section__wrapper__scroll-down {
+    width: 7% !important;
+  }
+  #page-loader .img-wrapper {
+    width: 40%;
+    height: 40%;
+  }
   .aside__logo {
     margin-right: 3%;
   }
@@ -2031,6 +2154,9 @@ textarea:focus {
   }
   .home-section__wrapper p {
     font-size: 2rem;
+  }
+  .home-section__wrapper a button {
+    gap: 10%;
   }
   .about-us {
     padding-top: 5rem;
@@ -2451,6 +2577,9 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 768px) {
+  .home-section__wrapper a {
+    min-width: unset !important;
+  }
   .home-section__wrapper__about-logo-container__logo1,
   .home-section__wrapper__about-logo-container__logo2 {
     width: 20rem;
@@ -2588,6 +2717,14 @@ textarea:focus {
   .certificate-sections__wrapper__certificate-wrapper__certificate-container {
     width: 100%;
   }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
+    font-size: 3.4rem;
+    font-weight: 600;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
+    font-size: 3.4rem;
+    font-weight: 600;
+  }
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container {
     width: 100%;
   }
@@ -2706,6 +2843,13 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 576px) {
+  .home-section__wrapper__scroll-down {
+    width: 10% !important;
+  }
+  #page-loader .img-wrapper {
+    width: 40%;
+    height: 40%;
+  }
   .home-section__wrapper {
     width: 95%;
   }
@@ -2829,6 +2973,12 @@ textarea:focus {
     width: 100%;
     margin-bottom: 15%;
   }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
+    font-size: 3.4rem;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
+    font-size: 3.4rem;
+  }
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container {
     width: 100%;
   }
@@ -2872,6 +3022,9 @@ textarea:focus {
     width: 90%;
     margin: 0 auto;
     z-index: 1;
+  }
+  .footer-section .footer-section__get-in-touch__headers {
+    margin-top: 5%;
   }
   .tab button {
     font-size: 1.8rem;
@@ -2926,20 +3079,21 @@ textarea:focus {
     width: 20%;
     padding-top: 6%;
   }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
-    font-size: 4.1rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
-    font-size: 4.1rem;
-  }
   .services-section__parent-container__slides .hidden-content:hover {
     border-radius: 2rem;
   }
   .devops-hidden {
     padding-top: 2rem;
   }
+  #contact {
+    padding-top: 10%;
+  }
 }
 @media screen and (max-width: 480px) {
+  .home-section__wrapper__scroll-down {
+    width: 13% !important;
+    margin-top: 10% !important;
+  }
   .home-section__wrapper {
     width: 95%;
   }
@@ -3477,7 +3631,7 @@ textarea:focus {
   }
   .certificate-sections {
     padding-top: 10.5%;
-    margin-bottom: 65%;
+    margin-bottom: 75%;
   }
   .certificate-sections__wrapper {
     flex-direction: column;
@@ -3506,11 +3660,31 @@ textarea:focus {
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header .logo-wrapper {
     width: 10%;
   }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details p {
-    font-size: 1.4rem;
+  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details {
+    display: none;
   }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
+  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__mobile-table {
+    display: block;
+    padding: 5%;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__mobile-table table {
+    width: 100%;
+    border-spacing: 10px;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__mobile-table table tbody {
+    -moz-column-gap: 3%;
+         column-gap: 3%;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__mobile-table table tbody tr {
+    border: 10px solid transparent;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__mobile-table table tbody tr td {
     font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__mobile-table table tbody tr td h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
   }
   .footer-section__footer-wrapper__footer-logo__logo-wrapper {
     width: 50%;

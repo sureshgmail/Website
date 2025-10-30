@@ -225,35 +225,35 @@ function setupContactValidation(form) {
     const successMsg = createSuccess(
       "Message sent successfully. We'll contact you soon."
     );
-    form.appendChild(successMsg);
-    form.reset();
-    genCaptcha();
 
-    // Remove success message after 5 seconds
-    setTimeout(() => {
-      successMsg.remove();
-    }, 5000);
-
-    // contactUsApi(form);
+    contactUsApi(form, createSuccess, createError, genCaptcha, clearErrors);
   });
 }
 
 // mail functionality
-async function contactUsApi(form) {
+async function contactUsApi(
+  form,
+  createSuccess,
+  createError,
+  genCaptcha,
+  clearErrors
+) {
   const formData = new FormData(form);
-  form.querySelector("button").disabled = true;
+  form.querySelector("#getintouch-submit-button").disabled = true;
+  form.querySelector("#getintouch-submit-button").textContent =
+    "Please Wait...";
   try {
     const response = await fetch("mail.php", {
       method: "POST",
       body: formData,
     });
-    form.querySelector("button").disabled = true;
+    form.querySelector("#getintouch-submit-button").disabled = true;
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const data = await response.json();
     if (data.status == "success") {
-      console.log("success data", data);
+      // console.log("success data", data);
       const successMsg = createSuccess(
         "Message sent successfully. We'll contact you soon."
       );
@@ -263,20 +263,27 @@ async function contactUsApi(form) {
       setTimeout(() => {
         successMsg.remove();
         clearErrors(form);
-        form.querySelector("button").disabled = false;
+        form.querySelector("#getintouch-submit-button").disabled = false;
+
         form.reset();
       }, 5000);
     } else {
       form.appendChild(createError("Something Went Wrong! Please try again"));
+
       setTimeout(() => {
-        form.querySelector("button").disabled = false;
+        form.querySelector("#getintouch-submit-button").disabled = false;
         clearErrors(form);
       }, 3000);
     }
+    form.querySelector("#getintouch-submit-button").textContent = "Submit";
+    form.reset();
     genCaptcha();
   } catch (error) {
-    console.log("errror", error);
+    // console.log("errror", error);
     form.appendChild(createError("Something Went Wrong! Please try again"));
+    // BUTTON ACTIVATION FOR FAILED MESSAGE
+    form.querySelector("#getintouch-submit-button").textContent = "Submit";
+    form.querySelector("#getintouch-submit-button").disabled = false;
     setTimeout(() => {
       clearErrors(form);
     }, 3000);
@@ -328,74 +335,75 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // --- Scroll-spy: mark sidebar nav links active for the section in view ---
-(function () {
-  var navLinks = Array.from(
-    document.querySelectorAll(".aside__list--item__link")
-  );
-  if (!navLinks.length) return;
+// (function () {
+//   var navLinks = Array.from(
+//     document.querySelectorAll(".aside__list--item__link")
+//   );
+//   if (!navLinks.length) return;
 
-  // map href -> element
-  var linkMap = new Map();
-  navLinks.forEach(function (a) {
-    var href = a.getAttribute("href");
-    if (href && href.startsWith("#")) linkMap.set(href.slice(1), a);
-    // on click, mark link active immediately
-    a.addEventListener("click", function () {
-      navLinks.forEach((n) => n.classList.remove("active"));
-      a.classList.add("active");
-    });
-  });
+//   // map href -> element
+//   var linkMap = new Map();
+//   navLinks.forEach(function (a) {
+//     var href = a.getAttribute("data-nav");
+//     if (href && href.startsWith("#")) linkMap.set(href.slice(1), a);
+//     // on click, mark link active immediately
+//     a.addEventListener("click", function () {
+//       navLinks.forEach((n) => n.classList.remove("active"));
 
-  var sections = Array.from(linkMap.keys())
-    .map(function (id) {
-      return document.getElementById(id);
-    })
-    .filter(Boolean);
-  if (!sections.length) return;
+//       // a.classList.add("active");
+//     });
+//   });
 
-  var obsOptions = {
-    root: null,
-    rootMargin: "-40% 0px -40% 0px", // focus on center 20% of viewport
-    threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
-  };
+//   var sections = Array.from(linkMap.keys())
+//     .map(function (id) {
+//       return document.getElementById(id);
+//     })
+//     .filter(Boolean);
+//   if (!sections.length) return;
 
-  // map of id -> last intersectionRatio
-  var sectionStates = {};
+//   var obsOptions = {
+//     root: null,
+//     rootMargin: "-40% 0px -40% 0px", // focus on center 20% of viewport
+//     threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
+//   };
 
-  var observer = new IntersectionObserver(function (entries) {
-    // update state for all entries we got
-    entries.forEach(function (entry) {
-      sectionStates[entry.target.id] = entry.intersectionRatio;
-    });
+//   // map of id -> last intersectionRatio
+//   var sectionStates = {};
 
-    // choose the section with the highest intersection ratio
-    var maxId = null;
-    var maxRatio = 0;
-    Object.keys(sectionStates).forEach(function (id) {
-      var r = sectionStates[id] || 0;
-      if (r > maxRatio) {
-        maxRatio = r;
-        maxId = id;
-      }
-    });
+//   var observer = new IntersectionObserver(function (entries) {
+//     // update state for all entries we got
+//     entries.forEach(function (entry) {
+//       sectionStates[entry.target.id] = entry.intersectionRatio;
+//     });
 
-    if (maxId && maxRatio > 0) {
-      var link = linkMap.get(maxId);
-      if (link) {
-        navLinks.forEach(function (n) {
-          n.classList.remove("active");
-        });
-        link.classList.add("active");
-      }
-    }
-  }, obsOptions);
+//     // choose the section with the highest intersection ratio
+//     var maxId = null;
+//     var maxRatio = 0;
+//     Object.keys(sectionStates).forEach(function (id) {
+//       var r = sectionStates[id] || 0;
+//       if (r > maxRatio) {
+//         maxRatio = r;
+//         maxId = id;
+//       }
+//     });
 
-  sections.forEach(function (s) {
-    // initialize state
-    sectionStates[s.id] = 0;
-    observer.observe(s);
-  });
-})();
+//     if (maxId && maxRatio > 0) {
+//       var link = linkMap.get(maxId);
+//       if (link) {
+//         navLinks.forEach(function (n) {
+//           n.classList.remove("active");
+//         });
+//         link.classList.add("active");
+//       }
+//     }
+//   }, obsOptions);
+
+//   sections.forEach(function (s) {
+//     // initialize state
+//     sectionStates[s.id] = 0;
+//     observer.observe(s);
+//   });
+// })();
 
 // scroll to top
 function scrollToTop() {
@@ -406,6 +414,90 @@ scrollTopBtn.addEventListener("click", () => {
   scrollToTop();
 });
 
+let scrollBottom = document.querySelector(
+  ".home-section__wrapper__scroll-down"
+);
+let capabilities = document.getElementById("capabilities-button");
+// function scrollDown() {
+//   window.scrollTo({ top: 800, behavior: "smooth" });
+// }
+
+const hamburger = document.getElementById("hamburger");
+let navlist = document.querySelector(".aside__list");
+let callToActions = [
+  "scroll-top",
+  "footer-logo-button",
+  "header-logo-button",
+  "service-button1",
+  "service-button2",
+  "service-button3",
+  "service-button4",
+  "service-button5",
+];
+let scroll_top = document.getElementById("scroll-top");
+let footer_logo_button = document.getElementById("footer-logo-button");
+let header_logo_button = document.getElementById("header-logo-button");
+let service_button1 = document.getElementById("service-button1");
+let service_button2 = document.getElementById("service-button2");
+let service_button3 = document.getElementById("service-button3");
+let service_button4 = document.getElementById("service-button4");
+let service_button5 = document.getElementById("service-button5");
+let tablinks = document.querySelectorAll(".tablinks");
+tablinks.forEach((element, index) => {
+  element.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navlist.classList.remove("active");
+  });
+});
+scroll_top.addEventListener("click", () => {
+  // navlist.style.transform = "translate(-100%,100%)";
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
+footer_logo_button.addEventListener("click", () => {
+  // navlist.style.transform = "translate(-100%,100%)";
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
+header_logo_button.addEventListener("click", () => {
+  // navlist.style.transform = "translate(-100%,100%)";
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
+service_button1.addEventListener("click", () => {
+  // navlist.style.transform = "translate(-100%,100%)";
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
+service_button2.addEventListener("click", () => {
+  // navlist.style.transform = "translate(-100%,100%)";
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
+service_button3.addEventListener("click", () => {
+  // navlist.style.transform = "translate(-100%,100%)";
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
+service_button4.addEventListener("click", () => {
+  // navlist.style.transform = "translate(-100%,100%)";
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
+service_button5.addEventListener("click", () => {
+  // navlist.style.transform = "translate(-100%,100%)";
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
+scrollBottom.addEventListener("click", () => {
+  // navlist.style.transform = "translate(-100%,100%)";
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
+capabilities.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navlist.classList.remove("active");
+});
 // navbar movement
 function navbarMovement() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -428,3 +520,78 @@ function navbarMovement() {
   });
 }
 navbarMovement();
+
+// const containerId = [
+//   "#home",
+//   "#about",
+//   "#services",
+//   "#technology",
+//   "#industry",
+//   "#naics",
+//   "#contact-form",
+// ];
+// const navBar = document.querySelectorAll(".aside__list--item");
+
+// navBar?.forEach((nav, idx) => {
+//   nav.addEventListener("click", () => {
+//     const navItem = document
+//       .querySelector(containerId[idx])
+//       .getBoundingClientRect();
+//     const offset = navItem.top + window.scrollY - 50;
+//     window.scrollTo({
+//       top: offset,
+//       behavior: "smooth",
+//     });
+//   });
+// });
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".aside__list--item__link");
+let isAutoScrolling = false;
+console.log(sections, navLinks);
+
+// Click handler: smooth scroll + freeze highlight
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute("data-nav"));
+
+    // Mark scrolling in progress
+    isAutoScrolling = true;
+
+    // Instantly highlight the clicked menu
+    navLinks.forEach((lnk) => lnk.classList.remove("active"));
+    link.classList.add("active");
+
+    // Smooth scroll to section
+    window.scrollTo({
+      top: target?.offsetTop - 60,
+      behavior: "smooth",
+    });
+
+    // Estimate scroll end and release control
+    setTimeout(() => {
+      isAutoScrolling = false;
+    }, 800); // Adjust time based on scroll distance
+  });
+});
+
+// Scroll listener (only active when not auto-scrolling)
+window.addEventListener("scroll", () => {
+  if (isAutoScrolling) return;
+
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 120;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("data-nav") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});

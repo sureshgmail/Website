@@ -83,7 +83,7 @@ $body = '<!DOCTYPE html
                     <tr style="height: 3rem;">
                         <td colspan="3" style="width: 300px;"></td>
                         <td align="right">
-                            <img width="60" height="60" src="https://devdews.com/beta/kernelteck/web/final/v2/assets/images/header-logo.svg" alt="logo">
+                            <img width="100" height="100" src="https://devdews.com/beta/kernelteck/web/final/v2/assets/images/fav-icon.png" alt="logo">
                         </td>
                     </tr>
                     <tr>
@@ -151,11 +151,14 @@ try {
     $mail->Port = 26;
 
 
-    $mail->setFrom('madhan@techdew.com', 'KernelTeck');
+    $mail->setFrom('info@devdews.com', 'KernelTeck');
 
-    $mail->addAddress('dewsparthasarathi@gmail.com');
+    $mail->addAddress('connect@kernelteck.com');
 
-    // $mail->addBCC('ramesh@techdew.com');
+    $mail->addBCC('ramesh@techdew.com');
+    //  $mail->addBCC('ramesh1@techdew.com');
+    // $mail->addBCC('ramesh2@techdew.com');
+    // $mail->addBCC('ramesh3@techdew.com');
 
     $mail->isHTML(true);
     $mail->Subject = 'New Form Submission - KernelTeck';
@@ -163,7 +166,6 @@ try {
 
 
     $mail->send();
-
 
     http_response_code(200);
     echo json_encode([
