@@ -1,4 +1,7 @@
 /**Hamburger */
+const overlay = document.getElementById("overlay-custom");
+const hamburgerBtn = document.getElementById("hamburger");
+
 document.getElementById("hamburger").addEventListener("click", (e) => {
   const target = e.currentTarget;
   const list = target.closest(".aside").querySelector("ul");
@@ -14,6 +17,7 @@ document.getElementById("hamburger").addEventListener("click", (e) => {
     if (isCtarget || isParentCtarget) {
       list.classList.remove("active");
       target.classList.remove("active");
+      overlay.style.display = "none";
       list.removeEventListener("click", navLinkClick);
     }
   }
@@ -23,11 +27,20 @@ document.getElementById("hamburger").addEventListener("click", (e) => {
 
   if (target.classList.contains("active")) {
     list.classList.remove("active");
+    overlay.style.display = "none";
     list.removeEventListener("click", navLinkClick);
   } else {
     list.classList.add("active");
+    overlay.style.display = "block";
   }
   target.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+  const list = document.querySelector(".aside__list");
+  list.classList.remove("active");
+  overlay.style.display = "none";
+  hamburgerBtn.classList.remove("active");
 });
 
 // Contact form validation + simple captcha (reusable for multiple forms)

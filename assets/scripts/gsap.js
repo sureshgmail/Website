@@ -163,5 +163,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 window.addEventListener("resize", () => {
   // window.location.reload();
-  ScrollTrigger.refresh();
+  // ScrollTrigger.refresh();
 });
+
+// ScrollTrigger.matchMedia({
+//   "(min-width: 1025px)": function () {
+//     // desktop-only ScrollTrigger setup
+//     ScrollTrigger.refresh();
+
+//     window.addEventListener("resize", () => {
+//       ScrollTrigger.refresh();
+//     });
+//   }
+// });
+
+
+function isDesktop() {
+  return window.innerWidth >= 1025;
+}
+
+if (isDesktop()) {
+  // desktop-only ScrollTrigger setup
+  ScrollTrigger.refresh();
+
+  window.addEventListener("resize", () => {
+    if (isDesktop()) {
+      ScrollTrigger.refresh();
+    }
+  });
+}

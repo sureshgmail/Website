@@ -9,7 +9,7 @@ window.onload = function () {
     if (content) {
       content.style.display = "block"; // Show the main content
     }
-  }, 5000);
+  }, 2500);
 };
 
 document.addEventListener("DOMContentLoaded", (event) => {
