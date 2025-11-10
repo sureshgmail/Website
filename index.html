@@ -1,120 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KernelTeck</title>
+    <meta
+      name="keywords"
+      content="KernelTeck, SDVOSB IT services, government IT solutions, AI machine learning services, cloud computing services, cybersecurity solutions, DevSecOps, cloud migration services, federal IT contractor, public sector technology solutions, data analytics services, managed infrastructure services"
+    />
+    <meta
+      name="description"
+      content="KernelTeck LLC is a Service-Disabled Veteran-Owned Small Business specializing in advanced IT solutions for federal and state agencies. We deliver cutting-edge technology services with expertise in Artificial Intelligence, Cloud Computing, Cybersecurity, and Software Development."
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon/96 X 96.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles.css?v=1.0.0.3" />
+    <script src="./assets/js/gsap.min.js"></script>
+    <script src="./assets/scripts/gsap.min.js"></script>
+    <script src="./assets/scripts/ScrollTrigger.min.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KernelTeck</title>
-  <meta name="description" content="KernelTeck LLC is a Service-Disabled Veteran-Owned Small Business specializing in advanced IT solutions for federal and state agencies. We deliver cutting-edge technology services with expertise in Artificial Intelligence, Cloud Computing, Cybersecurity, and Software Development.
-" />
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/images/favicon/96 X 96.png" type="image/x-icon" />
-  <!-- styles -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css?v=1.0.0.1" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js?v=1.0.0.1"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?v=1.0.0.1"></script>
-  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js?v=1.0.0.1"></script>
-  <!-- gsap -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js?v=1.0.0.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js?v=1.0.0.1"></script>
-
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?v=1.0.0.1" />
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?v=1.0.0.1"></script>
-  <!-- jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?v=1.0.0.1"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="./styles.css?v=1.0.0.1" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MM4MSJH1G3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-MM4MSJH1G3");
-  </script>
-</head>
-
-<body>
-  <!-- <div id="overlay">
-      <video autoplay muted loop>
-        <source src="./assets/video/overlay-video.mp4" />
-      </video>
-    </div> -->
-
-  <!-- navbar -->
-  <aside class="aside">
-    <div class="header--wrapper">
-      <a id="header-logo-button" class="aside__logo" onclick="scrollToTop()">
-        <div class="aside__logo__wrapper">
-          <img src="./assets/images/nav-logo.png" alt="KernelTeck-logo" />
-        </div>
-      </a>
-      <ul class="aside__list">
-        <li class="aside__list--item">
-          <button type="button" class="aside__list--item__link active" data-nav="#home">
-            Home
-          </button>
-        </li>
-        <li class="aside__list--item">
-          <button type="button" class="aside__list--item__link" data-nav="#about">
-            About Us
-          </button>
-        </li>
-        <li class="aside__list--item">
-          <button type="button" class="aside__list--item__link" data-nav="#services">
-            Services
-          </button>
-        </li>
-        <li class="aside__list--item">
-          <button type="button" class="aside__list--item__link" data-nav="#technology">
-            Technology
-          </button>
-        </li>
-        <li class="aside__list--item">
-          <button type="button" class="aside__list--item__link" data-nav="#industry">
-            Industries
-          </button>
-        </li>
-        <li class="aside__list--item">
-          <button type="button" class="aside__list--item__link" data-nav="#naics">
-            NAICS & Certifications
-          </button>
-        </li>
-        <li class="aside__list--item">
-          <button type="button" class="aside__list--item__link" data-nav="#contact">
-            Contact Us
-          </button>
-        </li>
-      </ul>
-      <button class="aside__scrollDownBtn">
-        <span>Scroll</span>
-      </button>
-      <button id="hamburger" type="button" class="aside__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </aside>
-  <main>
-    <div id="page-loader">
-      <div class="img-wrapper">
-        <img src="./assets/images/loader.gif" alt="" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MM4MSJH1G3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-MM4MSJH1G3");
+    </script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <aside class="aside">
+      <div class="header--wrapper">
+        <a
+          id="header-logo-button"
+          class="aside__logo logo-spy"
+          onclick="scrollToTop()"
+        >
+          <div class="aside__logo__wrapper">
+            <img src="./assets/images/nav-logo.png" alt="KernelTeck-logo" />
+          </div>
+        </a>
+        <ul class="aside__list">
+          <li class="aside__list--item">
+            <button
+              type="button"
+              id="nav-home-button"
+              class="aside__list--item__link active"
+              data-nav="#home"
+            >
+              Home
+            </button>
+          </li>
+          <li class="aside__list--item">
+            <button
+              type="button"
+              class="aside__list--item__link"
+              data-nav="#about"
+            >
+              About Us
+            </button>
+          </li>
+          <li class="aside__list--item">
+            <button
+              type="button"
+              class="aside__list--item__link"
+              data-nav="#services"
+            >
+              Services
+            </button>
+          </li>
+          <li class="aside__list--item">
+            <button
+              type="button"
+              class="aside__list--item__link"
+              data-nav="#technology"
+            >
+              Technology
+            </button>
+          </li>
+          <li class="aside__list--item">
+            <button
+              type="button"
+              class="aside__list--item__link"
+              data-nav="#industry"
+            >
+              Industries
+            </button>
+          </li>
+          <li class="aside__list--item">
+            <button
+              type="button"
+              class="aside__list--item__link"
+              data-nav="#naics"
+            >
+              NAICS & Certifications
+            </button>
+          </li>
+          <li class="aside__list--item">
+            <button
+              type="button"
+              class="aside__list--item__link"
+              data-nav="#contact"
+            >
+              Contact Us
+            </button>
+          </li>
+        </ul>
+        <button class="aside__scrollDownBtn">
+          <span>Scroll</span>
+        </button>
+        <button id="hamburger" type="button" class="aside__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </div>
-    <!-- <div
+    </aside>
+    <main>
+      <div id="page-loader">
+        <div class="img-wrapper">
+          <img src="./assets/images/loader.gif" alt="loader" />
+        </div>
+      </div>
+      <!-- <div
         class=""
         style="
-          height: 100vh;
+          height: 105vh;
           background: linear-gradient(
             145.19deg,
             rgba(2, 51, 246, 0.85) -40.01%,
@@ -127,811 +155,1119 @@
         "
       ></div> -->
 
-    <!-- home section -->
-    <section id="home" class="home-section d-flex align-items-center position-relative">
-      <div class="home-section__video-container position-absolute">
-        <video autoplay muted loop playsinline webkit-playsinline disablePictureInPicture
-          controlslist="nodownload nofullscreen noremoteplayback" style="pointer-events: none;">
-          <source src="./assets/video/banner_video_kernel_tech.mp4" />
-        </video>
-      </div>
-      <div class="home-section__wrapper">
-        <h2 class="text-center">Empowering Innovation Through</h2>
-        <h1 class="text-center">Intelligent Technology</h1>
-        <p class="text-center">
-          KernelTeck LLC is a Service-Disabled Veteran-Owned Small Business
-          (SDVOSB) delivering advanced IT, Cloud, and AI-driven solutions to
-          government and enterprise clients.
-        </p>
-        <div class="home-section__wrapper__about-logo-container d-flex gap-5 justify-content-center">
-          <div class="home-section__wrapper__about-logo-container__logo1">
-            <img src="./assets/images/about-logo-2.webp" alt="" />
-          </div>
-          <div class="home-section__wrapper__about-logo-container__logo2">
-            <img src="./assets/images/about-icon.webp" alt="" />
-          </div>
-        </div>
-
-        <a href="./assets/files/KernelTeck_CS.pdf" target="_blank" class="d-flex mx-auto">
-          <button id="capabilities-button" class="rounded-pill text-center d-flex mx-auto justify-content-center">
-            <span>
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_6185_25673)">
-                  <path
-                    d="M13.0139 19.5586C13.0139 19.0896 13.0139 18.8082 13.0139 18.5424C13.0139 12.883 13.0139 7.23924 13.0139 1.57983C13.0139 1.31406 12.9357 0.985749 13.0608 0.813778C13.2955 0.48547 13.624 0.125894 13.9837 0.0320919C14.4999 -0.108612 14.8597 0.297865 14.9849 0.798144C15.0474 1.04828 15.0161 1.31406 15.0161 1.57983C15.0161 7.23924 15.0161 12.883 15.0161 18.5424C15.0161 18.8238 15.0161 19.1052 15.0161 19.5742C15.3759 19.2303 15.6106 19.0114 15.8452 18.7769C17.5971 17.0259 19.3335 15.275 21.0854 13.524C21.4608 13.1488 21.8519 12.7892 22.4463 13.1175C23.1502 13.4927 23.1659 14.2431 22.4776 14.931C20.5536 16.8696 18.6139 18.7926 16.6742 20.7311C16.0798 21.3252 15.5011 21.9193 14.9066 22.4978C14.2184 23.1544 13.7647 23.17 13.0921 22.4978C10.558 19.9807 8.03961 17.4481 5.52117 14.931C4.92676 14.3369 4.84854 13.7429 5.28653 13.2895C5.75581 12.8205 6.27201 12.8674 6.91335 13.5084C8.7748 15.3688 10.6363 17.2292 12.4977 19.0896C12.6228 19.199 12.7323 19.3085 13.0139 19.5586Z"
-                    fill="black" />
-                  <path
-                    d="M14.0128 27.9833C9.78936 27.9833 5.5659 27.9833 1.34243 27.9677C0.982658 27.9677 0.529027 27.8739 0.278747 27.655C-0.253096 27.2016 -0.00281675 26.2949 0.685451 26.0916C0.951373 26.0135 1.24858 26.0135 1.53014 26.0135C9.83629 26.0135 18.1581 26.0135 26.4642 26.0135C26.7301 26.0135 26.9961 25.9978 27.2463 26.0604C27.7782 26.1854 28.1223 26.5919 27.9659 27.0922C27.8564 27.4361 27.4653 27.7332 27.1368 27.952C26.9804 28.0615 26.6832 27.9833 26.4486 27.9833C22.3033 27.9833 18.1581 27.9833 14.0128 27.9833Z"
-                    fill="black" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_6185_25673">
-                    <rect width="28" height="28" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            Capabilities Statement
-          </button>
-        </a>
-        <a href="#about" class="home-section__wrapper__scroll-down" class="d-flex mx-auto">
-          <img src="./assets/images/scroll-down-arrow.webp" alt="" />
-        </a>
-      </div>
-    </section>
-    <!-- about section -->
-    <section id="about" class="about-us">
-      <div class="about-us__wrapper d-flex">
-        <div class="about-us__wrapper__description d-flex justify-content-center flex-column">
-          <div class="about-us__wrapper__description__section">
-            <div class="about-us__wrapper__description__section__heading d-flex">
-              <h1>About us</h1>
-              <div class="img-wrapper">
-                <img src="./assets/images/qr-code.png" alt="" />
-              </div>
-            </div>
-            <p>
-              KernelTeck LLC is
-              <span> a Service-Disabled Veteran-Owned Small Business </span>
-              specializing in advanced IT solutions for federal and state
-              agencies. We deliver cutting-edge technology services with
-              <span>
-                expertise in Artificial Intelligence, Cloud Computing,
-                Cybersecurity, and Software Development.
-              </span>
-            </p>
-          </div>
-          <div class="about-us__wrapper__tabs-section">
-            <div class="tab">
-              <button class="tablinks active" onclick="openCity(event, 'London')">
-                Our Mission
-              </button>
-              <button class="tablinks" onclick="openCity(event, 'Paris')">
-                Why KernelTeck?
-              </button>
-              <button class="tablinks" onclick="openCity(event, 'Tokyo')">
-                Core Values
-              </button>
-            </div>
-
-            <div id="London" class="tabcontent">
-              <p>
-                Our mission is to deliver secure, intelligent, and
-                transformative IT solutions that empower organizations to
-                achieve operational excellence. Through a foundation of
-                innovation, reliability, and integrity, we drive mission
-                success and long-term technological advancement.
-              </p>
-            </div>
-
-            <div id="Paris" class="tabcontent">
-              <ul>
-                <li>
-                  <b> Veteran-owned leadership :</b> mission-driven,
-                  disciplined, and accountable.
-                </li>
-                <li>
-                  <b>Cutting-edge expertise :</b> AI, Cloud, and Cybersecurity
-                  specialists.
-                </li>
-                <li>
-                  <b>Security-first design :</b> Zero Trust and
-                  secure-by-design practices.
-                </li>
-                <li>
-                  <b>Scalable delivery :</b> from prototypes to enterprise
-                  production.
-                </li>
-                <li>
-                  <b>Client-centric approach :</b> transparent and
-                  collaborative engagements.
-                </li>
-              </ul>
-            </div>
-
-            <div id="Tokyo" class="tabcontent">
-              <ul>
-                <li><b>Integrity</b></li>
-                <li><b>Innovation</b></li>
-                <li><b>Service</b></li>
-                <li><b>Excellence</b></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="about-us__wrapper__mission-section d-flex flex-column justify-content-between position-relative">
-          <div class="about-us__wrapper__mission-section__about-logo-container d-flex position-relative">
-            <div class="about-us__wrapper__mission-section__about-logo-container__missionlogo-wraper">
-              <img src="./assets/images/about-logo-2.webp" alt="" />
-            </div>
-            <div class="about-us__wrapper__mission-section__about-logo-container__missionlogo-wraper">
-              <img src="./assets/images/about-icon.webp" alt="" />
-            </div>
-          </div>
-
-          <div class="about-us__wrapper__mission-section__description-container position-relative">
-            <h1>
-              Empowering Missions <br />
-              Through Technology <br />
-              and Integrity
-            </h1>
-            <p>
-              Our team combines deep technical knowledge with a commitment to
-              excellence, ensuring mission-critical projects are delivered
-              securely, on time, and within budget. As a certified SDVOSB, we
-              bring both technical prowess and a veteran's dedication to
-              serving our nation.
-            </p>
-          </div>
-          <div class="about-us__wrapper__mission-section__pattern-video position-absolute">
-            <video autoplay muted loop playsinline webkit-playsinline disablePictureInPicture
-              controlslist="nodownload nofullscreen noremoteplayback" style="pointer-events: none;">
-              <source src="./assets/video/about_video_kernel_tech.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- services section -->
-    <section id="services" class="services-section">
-      <div class="services-headers">
-        <h1>Services</h1>
-        <p>
-          Specialized IT capabilities designed to meet the evolving needs of
-          federal and <br />state agencies
-        </p>
-      </div>
-      <div class="services-section__parent-container">
-        <div id="service-button1" class="services-section__parent-container__slides position-relative">
-          <div class="visible-content">
-            <div class="image-wrapper">
-              <img src="./assets/images/ai-service.png" alt="" />
-              <div class="heading">
-                <h1>AI & Machine Learning</h1>
-              </div>
-            </div>
-          </div>
-          <div class="hidden-content position-absolute">
-            <h1>AI & Machine Learning</h1>
-
-            <ul>
-              <li>Generative AI</li>
-              <li>Agentic AI</li>
-              <li>Explainable AI (XAI)</li>
-              <li>AI TRiSM</li>
-              <li>AI-Augmented Development</li>
-            </ul>
-          </div>
-        </div>
-        <div id="service-button2" class="services-section__parent-container__slides position-relative">
-          <div class="visible-content">
-            <div class="image-wrapper">
-              <img src="./assets/images/cloud-service.png" alt="" />
-              <div class="heading">
-                <h1>Cloud Computing & Infrastructure</h1>
-              </div>
-            </div>
-          </div>
-          <div class="hidden-content position-absolute">
-            <h1>Cloud Computing & Infrastructure</h1>
-
-            <ul>
-              <li>Cloud-Native Platforms</li>
-              <li>Multi-Cloud Strategies</li>
-              <li>Edge Computing</li>
-              <li>Platform Engineering</li>
-            </ul>
-          </div>
-        </div>
-        <div id="service-button3" class="services-section__parent-container__slides position-relative">
-          <div class="visible-content">
-            <div class="image-wrapper">
-              <img src="./assets/images/development-service.png" alt="" />
-              <div class="heading">
-                <h1>Software Development & DevSecOps</h1>
-              </div>
-            </div>
-          </div>
-          <div class="hidden-content position-absolute devops-hidden">
-            <h1>Software Development & DevSecOps</h1>
-
-            <ul>
-              <li>Agile Development</li>
-              <li>CI/CD, DevSecOps</li>
-              <li>Low-code/No-code Platforms</li>
-              <li>Microservices Architecture</li>
-            </ul>
-          </div>
-        </div>
-        <div id="service-button4" class="services-section__parent-container__slides position-relative">
-          <div class="visible-content">
-            <div class="image-wrapper">
-              <img src="./assets/images/security-service.png" alt="" />
-              <div class="heading">
-                <h1>Data & Security</h1>
-              </div>
-            </div>
-          </div>
-          <div class="hidden-content position-absolute">
-            <h1>Data & Security</h1>
-
-            <ul>
-              <li>Zero Trust</li>
-              <li>Cybersecurity Mesh</li>
-              <li>Datafication</li>
-              <li>Blockchain applications beyond Crypto</li>
-            </ul>
-          </div>
-        </div>
-        <div id="service-button5" class="services-section__parent-container__slides position-relative">
-          <div class="visible-content">
-            <div class="image-wrapper">
-              <img src="./assets/images/consulting-service.png" alt="" />
-              <div class="heading">
-                <h1>Consulting & Strategy</h1>
-              </div>
-            </div>
-          </div>
-          <div class="hidden-content position-absolute">
-            <h1>Consulting & Strategy</h1>
-
-            <ul>
-              <li>Cloud Migration Roadmaps</li>
-              <li>AI Readiness Assessments</li>
-              <li>IT Operations Optimization</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- technology section -->
-    <section class="technology-section" id="technology">
-      <div class="technology-section__content-container">
-        <div class="technology-section__content-container__contents">
-          <div class="technology-section__content-container__contents__heading">
-            <h1>Technologies & Expertise</h1>
-            <p>
-              We Work across modern stacks & platforms to deliver pratical,
-              secure solutions.
-            </p>
-          </div>
-          <div class="technology-section__content-container__contents__image-section d-flex">
-            <div class="technology-section__content-container__contents__image-section__containers">
-              <div class="technology-section__content-container__contents__image-section__containers__image-wrapper">
-                <div class="image-sizer">
-                  <img src="./assets/images/coding.webp" alt="" />
-                </div>
-              </div>
-              <div
-                class="technology-section__content-container__contents__image-section__containers__heading-description">
-                <h4>Programming Frameworks</h4>
-                <p>Python, C#, NET, Node js, Angular, React</p>
-              </div>
-            </div>
-            <div class="technology-section__content-container__contents__image-section__containers">
-              <div class="technology-section__content-container__contents__image-section__containers__image-wrapper">
-                <div class="image-sizer">
-                  <img src="./assets/images/database.webp" alt="" />
-                </div>
-              </div>
-              <div
-                class="technology-section__content-container__contents__image-section__containers__heading-description">
-                <h4>Cloud & Devops</h4>
-                <p>
-                  AWS, AZure, GCP, Docker, Kubernetes, Terraform, Jenkins,
-                  GitHub Actions
-                </p>
-              </div>
-            </div>
-            <div class="technology-section__content-container__contents__image-section__containers">
-              <div class="technology-section__content-container__contents__image-section__containers__image-wrapper">
-                .
-                <div class="image-sizer">
-                  <img src="./assets/images/ai-logo-tech.webp" alt="" />
-                </div>
-              </div>
-              <div
-                class="technology-section__content-container__contents__image-section__containers__heading-description">
-                <h4>AI & ML</h4>
-                <p>
-                  OpenAI APIs, AWS SageMaker/Bedrock, Tensoflow,
-                  Pytorch,Langchain, Vector DBS
-                </p>
-              </div>
-            </div>
-            <div class="technology-section__content-container__contents__image-section__containers">
-              <div class="technology-section__content-container__contents__image-section__containers__image-wrapper">
-                <div class="image-sizer">
-                  <img src="./assets/images/files.webp" alt="" />
-                </div>
-              </div>
-              <div
-                class="technology-section__content-container__contents__image-section__containers__heading-description">
-                <h4>Security & Compliance</h4>
-                <p>Zero Trust, NIST, FedRAMP, HIPAA, FISMA</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- industry section -->
-    <section id="industry" class="industry-section">
-      <h2 class="fw-semibold">Industries We Serve</h2>
-      <p class="industry-content-desc">
-        We Work across modern stacks & platforms to deliver pratical, secure
-        solutions.
-      </p>
-
-      <div class="industry-card-wrapper">
-        <div class="industry-card-container">
-          <div class="industry-card industry-card-1">
-            <div class="img-wrapper">
-              <img src="./assets/images/highcourt.svg" alt="government" />
-            </div>
-            <div class="industry-card-content-container">
-              <h3 class="fw-semibold">Federal, State & Local Government</h3>
-              <p class="industry-card-desc">
-                KernelTeck partners with government agencies to modernize
-                legacy systems, enhance cybersecurity, and deliver
-                mission-focused digital transformation Our SDVOSB status
-                allows us to provide agile, secure, and compliant IT solutions
-                tailored to public sector needs.
-              </p>
-            </div>
-          </div>
-          <div class="industry-card industry-card-2">
-            <div class="img-wrapper">
-              <img src="./assets/images/health.svg" alt="health" />
-            </div>
-            <div class="industry-card-content-container">
-              <h3 class="fw-semibold">Healthcare & Life Sciences</h3>
-              <p class="industry-card-desc">
-                We help healthcare organizations leverage cloud, AI, and data
-                analytics to improve patient outcomes and operational
-                efficiency. Our solutions ensure regulatory compliance while
-                enabling secure, data-driven innovation in clinical and
-                research environments.
-              </p>
-            </div>
-          </div>
-          <div class="industry-card industry-card-3">
-            <div class="img-wrapper">
-              <img src="./assets/images/dollar.svg" alt="dollar" />
-            </div>
-            <div class="industry-card-content-container">
-              <h3 class="fw-semibold">Finance & Insurance</h3>
-              <p class="industry-card-desc">
-                KernelTeck supports financial institutions with scalable,
-                secure, and compliant digital infrastructure. We specialize in
-                automation, data analytics, and cybersecurity to strengthen
-                risk management and enhance customer experience.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="industry-card-container">
-          <div class="industry-card industry-card-4">
-            <div class="img-wrapper">
-              <img src="./assets/images/graduate.svg" alt="education" />
-            </div>
-            <div class="industry-card-content-container">
-              <h3 class="fw-semibold">Education & Research</h3>
-              <p class="industry-card-desc">
-                We empower educational institutions and research organizations
-                with advanced technology platforms that foster collaboration,
-                digital learning, and data-driven insights. Our solutions
-                support innovation, accessibility, and long-term institutional
-                growth.
-              </p>
-            </div>
-          </div>
-          <div class="industry-card industry-card-5">
-            <div class="img-wrapper">
-              <img src="./assets/images/group.svg" alt="group" />
-            </div>
-            <div class="industry-card-content-container">
-              <h3 class="fw-semibold">Energy & Public Utilities</h3>
-              <p class="industry-card-desc">
-                KernelTeck delivers technology solutions that enhance
-                efficiency, resilience, and sustainability in the energy and
-                utilities sector. From data-driven grid optimization to IoT
-                and cloud transformation, we help modernize critical
-                infrastructure.
-              </p>
-            </div>
-          </div>
-          <div class="industry-card industry-card-6">
-            <div class="img-wrapper">
-              <img src="./assets/images/information-technology.svg" alt="information-technology" />
-            </div>
-            <div class="industry-card-content-container">
-              <h3 class="fw-semibold">
-                Information Technology & Workforce Solutions
-              </h3>
-              <p class="industry-card-desc">
-                KernelTeck provides end-to-end IT staffing and workforce
-                solutions, connecting organizations with skilled professionals
-                across emerging technologies. We deliver flexible,
-                high-performing teams that drive innovation and project
-                success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- naics section -->
-    <section id="naics" class="naics-section position-relative">
-      <div class="naics-section__video-container position-absolute">
-        <img src="./assets/images/naics-pattern.png" alt="" />
-      </div>
-      <div class="naics-section__naics-headings">
-        <h1>NAICS Codes</h1>
-        <p>Primary IT and professional services classifications</p>
-      </div>
-      <div class="naics-section__naics-wrapper">
-        <div class="naics-section__naics-wrapper__parent-container">
-          <div class="naics-section__naics-wrapper__parent-container__naics-coin">
-            <p>518210</p>
-          </div>
-          <div class="naics-section__naics-wrapper__parent-container__description">
-            <p>Data Processing, Hosting, and Related Services</p>
-          </div>
-        </div>
-        <div class="naics-section__naics-wrapper__parent-container">
-          <div class="naics-section__naics-wrapper__parent-container__naics-coin">
-            <p>519130</p>
-          </div>
-          <div class="naics-section__naics-wrapper__parent-container__description">
-            <p>Internet Publishing, Broadcasting, and Web Search Portals</p>
-          </div>
-        </div>
-        <div class="naics-section__naics-wrapper__parent-container">
-          <div class="naics-section__naics-wrapper__parent-container__naics-coin">
-            <p>519190</p>
-          </div>
-          <div class="naics-section__naics-wrapper__parent-container__description">
-            <p>All Other Information Services</p>
-          </div>
-        </div>
-        <div class="naics-section__naics-wrapper__parent-container">
-          <div class="naics-section__naics-wrapper__parent-container__naics-coin">
-            <p>541511</p>
-          </div>
-          <div class="naics-section__naics-wrapper__parent-container__description">
-            <p>Custom Computer Programming Services</p>
-          </div>
-        </div>
-        <div class="naics-section__naics-wrapper__parent-container">
-          <div class="naics-section__naics-wrapper__parent-container__naics-coin">
-            <p>541512</p>
-          </div>
-          <div class="naics-section__naics-wrapper__parent-container__description">
-            <p>Computer Systems Design Services</p>
-          </div>
-        </div>
-        <div class="naics-section__naics-wrapper__parent-container">
-          <div class="naics-section__naics-wrapper__parent-container__naics-coin">
-            <p>541513</p>
-          </div>
-          <div class="naics-section__naics-wrapper__parent-container__description">
-            <p>Computer Facilities Management Services</p>
-          </div>
-        </div>
-        <div class="naics-section__naics-wrapper__parent-container">
-          <div class="naics-section__naics-wrapper__parent-container__naics-coin">
-            <p>541519</p>
-          </div>
-          <div class="naics-section__naics-wrapper__parent-container__description">
-            <p>Other Computer-Related Services</p>
-          </div>
-        </div>
-        <div class="naics-section__naics-wrapper__parent-container">
-          <div class="naics-section__naics-wrapper__parent-container__naics-coin">
-            <p>541618</p>
-          </div>
-          <div class="naics-section__naics-wrapper__parent-container__description">
-            <p>Other Management Consulting Services</p>
-          </div>
-        </div>
-        <div class="naics-section__naics-wrapper__parent-container">
-          <div class="naics-section__naics-wrapper__parent-container__naics-coin">
-            <p>541990</p>
-          </div>
-          <div class="naics-section__naics-wrapper__parent-container__description">
-            <p>All Other Professional, Scientific, and Technical Services</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- certificates section -->
-    <div id="certificates" class="certificate-sections">
-      <div class="certificate-sections__wrapper">
-        <div class="certificate-sections__wrapper__certificate-header">
-          <h1>Certifications & Business Identifers</h1>
-          <p>
-            We are committed to excellence and compliance with federal
-            standards
-          </p>
-        </div>
-        <div class="certificate-sections__wrapper__certificate-wrapper d-flex items-center align-items-center">
-          <div class="certificate-sections__wrapper__certificate-wrapper__certificate-container">
-            <div
-              class="swiper mySwiper certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper">
-              <div
-                class="swiper-wrapper certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper">
-                <div
-                  class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide">
-                  <div
-                    class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper">
-                    <img src="./assets/images//new-certificater.webp" alt="" />
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide">
-                  <div
-                    class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper">
-                    <img src="./assets/images//new-certificater.webp" alt="" />
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide">
-                  <div
-                    class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper">
-                    <img src="./assets/images//new-certificater.webp" alt="" />
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide">
-                  <div
-                    class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper">
-                    <img src="./assets/images//new-certificater.webp" alt="" />
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide">
-                  <div
-                    class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper">
-                    <img src="./assets/images//new-certificater.webp" alt="" />
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide">
-                  <div
-                    class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper">
-                    <img src="./assets/images//new-certificater.webp" alt="" />
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide">
-                  <div
-                    class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper">
-                    <img src="./assets/images//new-certificater.webp" alt="" />
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide">
-                  <div
-                    class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper">
-                    <img src="./assets/images//new-certificater.webp" alt="" />
-                  </div>
-                </div>
-                <div
-                  class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide">
-                  <div
-                    class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper">
-                    <img src="./assets/images//new-certificater.webp" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination position-absolute">
-              <div
-                class="swiper-button-next certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn">
-              </div>
-              <div
-                class="swiper-button-prev certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn">
-              </div>
-            </div>
-          </div>
-          <div class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container">
-            <div
-              class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card">
-              <div
-                class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header d-flex align-items-center">
-                <div class="logo-wrapper">
-                  <img src="./assets//images/profile.png" alt="" />
-                </div>
-                <h1>Business Identifers</h1>
-              </div>
-              <div
-                class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details">
-                <div
-                  class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details">
-                  <p>DUNS</p>
-                  <h1>120615878</h1>
-                </div>
-                <div
-                  class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details">
-                  <p>CAGE CODE</p>
-                  <h1>9FHR4</h1>
-                </div>
-                <div
-                  class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details">
-                  <p>UEI</p>
-                  <h1 id="get-in-touch">PQV8WU7D5AX1</h1>
-                </div>
-              </div>
-              <div
-                class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__mobile-table">
-                <table>
-                  <thead></thead>
-                  <tbody>
-                    <tr>
-                      <td>DUNS</td>
-                      <td>
-                        <h1>120615878</h1>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>CAGE CODE</td>
-                      <td>
-                        <h1>9FHR4</h1>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>UEI</td>
-                      <td>
-                        <h1>PQV8WU7D5AX1</h1>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- contact section -->
-    <section id="contact">
-      <div class="footer-section position-relative">
-        <div class="footer-section__get-in-touch" id="contact-form">
-          <div class="footer-section__get-in-touch__headers">
-            <h1>Get In Touch</h1>
-            <p>
-              Ready to discuss your IT project requirements? <br />
-              Contact us to learn how KernelTeck LLC can support your mission.
-            </p>
-          </div>
-          <div class="footer-section__get-in-touch__form-container">
-            <form action="#">
-              <div class="name-input-container position-relative">
-                <input type="text" placeholder="Your Name" name="name" />
-                <br />
-                <p class="field-error position-absolute" aria-live="polite"></p>
-              </div>
-              <div class="email-input-container position-relative">
-                <input type="text" placeholder="Email Address" name="email" />
-                <br />
-                <p class="field-error position-absolute" aria-live="polite"></p>
-              </div>
-              <div class="organaization-input-container position-relative">
-                <input type="text" placeholder="Organization" name="organization" /><br />
-                <p class="field-error position-absolute" aria-live="polite"></p>
-              </div>
-              <textarea name="message" placeholder="Your Message"></textarea>
-              <div class="captcha-section-parent">
-                <div class="captcha-container">
-                  <h1>YR890</h1>
-                  <div class="reset-wrapper">
-                    <img src="./assets/images/reset.png" alt="" />
-                  </div>
-                </div>
-                <div class="user-captcha-container position-relative">
-                  <p class="field-error position-absolute captch-error" aria-live="polite"></p>
-                </div>
-              </div>
-              <button type="submit" id="getintouch-submit-button">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-        <div id="scroll-top" class="footer-section__up-button-wrapper position-absolute">
-          <img src="./assets/images/up-btn.png " alt="" />
-        </div>
-        <div class="footer-section__video-container position-absolute">
-          <video autoplay muted loop playsinline webkit-playsinline disablePictureInPicture
-            controlslist="nodownload nofullscreen noremoteplayback" style="pointer-events: none;">
-            <source src="./assets/video/footer_video_kernel_tech.mp4" type="video/mp4" />
+      <!-- home section -->
+      <section
+        id="home"
+        class="home-section d-flex align-items-center position-relative"
+      >
+        <div class="home-section__video-container position-absolute">
+          <video
+            id="video1"
+            autoplay
+            muted
+            loop
+            playsinline
+            webkit-playsinline
+            disablePictureInPicture
+            controlslist="nodownload nofullscreen noremoteplayback"
+            style="pointer-events: none"
+          >
+            <source
+              src="./assets/video/banner_video_kernel_tech.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
-        <div class="footer-section__footer-wrapper">
-          <div class="footer-section__footer-wrapper__footer-logo">
-            <div id="footer-logo-button" class="footer-section__footer-wrapper__footer-logo__logo-wrapper"
-              onclick="scrollToTop()">
-              <a>
-                <img src="./assets/images/footer-logo.png" alt="" />
-              </a>
+        <div class="home-section__wrapper">
+          <h2 class="text-center">Empowering Innovation Through</h2>
+          <h1 class="text-center">Intelligent Technology</h1>
+          <p class="text-center">
+            KernelTeck LLC is a Service-Disabled Veteran-Owned Small Business
+            (SDVOSB) delivering advanced IT, Cloud, and AI-driven solutions to
+            government and enterprise clients.
+          </p>
+          <div
+            class="home-section__wrapper__about-logo-container d-flex gap-5 justify-content-center"
+          >
+            <div class="home-section__wrapper__about-logo-container__logo1">
+              <img src="./assets/images/about-logo-2.webp" alt="logo" />
+            </div>
+            <div class="home-section__wrapper__about-logo-container__logo2">
+              <img src="./assets/images/about-icon.webp" alt="logo" />
             </div>
           </div>
-          <div class="footer-section__footer-wrapper__headings">
-            <p>
-              Service-Disabled Veteran-Owned Small Business delivering
-              advanced
-              <span> IT solutions. </span>
-            </p>
+
+          <a
+            href="./assets/files/KernelTeck_CS.pdf"
+            target="_blank"
+            class="d-flex mx-auto"
+          >
+            <button
+              id="capabilities-button"
+              class="rounded-pill text-center d-flex mx-auto justify-content-center"
+            >
+              <span>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_6185_25673)">
+                    <path
+                      d="M13.0139 19.5586C13.0139 19.0896 13.0139 18.8082 13.0139 18.5424C13.0139 12.883 13.0139 7.23924 13.0139 1.57983C13.0139 1.31406 12.9357 0.985749 13.0608 0.813778C13.2955 0.48547 13.624 0.125894 13.9837 0.0320919C14.4999 -0.108612 14.8597 0.297865 14.9849 0.798144C15.0474 1.04828 15.0161 1.31406 15.0161 1.57983C15.0161 7.23924 15.0161 12.883 15.0161 18.5424C15.0161 18.8238 15.0161 19.1052 15.0161 19.5742C15.3759 19.2303 15.6106 19.0114 15.8452 18.7769C17.5971 17.0259 19.3335 15.275 21.0854 13.524C21.4608 13.1488 21.8519 12.7892 22.4463 13.1175C23.1502 13.4927 23.1659 14.2431 22.4776 14.931C20.5536 16.8696 18.6139 18.7926 16.6742 20.7311C16.0798 21.3252 15.5011 21.9193 14.9066 22.4978C14.2184 23.1544 13.7647 23.17 13.0921 22.4978C10.558 19.9807 8.03961 17.4481 5.52117 14.931C4.92676 14.3369 4.84854 13.7429 5.28653 13.2895C5.75581 12.8205 6.27201 12.8674 6.91335 13.5084C8.7748 15.3688 10.6363 17.2292 12.4977 19.0896C12.6228 19.199 12.7323 19.3085 13.0139 19.5586Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M14.0128 27.9833C9.78936 27.9833 5.5659 27.9833 1.34243 27.9677C0.982658 27.9677 0.529027 27.8739 0.278747 27.655C-0.253096 27.2016 -0.00281675 26.2949 0.685451 26.0916C0.951373 26.0135 1.24858 26.0135 1.53014 26.0135C9.83629 26.0135 18.1581 26.0135 26.4642 26.0135C26.7301 26.0135 26.9961 25.9978 27.2463 26.0604C27.7782 26.1854 28.1223 26.5919 27.9659 27.0922C27.8564 27.4361 27.4653 27.7332 27.1368 27.952C26.9804 28.0615 26.6832 27.9833 26.4486 27.9833C22.3033 27.9833 18.1581 27.9833 14.0128 27.9833Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_6185_25673">
+                      <rect width="28" height="28" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              Capabilities Statement
+            </button>
+          </a>
+          <a
+            href="#about"
+            class="home-section__wrapper__scroll-down"
+            class="d-flex mx-auto"
+          >
+            <img
+              src="./assets/images/scroll-down-arrow.webp"
+              alt="down-arrow"
+            />
+          </a>
+        </div>
+      </section>
+      <!-- about section -->
+      <section id="about" class="about-us">
+        <div class="about-us__wrapper d-flex">
+          <div
+            class="about-us__wrapper__description d-flex justify-content-center flex-column"
+          >
+            <div class="about-us__wrapper__description__section">
+              <div
+                class="about-us__wrapper__description__section__heading d-flex"
+              >
+                <h1>About us</h1>
+                <div class="img-wrapper">
+                  <img src="./assets/images/qr-code.png" alt="qr-code" />
+                </div>
+              </div>
+              <p>
+                KernelTeck LLC is
+                <span> a Service-Disabled Veteran-Owned Small Business </span>
+                specializing in advanced IT solutions for federal and state
+                agencies. We deliver cutting-edge technology services with
+                <span>
+                  expertise in Artificial Intelligence, Cloud Computing,
+                  Cybersecurity, and Software Development.
+                </span>
+              </p>
+            </div>
+            <div class="about-us__wrapper__tabs-section">
+              <div class="tab">
+                <button
+                  class="tablinks active"
+                  onclick="openCity(event, 'London')"
+                >
+                  Our Mission
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">
+                  Why KernelTeck?
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                  Core Values
+                </button>
+              </div>
+
+              <div id="London" class="tabcontent">
+                <p>
+                  Our mission is to deliver secure, intelligent, and
+                  transformative IT solutions that empower organizations to
+                  achieve operational excellence. Through a foundation of
+                  innovation, reliability, and integrity, we drive mission
+                  success and long-term technological advancement.
+                </p>
+              </div>
+
+              <div id="Paris" class="tabcontent">
+                <ul>
+                  <li>
+                    <b> Veteran-owned leadership :</b> mission-driven,
+                    disciplined, and accountable.
+                  </li>
+                  <li>
+                    <b>Cutting-edge expertise :</b> AI, Cloud, and Cybersecurity
+                    specialists.
+                  </li>
+                  <li>
+                    <b>Security-first design :</b> Zero Trust and
+                    secure-by-design practices.
+                  </li>
+                  <li>
+                    <b>Scalable delivery :</b> from prototypes to enterprise
+                    production.
+                  </li>
+                  <li>
+                    <b>Client-centric approach :</b> transparent and
+                    collaborative engagements.
+                  </li>
+                </ul>
+              </div>
+
+              <div id="Tokyo" class="tabcontent">
+                <ul>
+                  <li>
+                    <div class="wrapper d-flex align-items-center">
+                      <div class="img-wrapper">
+                        <img
+                          src="./assets/images/about-integrity.svg"
+                          alt="integrity-image"
+                        />
+                      </div>
+                      <b>Integrity</b>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wrapper d-flex align-items-center">
+                      <div class="img-wrapper">
+                        <img
+                          src="./assets/images/about-innovation.svg"
+                          alt="innovation"
+                        />
+                      </div>
+                      <b>Innovation</b>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wrapper d-flex align-items-center">
+                      <div class="img-wrapper">
+                        <img
+                          src="./assets/images/about-service.svg"
+                          alt="service-image"
+                        />
+                      </div>
+                      <b>Service</b>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wrapper d-flex align-items-center">
+                      <div class="img-wrapper">
+                        <img
+                          src="./assets/images/about-excellence.svg"
+                          alt="excellence"
+                        />
+                      </div>
+                      <b>Excellence</b>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          <div
+            class="about-us__wrapper__mission-section d-flex flex-column justify-content-between position-relative"
+          >
+            <div
+              class="about-us__wrapper__mission-section__about-logo-container d-flex position-relative"
+            >
+              <div
+                class="about-us__wrapper__mission-section__about-logo-container__missionlogo-wraper"
+              >
+                <img src="./assets/images/about-logo-2.webp" alt="logo" />
+              </div>
+              <div
+                class="about-us__wrapper__mission-section__about-logo-container__missionlogo-wraper"
+              >
+                <img src="./assets/images/about-icon.webp" alt="logo" />
+              </div>
+            </div>
 
-          <div class="footer-section__footer-wrapper__footer-menu">
-            <ul>
-              <li>
-                <div class="mail-logo-wrapper logo-parent">
-                  <img src="./assets//images/email.svg" alt="" />
+            <div
+              class="about-us__wrapper__mission-section__description-container position-relative"
+            >
+              <h1>
+                Empowering Missions <br />
+                Through Technology <br />
+                and Integrity
+              </h1>
+              <p>
+                Our team combines deep technical knowledge with a commitment to
+                excellence, ensuring mission-critical projects are delivered
+                securely, on time, and within budget. As a certified SDVOSB, we
+                bring both technical prowess and a veteran's dedication to
+                serving our nation.
+              </p>
+            </div>
+            <div
+              class="about-us__wrapper__mission-section__pattern-video position-absolute"
+            >
+              <video
+                id="video2"
+                autoplay
+                muted
+                loop
+                playsinline
+                webkit-playsinline
+                disablePictureInPicture
+                controlslist="nodownload nofullscreen noremoteplayback"
+                style="pointer-events: none"
+              >
+                <source
+                  src="./assets/video/about_video_kernel_tech.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services section -->
+      <section id="services" class="services-section">
+        <div class="services-headers">
+          <h1>Services</h1>
+          <p>
+            Specialized IT capabilities designed to meet the evolving needs of
+            federal and <br />state agencies
+          </p>
+        </div>
+        <div class="services-section__parent-container">
+          <div
+            id="service-button1"
+            class="services-section__parent-container__slides position-relative"
+          >
+            <div class="visible-content">
+              <div class="image-wrapper">
+                <img src="./assets/images/ai-service.png" alt="ai-services" />
+                <div class="heading">
+                  <h1>AI & Machine Learning</h1>
                 </div>
-                <span><a href="mailto:connect@kernelteck.com">connect@kernelteck.com</a></span>
-              </li>
-              <li>
-                <div class="mobile-logo-wrapper logo-parent">
-                  <img src="./assets/images/phone.svg" alt="" />
+              </div>
+            </div>
+            <div class="hidden-content position-absolute">
+              <h1>AI & Machine Learning</h1>
+
+              <ul>
+                <li>Generative AI</li>
+                <li>Agentic AI</li>
+                <li>Explainable AI (XAI)</li>
+                <li>AI TRiSM</li>
+                <li>AI-Augmented Development</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="service-button2"
+            class="services-section__parent-container__slides position-relative"
+          >
+            <div class="visible-content">
+              <div class="image-wrapper">
+                <img
+                  src="./assets/images/cloud-service.png"
+                  alt="cloud-services"
+                />
+                <div class="heading">
+                  <h1>Cloud Computing & Infrastructure</h1>
                 </div>
-                <span> <a href="tel:469-955-5128">469-955-5128</a> </span>
-              </li>
-              <li>
-                <div class="location-logo-wrapper logo-parent">
-                  <img src="./assets/images/address.svg" alt="" />
+              </div>
+            </div>
+            <div class="hidden-content position-absolute">
+              <h1>Cloud Computing & Infrastructure</h1>
+
+              <ul>
+                <li>Cloud-Native Platforms</li>
+                <li>Multi-Cloud Strategies</li>
+                <li>Edge Computing</li>
+                <li>Platform Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="service-button3"
+            class="services-section__parent-container__slides position-relative"
+          >
+            <div class="visible-content">
+              <div class="image-wrapper">
+                <img
+                  src="./assets/images/development-service.png"
+                  alt="development-services"
+                />
+                <div class="heading">
+                  <h1>Software Development & DevSecOps</h1>
                 </div>
-                <div class="mobile-contact-all">
+              </div>
+            </div>
+            <div class="hidden-content position-absolute devops-hidden">
+              <h1>Software Development & DevSecOps</h1>
+
+              <ul>
+                <li>Agile Development</li>
+                <li>CI/CD, DevSecOps</li>
+                <li>Low-code/No-code Platforms</li>
+                <li>Microservices Architecture</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="service-button4"
+            class="services-section__parent-container__slides position-relative"
+          >
+            <div class="visible-content">
+              <div class="image-wrapper">
+                <img
+                  src="./assets/images/security-service.png"
+                  alt="security-services"
+                />
+                <div class="heading">
+                  <h1>Data & Security</h1>
+                </div>
+              </div>
+            </div>
+            <div class="hidden-content position-absolute">
+              <h1>Data & Security</h1>
+
+              <ul>
+                <li>Zero Trust</li>
+                <li>Cybersecurity Mesh</li>
+                <li>Datafication</li>
+                <li>Blockchain applications beyond Crypto</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="service-button5"
+            class="services-section__parent-container__slides position-relative"
+          >
+            <div class="visible-content">
+              <div class="image-wrapper">
+                <img
+                  src="./assets/images/consulting-service.png"
+                  alt="consulting-service"
+                />
+                <div class="heading">
+                  <h1>Consulting & Strategy</h1>
+                </div>
+              </div>
+            </div>
+            <div class="hidden-content position-absolute">
+              <h1>Consulting & Strategy</h1>
+
+              <ul>
+                <li>Cloud Migration Roadmaps</li>
+                <li>AI Readiness Assessments</li>
+                <li>IT Operations Optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- technology section -->
+      <section class="technology-section" id="technology">
+        <div class="technology-section__content-container">
+          <div class="technology-section__content-container__contents">
+            <div
+              class="technology-section__content-container__contents__heading"
+            >
+              <h1>Technologies & Expertise</h1>
+              <p>
+                We Work across modern stacks & platforms to deliver pratical,
+                secure solutions.
+              </p>
+            </div>
+            <div
+              class="technology-section__content-container__contents__image-section d-flex"
+            >
+              <div
+                class="technology-section__content-container__contents__image-section__containers"
+              >
+                <div
+                  class="technology-section__content-container__contents__image-section__containers__image-wrapper"
+                >
+                  <div class="image-sizer">
+                    <img src="./assets/images/coding.webp" alt="coding" />
+                  </div>
+                </div>
+                <div
+                  class="technology-section__content-container__contents__image-section__containers__heading-description"
+                >
+                  <h4>Programming Frameworks</h4>
+                  <p>Python, C#, NET, Node js, Angular, React</p>
+                </div>
+              </div>
+              <div
+                class="technology-section__content-container__contents__image-section__containers"
+              >
+                <div
+                  class="technology-section__content-container__contents__image-section__containers__image-wrapper"
+                >
+                  <div class="image-sizer">
+                    <img src="./assets/images/database.webp" alt="database" />
+                  </div>
+                </div>
+                <div
+                  class="technology-section__content-container__contents__image-section__containers__heading-description"
+                >
+                  <h4>Cloud & Devops</h4>
                   <p>
-                    KernelTeck LLC <br />
-
-                    14333 125th NE,Lake stevens, WA 98258
+                    AWS, AZure, GCP, Docker, Kubernetes, Terraform, Jenkins,
+                    GitHub Actions
                   </p>
                 </div>
-              </li>
-            </ul>
+              </div>
+              <div
+                class="technology-section__content-container__contents__image-section__containers"
+              >
+                <div
+                  class="technology-section__content-container__contents__image-section__containers__image-wrapper"
+                >
+                  .
+                  <div class="image-sizer">
+                    <img
+                      src="./assets/images/ai-logo-tech.webp"
+                      alt="ai-logo-tech"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="technology-section__content-container__contents__image-section__containers__heading-description"
+                >
+                  <h4>AI & ML</h4>
+                  <p>
+                    OpenAI APIs, AWS SageMaker/Bedrock, Tensoflow,
+                    Pytorch,Langchain, Vector DBS
+                  </p>
+                </div>
+              </div>
+              <div
+                class="technology-section__content-container__contents__image-section__containers"
+              >
+                <div
+                  class="technology-section__content-container__contents__image-section__containers__image-wrapper"
+                >
+                  <div class="image-sizer">
+                    <img src="./assets/images/files.webp" alt="files" />
+                  </div>
+                </div>
+                <div
+                  class="technology-section__content-container__contents__image-section__containers__heading-description"
+                >
+                  <h4>Security & Compliance</h4>
+                  <p>Zero Trust, NIST, FedRAMP, HIPAA, FISMA</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- industry section -->
+      <section id="industry" class="industry-section">
+        <h2 class="fw-semibold">Industries We Serve</h2>
+        <p class="industry-content-desc">
+          We Work across modern stacks & platforms to deliver pratical, secure
+          solutions.
+        </p>
 
-        <div class="footer-section__copy-rights">
-          <p>&copy; KernelTeck LLC. All Rights Reserved</p>
+        <div class="industry-card-wrapper">
+          <div class="industry-card-container">
+            <div class="industry-card industry-card-1">
+              <div class="img-wrapper">
+                <img src="./assets/images/highcourt.svg" alt="government" />
+              </div>
+              <div class="industry-card-content-container">
+                <h3 class="fw-semibold">Federal, State & Local Government</h3>
+                <p class="industry-card-desc">
+                  KernelTeck partners with government agencies to modernize
+                  legacy systems, enhance cybersecurity, and deliver
+                  mission-focused digital transformation Our SDVOSB status
+                  allows us to provide agile, secure, and compliant IT solutions
+                  tailored to public sector needs.
+                </p>
+              </div>
+            </div>
+            <div class="industry-card industry-card-2">
+              <div class="img-wrapper">
+                <img src="./assets/images/health.svg" alt="health" />
+              </div>
+              <div class="industry-card-content-container">
+                <h3 class="fw-semibold">Healthcare & Life Sciences</h3>
+                <p class="industry-card-desc">
+                  We help healthcare organizations leverage cloud, AI, and data
+                  analytics to improve patient outcomes and operational
+                  efficiency. Our solutions ensure regulatory compliance while
+                  enabling secure, data-driven innovation in clinical and
+                  research environments.
+                </p>
+              </div>
+            </div>
+            <div class="industry-card industry-card-3">
+              <div class="img-wrapper">
+                <img src="./assets/images/dollar.svg" alt="dollar" />
+              </div>
+              <div class="industry-card-content-container">
+                <h3 class="fw-semibold">Finance & Insurance</h3>
+                <p class="industry-card-desc">
+                  KernelTeck supports financial institutions with scalable,
+                  secure, and compliant digital infrastructure. We specialize in
+                  automation, data analytics, and cybersecurity to strengthen
+                  risk management and enhance customer experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="industry-card-container">
+            <div class="industry-card industry-card-4">
+              <div class="img-wrapper">
+                <img src="./assets/images/graduate.svg" alt="education" />
+              </div>
+              <div class="industry-card-content-container">
+                <h3 class="fw-semibold">Education & Research</h3>
+                <p class="industry-card-desc">
+                  We empower educational institutions and research organizations
+                  with advanced technology platforms that foster collaboration,
+                  digital learning, and data-driven insights. Our solutions
+                  support innovation, accessibility, and long-term institutional
+                  growth.
+                </p>
+              </div>
+            </div>
+            <div class="industry-card industry-card-5">
+              <div class="img-wrapper">
+                <img src="./assets/images/group.svg" alt="group" />
+              </div>
+              <div class="industry-card-content-container">
+                <h3 class="fw-semibold">Energy & Public Utilities</h3>
+                <p class="industry-card-desc">
+                  KernelTeck delivers technology solutions that enhance
+                  efficiency, resilience, and sustainability in the energy and
+                  utilities sector. From data-driven grid optimization to IoT
+                  and cloud transformation, we help modernize critical
+                  infrastructure.
+                </p>
+              </div>
+            </div>
+            <div class="industry-card industry-card-6">
+              <div class="img-wrapper">
+                <img
+                  src="./assets/images/information-technology.svg"
+                  alt="information-technology"
+                />
+              </div>
+              <div class="industry-card-content-container">
+                <h3 class="fw-semibold">
+                  Information Technology & Workforce Solutions
+                </h3>
+                <p class="industry-card-desc">
+                  KernelTeck provides end-to-end IT staffing and workforce
+                  solutions, connecting organizations with skilled professionals
+                  across emerging technologies. We deliver flexible,
+                  high-performing teams that drive innovation and project
+                  success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- naics section -->
+      <section id="naics" class="naics-section position-relative">
+        <div class="naics-section__video-container position-absolute">
+          <img src="./assets/images/naics-pattern.png" alt="naics-pattern" />
+        </div>
+        <div class="naics-section__naics-headings">
+          <h1>NAICS Codes</h1>
+          <p>Primary IT and professional services classifications</p>
+        </div>
+        <div class="naics-section__naics-wrapper">
+          <div class="naics-section__naics-wrapper__parent-container">
+            <div
+              class="naics-section__naics-wrapper__parent-container__naics-coin"
+            >
+              <p>518210</p>
+            </div>
+            <div
+              class="naics-section__naics-wrapper__parent-container__description"
+            >
+              <p>Data Processing, Hosting, and Related Services</p>
+            </div>
+          </div>
+          <div class="naics-section__naics-wrapper__parent-container">
+            <div
+              class="naics-section__naics-wrapper__parent-container__naics-coin"
+            >
+              <p>519130</p>
+            </div>
+            <div
+              class="naics-section__naics-wrapper__parent-container__description"
+            >
+              <p>Internet Publishing, Broadcasting, and Web Search Portals</p>
+            </div>
+          </div>
+          <div class="naics-section__naics-wrapper__parent-container">
+            <div
+              class="naics-section__naics-wrapper__parent-container__naics-coin"
+            >
+              <p>519190</p>
+            </div>
+            <div
+              class="naics-section__naics-wrapper__parent-container__description"
+            >
+              <p>All Other Information Services</p>
+            </div>
+          </div>
+          <div class="naics-section__naics-wrapper__parent-container">
+            <div
+              class="naics-section__naics-wrapper__parent-container__naics-coin"
+            >
+              <p>541511</p>
+            </div>
+            <div
+              class="naics-section__naics-wrapper__parent-container__description"
+            >
+              <p>Custom Computer Programming Services</p>
+            </div>
+          </div>
+          <div class="naics-section__naics-wrapper__parent-container">
+            <div
+              class="naics-section__naics-wrapper__parent-container__naics-coin"
+            >
+              <p>541512</p>
+            </div>
+            <div
+              class="naics-section__naics-wrapper__parent-container__description"
+            >
+              <p>Computer Systems Design Services</p>
+            </div>
+          </div>
+          <div class="naics-section__naics-wrapper__parent-container">
+            <div
+              class="naics-section__naics-wrapper__parent-container__naics-coin"
+            >
+              <p>541513</p>
+            </div>
+            <div
+              class="naics-section__naics-wrapper__parent-container__description"
+            >
+              <p>Computer Facilities Management Services</p>
+            </div>
+          </div>
+          <div class="naics-section__naics-wrapper__parent-container">
+            <div
+              class="naics-section__naics-wrapper__parent-container__naics-coin"
+            >
+              <p>541519</p>
+            </div>
+            <div
+              class="naics-section__naics-wrapper__parent-container__description"
+            >
+              <p>Other Computer-Related Services</p>
+            </div>
+          </div>
+          <div class="naics-section__naics-wrapper__parent-container">
+            <div
+              class="naics-section__naics-wrapper__parent-container__naics-coin"
+            >
+              <p>541618</p>
+            </div>
+            <div
+              class="naics-section__naics-wrapper__parent-container__description"
+            >
+              <p>Other Management Consulting Services</p>
+            </div>
+          </div>
+          <div class="naics-section__naics-wrapper__parent-container">
+            <div
+              class="naics-section__naics-wrapper__parent-container__naics-coin"
+            >
+              <p>541990</p>
+            </div>
+            <div
+              class="naics-section__naics-wrapper__parent-container__description"
+            >
+              <p>All Other Professional, Scientific, and Technical Services</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- certificates section -->
+      <div id="certificates" class="certificate-sections">
+        <div class="certificate-sections__wrapper">
+          <div class="certificate-sections__wrapper__certificate-header">
+            <h1>Certifications & Business Identifers</h1>
+            <p>
+              We are committed to excellence and compliance with federal
+              standards
+            </p>
+          </div>
+          <div
+            class="certificate-sections__wrapper__certificate-wrapper d-flex items-center align-items-center"
+          >
+            <div
+              class="certificate-sections__wrapper__certificate-wrapper__certificate-container"
+            >
+              <div
+                class="swiper mySwiper certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper"
+              >
+                <div
+                  class="swiper-wrapper certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper"
+                >
+                  <div
+                    class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide"
+                  >
+                    <div
+                      class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
+                    >
+                      <img
+                        src="./assets/images//new-certificater.webp"
+                        alt="new-certificater"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide"
+                  >
+                    <div
+                      class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
+                    >
+                      <img
+                        src="./assets/images//new-certificater.webp"
+                        alt="new-certificater"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide"
+                  >
+                    <div
+                      class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
+                    >
+                      <img
+                        src="./assets/images//new-certificater.webp"
+                        alt="new-certificater"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide"
+                  >
+                    <div
+                      class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
+                    >
+                      <img
+                        src="./assets/images//new-certificater.webp"
+                        alt="new-certificater"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide"
+                  >
+                    <div
+                      class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
+                    >
+                      <img
+                        src="./assets/images//new-certificater.webp"
+                        alt="new-certificater"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide"
+                  >
+                    <div
+                      class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
+                    >
+                      <img
+                        src="./assets/images//new-certificater.webp"
+                        alt="new-certificater"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide"
+                  >
+                    <div
+                      class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
+                    >
+                      <img
+                        src="./assets/images//new-certificater.webp"
+                        alt="new-certificater"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide"
+                  >
+                    <div
+                      class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
+                    >
+                      <img
+                        src="./assets/images//new-certificater.webp"
+                        alt="new-certificater"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide"
+                  >
+                    <div
+                      class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
+                    >
+                      <img
+                        src="./assets/images//new-certificater.webp"
+                        alt="new-certificater"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination position-absolute"
+              >
+                <div
+                  class="swiper-button-next certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn"
+                ></div>
+                <div
+                  class="swiper-button-prev certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container"
+            >
+              <div
+                class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card"
+              >
+                <div
+                  class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header d-flex align-items-center"
+                >
+                  <div class="logo-wrapper">
+                    <img src="./assets//images/profile.png" alt="profile.png" />
+                  </div>
+                  <h1>Business Identifers</h1>
+                </div>
+                <div
+                  class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details"
+                >
+                  <div
+                    class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details"
+                  >
+                    <p>DUNS</p>
+                    <h1>120615878</h1>
+                  </div>
+                  <div
+                    class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details"
+                  >
+                    <p>CAGE CODE</p>
+                    <h1>9FHR4</h1>
+                  </div>
+                  <div
+                    class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details"
+                  >
+                    <p>UEI</p>
+                    <h1 id="get-in-touch">PQV8WU7D5AX1</h1>
+                  </div>
+                </div>
+                <div
+                  class="certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__mobile-table"
+                >
+                  <table>
+                    <thead></thead>
+                    <tbody>
+                      <tr>
+                        <td>DUNS</td>
+                        <td><h1>120615878</h1></td>
+                      </tr>
+                      <tr>
+                        <td>CAGE CODE</td>
+                        <td><h1>9FHR4</h1></td>
+                      </tr>
+                      <tr>
+                        <td>UEI</td>
+                        <td><h1>PQV8WU7D5AX1</h1></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+      <!-- contact section -->
+      <section id="contact">
+        <div class="footer-section position-relative">
+          <div class="footer-section__get-in-touch" id="contact-form">
+            <div class="footer-section__get-in-touch__headers">
+              <h1>Get In Touch</h1>
+              <p>
+                Ready to discuss your IT project requirements? <br />
+                Contact us to learn how KernelTeck LLC can support your mission.
+              </p>
+            </div>
+            <div class="footer-section__get-in-touch__form-container">
+              <form action="#">
+                <div class="name-input-container position-relative">
+                  <input type="text" placeholder="Your Name" name="name" />
+                  <br />
+                  <p
+                    class="field-error position-absolute"
+                    aria-live="polite"
+                  ></p>
+                </div>
+                <div class="email-input-container position-relative">
+                  <input type="text" placeholder="Email Address" name="email" />
+                  <br />
+                  <p
+                    class="field-error position-absolute"
+                    aria-live="polite"
+                  ></p>
+                </div>
+                <div class="organaization-input-container position-relative">
+                  <input
+                    type="text"
+                    placeholder="Organization"
+                    name="organization"
+                  /><br />
+                  <p
+                    class="field-error position-absolute"
+                    aria-live="polite"
+                  ></p>
+                </div>
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <div class="captcha-section-parent">
+                  <div class="captcha-container">
+                    <h1>YR890</h1>
+                    <div class="reset-wrapper">
+                      <img src="./assets/images/reset.png" alt="reset.png" />
+                    </div>
+                  </div>
+                  <div class="user-captcha-container position-relative">
+                    <p
+                      class="field-error position-absolute captch-error"
+                      aria-live="polite"
+                    ></p>
+                  </div>
+                </div>
+                <button type="submit" id="getintouch-submit-button">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div
+            id="scroll-top"
+            class="footer-section__up-button-wrapper position-absolute logo-spy"
+          >
+            <img src="./assets/images/up-btn.png " alt="up-btn" />
+          </div>
+          <div class="footer-section__video-container position-absolute">
+            <video
+              id="video3"
+              autoplay
+              muted
+              loop
+              playsinline
+              webkit-playsinline
+              disablePictureInPicture
+              controlslist="nodownload nofullscreen noremoteplayback"
+              style="pointer-events: none"
+            >
+              <source
+                src="./assets/video/footer_video_kernel_tech.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div class="footer-section__footer-wrapper">
+            <div class="footer-section__footer-wrapper__footer-logo">
+              <div
+                id="footer-logo-button"
+                class="footer-section__footer-wrapper__footer-logo__logo-wrapper logo-spy"
+                onclick="scrollToTop()"
+              >
+                <a>
+                  <img
+                    src="./assets/images/footer-logo.png"
+                    alt="footer-logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer-section__footer-wrapper__headings">
+              <p>
+                Service-Disabled Veteran-Owned Small Business delivering
+                advanced
+                <span> IT solutions. </span>
+              </p>
+            </div>
 
-  <div class="overlay-custom" id="overlay-custom"></div>
+            <div class="footer-section__footer-wrapper__footer-menu">
+              <ul>
+                <li>
+                  <div class="mail-logo-wrapper logo-parent">
+                    <img src="./assets/images/email.svg" alt="email-logo" />
+                  </div>
+                  <span
+                    ><a href="mailto:connect@kernelteck.com"
+                      >connect@kernelteck.com</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <div class="mobile-logo-wrapper logo-parent">
+                    <img src="./assets/images/phone.svg" alt="phone" />
+                  </div>
+                  <span> <a href="tel:469-955-5128">469-955-5128</a> </span>
+                </li>
+                <li>
+                  <div class="location-logo-wrapper logo-parent">
+                    <img src="./assets/images/address.svg" alt="address" />
+                  </div>
+                  <div class="mobile-contact-all" style="cursor: pointer">
+                    <p>
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=48.11015948976812,-122.04067341606722"
+                        style="color: inherit"
+                        target="_blank"
+                      >
+                        KernelTeck LLC <br />
 
-  <!-- scripts -->
-  <script src="./assets/scripts/overlay.js?v=1.0.0.1"></script>
-  <script src="./script.js?v=1.0.0.1"></script>
-  <script src="./assets/scripts/mobile-swiper.js?v=1.0.0.1"></script>
-  <script src="./assets/scripts/gsap.js?v=1.0.0.1"></script>
-</body>
+                        14333 125th St NE, Lake Stevens, WA 98258
+                      </a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="footer-section__copy-rights">
+            <p>&copy; KernelTeck LLC. All Rights Reserved</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="overlay-custom" id="overlay-custom"></div>
+
+    <!-- scripts -->
+    <script src="./assets/scripts/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/mobile-swiper.js?v=1.0.0.3"></script>
+    <script src="./assets/scripts/gsap.js?v=1.0.0.3"></script>
+    <script src="./script.js?v=1.0.0.3"></script>
+    <script src="./assets/scripts/overlay.js?v=1.0.0.3"></script>
+    <script src="./assets/scripts/video-play.js"></script>
+  </body>
 </html>

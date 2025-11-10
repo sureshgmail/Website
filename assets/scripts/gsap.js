@@ -21,24 +21,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function animations() {
     // Create animations when viewport is >= 1025px
     mm.add("(min-width: 1025px)", () => {
-      // Overlay animation for larger screens
-      gsap.to("#overlay", {
-        scrollTrigger: {
-          trigger: "#overlay",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-        scale: 1.9,
-        opacity: 0,
-        ease: "none",
-        onUpdate: (self) => {
-          // pointerEvents toggle for overlay when fully hidden or shown
-          // gsap.set("#overlay", {
-          //   pointerEvents: self.progress === 0 ? "auto" : "none",
-          // });
-        },
-      });
       // compute offsets fresh when this media query becomes active
       const offset = computeOffset(
         ".about-us__wrapper__mission-section__about-logo-container",
@@ -69,8 +51,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         y: "-6vw",
       });
 
-      // Return a cleanup function that GSAP's matchMedia will call when this
-      // media query is no longer active (e.g., when the screen shrinks to <=1024px)
       return () => {
         try {
           // kill tweens
@@ -133,62 +113,44 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
   });
 
-  // gsap.to("#overlay", {
-  //   scrollTrigger: {
-  //     trigger: "#overlay",
-  //     start: "top top",
-  //     end: "bottom top",
-  //     scrub: true,
-  //     markers: true,
-  //   },
-  //   scale: 1.9,
-  //   opacity: 0,
-
-  //   ease: "none",
-  //   onUpdate: (self) => {
-  //     // pointerEvents toggle for overlay when fully hidden or shown
-  //     if (self.progress === 0) {
-  //       gsap.set("#overlay", { pointerEvents: "auto" });
-  //     } else {
-  //       gsap.set("#overlay", { pointerEvents: "none" });
-  //     }
-  //   },
-  // });
-
   // Cleanup function
   return () => {
     // Kill all ScrollTriggers when matching media query changes
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
   };
 });
-window.addEventListener("resize", () => {
-  // window.location.reload();
-  // ScrollTrigger.refresh();
-});
-
-// ScrollTrigger.matchMedia({
-//   "(min-width: 1025px)": function () {
-//     // desktop-only ScrollTrigger setup
-//     ScrollTrigger.refresh();
-
-//     window.addEventListener("resize", () => {
-//       ScrollTrigger.refresh();
-//     });
-//   }
-// });
-
 
 function isDesktop() {
   return window.innerWidth >= 1025;
 }
 
 if (isDesktop()) {
-  // desktop-only ScrollTrigger setup
-  ScrollTrigger.refresh();
+  widthResize();
+}
 
-  window.addEventListener("resize", () => {
-    if (isDesktop()) {
-      ScrollTrigger.refresh();
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= 1025) {
+    // window.location.reload();
+    widthResize();
+  }
+});
+
+function widthResize() {
+  // Store the initial window width
+  let previousWidth = window.innerWidth;
+
+  // Add a resize event listener to the window
+  window.addEventListener("resize", function () {
+    const currentWidth = window.innerWidth;
+
+    // Check if the current width is different from the previous width
+    if (currentWidth !== previousWidth) {
+      // Only X-axis (horizontal) resize occurred.
+      // Place your specific code or function calls here
+      // executeMyDesiredCode();
+      window.location.reload();
+      // Update the previous width for the next comparison
+      previousWidth = currentWidth;
     }
   });
 }

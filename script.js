@@ -10,6 +10,7 @@ document.getElementById("hamburger").addEventListener("click", (e) => {
 
   function navLinkClick(e) {
     const ctarget = e.target;
+
     const isCtarget = ctarget.classList.contains("aside__list--item__link");
     const parentCtarget = ctarget.closest(".aside__list--item__link");
     const isParentCtarget =
@@ -266,7 +267,6 @@ async function contactUsApi(
     }
     const data = await response.json();
     if (data.status == "success") {
-      // console.log("success data", data);
       const successMsg = createSuccess(
         "Message sent successfully. We'll contact you soon."
       );
@@ -292,7 +292,6 @@ async function contactUsApi(
     form.reset();
     genCaptcha();
   } catch (error) {
-    // console.log("errror", error);
     form.appendChild(createError("Something Went Wrong! Please try again"));
     // BUTTON ACTIVATION FOR FAILED MESSAGE
     form.querySelector("#getintouch-submit-button").textContent = "Submit";
@@ -347,83 +346,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// --- Scroll-spy: mark sidebar nav links active for the section in view ---
-// (function () {
-//   var navLinks = Array.from(
-//     document.querySelectorAll(".aside__list--item__link")
-//   );
-//   if (!navLinks.length) return;
-
-//   // map href -> element
-//   var linkMap = new Map();
-//   navLinks.forEach(function (a) {
-//     var href = a.getAttribute("data-nav");
-//     if (href && href.startsWith("#")) linkMap.set(href.slice(1), a);
-//     // on click, mark link active immediately
-//     a.addEventListener("click", function () {
-//       navLinks.forEach((n) => n.classList.remove("active"));
-
-//       // a.classList.add("active");
-//     });
-//   });
-
-//   var sections = Array.from(linkMap.keys())
-//     .map(function (id) {
-//       return document.getElementById(id);
-//     })
-//     .filter(Boolean);
-//   if (!sections.length) return;
-
-//   var obsOptions = {
-//     root: null,
-//     rootMargin: "-40% 0px -40% 0px", // focus on center 20% of viewport
-//     threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
-//   };
-
-//   // map of id -> last intersectionRatio
-//   var sectionStates = {};
-
-//   var observer = new IntersectionObserver(function (entries) {
-//     // update state for all entries we got
-//     entries.forEach(function (entry) {
-//       sectionStates[entry.target.id] = entry.intersectionRatio;
-//     });
-
-//     // choose the section with the highest intersection ratio
-//     var maxId = null;
-//     var maxRatio = 0;
-//     Object.keys(sectionStates).forEach(function (id) {
-//       var r = sectionStates[id] || 0;
-//       if (r > maxRatio) {
-//         maxRatio = r;
-//         maxId = id;
-//       }
-//     });
-
-//     if (maxId && maxRatio > 0) {
-//       var link = linkMap.get(maxId);
-//       if (link) {
-//         navLinks.forEach(function (n) {
-//           n.classList.remove("active");
-//         });
-//         link.classList.add("active");
-//       }
-//     }
-//   }, obsOptions);
-
-//   sections.forEach(function (s) {
-//     // initialize state
-//     sectionStates[s.id] = 0;
-//     observer.observe(s);
-//   });
-// })();
-
 // scroll to top
 function scrollToTop() {
-  window.scrollTo({ top: 0 });
+  // Disable scroll spy during scroll to top
+  isAutoScrolling = true;
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 }
+let scrollLogo = document.querySelectorAll(".logo-spy");
+scrollLogo.forEach((logo) => {
+  logo.addEventListener("click", () => {
+    document
+      .querySelector(".aside__list--item__link.active")
+      .classList.remove("active");
+    document.querySelector("#nav-home-button").classList.add("active");
+  });
+});
 let scrollTopBtn = document.getElementById("scroll-top");
-scrollTopBtn.addEventListener("click", () => {
+scrollTopBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   scrollToTop();
 });
 
@@ -431,9 +375,6 @@ let scrollBottom = document.querySelector(
   ".home-section__wrapper__scroll-down"
 );
 let capabilities = document.getElementById("capabilities-button");
-// function scrollDown() {
-//   window.scrollTo({ top: 800, behavior: "smooth" });
-// }
 
 const hamburger = document.getElementById("hamburger");
 let navlist = document.querySelector(".aside__list");
@@ -447,70 +388,7 @@ let callToActions = [
   "service-button4",
   "service-button5",
 ];
-let scroll_top = document.getElementById("scroll-top");
-let footer_logo_button = document.getElementById("footer-logo-button");
-let header_logo_button = document.getElementById("header-logo-button");
-let service_button1 = document.getElementById("service-button1");
-let service_button2 = document.getElementById("service-button2");
-let service_button3 = document.getElementById("service-button3");
-let service_button4 = document.getElementById("service-button4");
-let service_button5 = document.getElementById("service-button5");
-let tablinks = document.querySelectorAll(".tablinks");
-tablinks.forEach((element, index) => {
-  element.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navlist.classList.remove("active");
-  });
-});
-scroll_top.addEventListener("click", () => {
-  // navlist.style.transform = "translate(-100%,100%)";
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
-footer_logo_button.addEventListener("click", () => {
-  // navlist.style.transform = "translate(-100%,100%)";
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
-header_logo_button.addEventListener("click", () => {
-  // navlist.style.transform = "translate(-100%,100%)";
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
-service_button1.addEventListener("click", () => {
-  // navlist.style.transform = "translate(-100%,100%)";
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
-service_button2.addEventListener("click", () => {
-  // navlist.style.transform = "translate(-100%,100%)";
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
-service_button3.addEventListener("click", () => {
-  // navlist.style.transform = "translate(-100%,100%)";
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
-service_button4.addEventListener("click", () => {
-  // navlist.style.transform = "translate(-100%,100%)";
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
-service_button5.addEventListener("click", () => {
-  // navlist.style.transform = "translate(-100%,100%)";
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
-scrollBottom.addEventListener("click", () => {
-  // navlist.style.transform = "translate(-100%,100%)";
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
-capabilities.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navlist.classList.remove("active");
-});
+
 // navbar movement
 function navbarMovement() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -534,40 +412,29 @@ function navbarMovement() {
 }
 navbarMovement();
 
-// const containerId = [
-//   "#home",
-//   "#about",
-//   "#services",
-//   "#technology",
-//   "#industry",
-//   "#naics",
-//   "#contact-form",
-// ];
-// const navBar = document.querySelectorAll(".aside__list--item");
-
-// navBar?.forEach((nav, idx) => {
-//   nav.addEventListener("click", () => {
-//     const navItem = document
-//       .querySelector(containerId[idx])
-//       .getBoundingClientRect();
-//     const offset = navItem.top + window.scrollY - 50;
-//     window.scrollTo({
-//       top: offset,
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".aside__list--item__link");
 let isAutoScrolling = false;
-console.log(sections, navLinks);
 
-// Click handler: smooth scroll + freeze highlight
+// Click handler: smooth scroll + scroll spy
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
-    const target = document.querySelector(link.getAttribute("data-nav"));
+    let form = document.querySelector("form");
+    let formErrors = form.querySelectorAll(".field-error");
+    formErrors.forEach((errorMsg) => {
+      errorMsg.textContent = "";
+    });
+
+    const targetId = link.getAttribute("data-nav");
+    const target = document.querySelector(targetId);
+
+    if (!target) return;
+
+    // Clear any existing timeout
+    if (window.scrollTimeout) {
+      clearTimeout(window.scrollTimeout);
+    }
 
     // Mark scrolling in progress
     isAutoScrolling = true;
@@ -576,35 +443,150 @@ navLinks.forEach((link) => {
     navLinks.forEach((lnk) => lnk.classList.remove("active"));
     link.classList.add("active");
 
+    // Get the scroll destination
+    const targetPosition = target.offsetTop - 60;
+
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+
+    // Calculate scroll duration based on distance
+    const duration = Math.min(Math.abs(distance), 1000); // Max 1 second
+
     // Smooth scroll to section
     window.scrollTo({
-      top: target?.offsetTop - 60,
+      top: targetPosition,
       behavior: "smooth",
     });
 
-    // Estimate scroll end and release control
-    setTimeout(() => {
+    // Set a timeout to re-enable scroll spy after animation
+    window.scrollTimeout = setTimeout(() => {
       isAutoScrolling = false;
-    }, 800); // Adjust time based on scroll distance
+
+      // Double-check the active section after scroll completes
+      const currentSection = Array.from(sections).find((section) => {
+        const rect = section.getBoundingClientRect();
+        return rect.top <= 100 && rect.bottom >= 100;
+      });
+
+      if (currentSection) {
+        const currentId = `#${currentSection.id}`;
+        navLinks.forEach((navLink) => {
+          navLink.classList.toggle(
+            "active",
+            navLink.getAttribute("data-nav") === currentId
+          );
+        });
+      }
+    }, duration + 100); // Add small buffer to duration
   });
 });
 
-// Scroll listener (only active when not auto-scrolling)
+// Scroll listener with Intersection Observer
+const observerOptions = {
+  root: null,
+  rootMargin: "-10% 0px",
+  threshold: [0.3],
+};
+
+const observerCallback = (entries) => {
+  if (isAutoScrolling) return;
+
+  const visibleSections = entries.filter((entry) => entry.isIntersecting);
+
+  if (visibleSections.length) {
+    // Find the section closest to the center of the viewport
+    const closest = visibleSections.reduce(
+      (acc, curr) => {
+        const rect = curr.target.getBoundingClientRect();
+        const center = Math.abs(
+          window.innerHeight / 2 - (rect.top + rect.height / 2)
+        );
+        return center < acc.center ? { section: curr.target, center } : acc;
+      },
+      { section: null, center: Infinity }
+    );
+
+    if (closest.section) {
+      const currentId = `#${closest.section.id}`;
+      navLinks.forEach((link) => {
+        if (link.getAttribute("data-nav") === currentId) {
+          if (!link.classList.contains("active")) {
+            link.classList.add("active");
+          }
+        } else {
+          link.classList.remove("active");
+        }
+      });
+      // Try to ensure autoplay works on restrictive mobile browsers (Edge/Chrome/Safari)
+      // Force muted + programmatic play on DOMContentLoaded for any autoplay videos.
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   try {
+      //     const autoplayVideos = document.querySelectorAll("video[autoplay]");
+      //     console.log(autoplayVideos);
+
+      //     autoplayVideos.forEach((v) => {
+      //       // Ensure muted attribute is present
+      //       v.muted = true;
+      //       // Some browsers require playsinline to be set as property as well
+      //       v.playsInline = true;
+      //       // Try to play programmatically; if blocked, browsers will ignore the error
+      //       const p = v.play();
+      //       if (p && p.catch) p.catch(() => {});
+      //     });
+      //   } catch (err) {
+      //     // swallow errors - non-critical
+      //     console.warn("Autoplay helper failed:", err);
+      //   }
+      // });
+    }
+  }
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach((section) => observer.observe(section));
+
+// Backup scroll listener for extreme scroll speeds
+let scrollTimeout = null;
 window.addEventListener("scroll", () => {
   if (isAutoScrolling) return;
 
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 120;
-    if (scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
+  if (scrollTimeout) {
+    clearTimeout(scrollTimeout);
+  }
 
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("data-nav") === `#${current}`) {
-      link.classList.add("active");
+  scrollTimeout = setTimeout(() => {
+    const viewportMiddle = window.innerHeight / 2;
+    let closestSection = null;
+    let minDistance = Infinity;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const sectionMiddle = rect.top + rect.height / 2;
+      const distance = Math.abs(viewportMiddle - sectionMiddle);
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        closestSection = section;
+      }
+    });
+
+    if (closestSection) {
+      const currentId = `#${closestSection.id}`;
+      navLinks.forEach((link) => {
+        if (link.getAttribute("data-nav") === currentId) {
+          if (!link.classList.contains("active")) {
+            link.classList.add("active");
+          }
+        } else {
+          link.classList.remove("active");
+        }
+      });
     }
-  });
+  }, 150); // Slightly longer debounce
 });
+// let video = document.querySelectorAll("video");
+// console.log(video);
+
+// video.forEach((vid) => {
+//   vid.play();
+// });
