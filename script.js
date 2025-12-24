@@ -105,7 +105,7 @@ function setupContactValidation(form) {
     captchaInput.name = "captcha_answer";
     captchaInput.placeholder = "Enter Captcha";
     captchaInput.style.display = "block";
-    captchaInput.style.marginTop = "0.4rem";
+    captchaInput.style.marginTop = "0rem";
 
     // insert before the placeholder if possible, otherwise append to the form
     if (captchaPlaceholder) {
@@ -346,6 +346,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+let aboutTabBtns = document.querySelectorAll(".tablinks");
+let activeAboutTab = document.querySelector(".button-active-mark");
+aboutTabBtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    document
+      .querySelector(".btn-mark-active")
+      ?.classList.remove("btn-mark-active");
+    btn.firstElementChild.classList.add("btn-mark-active");
+  });
+});
 // scroll to top
 function scrollToTop() {
   // Disable scroll spy during scroll to top
@@ -355,6 +365,11 @@ function scrollToTop() {
     top: 0,
     behavior: "smooth",
   });
+
+  // Re-enable scroll spy after scroll animation completes
+  setTimeout(() => {
+    isAutoScrolling = false;
+  }, 1000);
 }
 let scrollLogo = document.querySelectorAll(".logo-spy");
 scrollLogo.forEach((logo) => {
@@ -517,27 +532,6 @@ const observerCallback = (entries) => {
           link.classList.remove("active");
         }
       });
-      // Try to ensure autoplay works on restrictive mobile browsers (Edge/Chrome/Safari)
-      // Force muted + programmatic play on DOMContentLoaded for any autoplay videos.
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   try {
-      //     const autoplayVideos = document.querySelectorAll("video[autoplay]");
-      //     console.log(autoplayVideos);
-
-      //     autoplayVideos.forEach((v) => {
-      //       // Ensure muted attribute is present
-      //       v.muted = true;
-      //       // Some browsers require playsinline to be set as property as well
-      //       v.playsInline = true;
-      //       // Try to play programmatically; if blocked, browsers will ignore the error
-      //       const p = v.play();
-      //       if (p && p.catch) p.catch(() => {});
-      //     });
-      //   } catch (err) {
-      //     // swallow errors - non-critical
-      //     console.warn("Autoplay helper failed:", err);
-      //   }
-      // });
     }
   }
 };

@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
   line-height: inherit;
+  text-wrap: pretty;
 }
 
 a {
@@ -144,12 +145,12 @@ textarea:focus {
 }
 .aside__list--item__link::after {
   content: "";
-  width: 30%;
+  width: 50%;
   height: 0.3rem;
   background-color: #f6208f;
   position: absolute;
   left: 0rem;
-  bottom: 0rem;
+  bottom: 0.5rem;
   transform: translateY(250%);
   display: none;
 }
@@ -314,7 +315,7 @@ textarea:focus {
     position: absolute;
     padding-bottom: 1rem;
     left: 0rem;
-    bottom: -1.6rem;
+    bottom: -1.5rem;
     transform: translate(-100%, 100%);
     background-color: #ffffff;
     width: 100%;
@@ -324,7 +325,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     transition: 0s;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 0px;
   }
   .aside__list--item {
     width: 100%;
@@ -458,7 +459,7 @@ textarea:focus {
   min-height: 10.5rem;
 }
 .home-section__wrapper a {
-  width: 27%;
+  width: 25%;
   margin: 0 auto;
 }
 .home-section__wrapper a button {
@@ -480,8 +481,7 @@ textarea:focus {
 .home-section__wrapper p {
   font-size: 2.8rem;
   color: #fff;
-  margin-top: 4.4rem;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
 }
 .home-section__wrapper button {
   width: 100%;
@@ -492,7 +492,7 @@ textarea:focus {
   padding-top: 1.8rem;
   padding-bottom: 1.8rem;
   align-items: center;
-  margin-top: 4.4rem;
+  margin: 15%;
   transition: 0.3s ease;
 }
 .home-section__wrapper button span svg g path {
@@ -509,7 +509,7 @@ textarea:focus {
   fill: #000;
 }
 .home-section__wrapper__scroll-down {
-  width: 5% !important;
+  width: 4% !important;
   display: flex;
   margin-top: 3% !important;
 }
@@ -536,20 +536,21 @@ textarea:focus {
   width: 50%;
   padding: 5.6rem;
 }
+.about-us__wrapper__description__section .img-wrapper {
+  width: 20%;
+  right: 0;
+}
 .about-us__wrapper__description__section__heading {
   justify-content: space-between;
-  margin-bottom: 2%;
-}
-.about-us__wrapper__description__section__heading .img-wrapper {
-  width: 20%;
 }
 .about-us__wrapper__description__section__heading h1 {
-  padding-bottom: 4.6rem;
   font-size: 6.7rem;
+  font-weight: 600;
 }
 .about-us__wrapper__description__section p {
   font-size: 1.8rem;
-  padding-bottom: 6.1rem;
+  padding-bottom: 5.1rem;
+  color: #666666;
 }
 .about-us__wrapper__description__section p span {
   color: #8c30a8;
@@ -583,6 +584,7 @@ textarea:focus {
   border-radius: 1rem;
   z-index: 2;
   padding: 4rem 3.7rem 4rem 3.8rem;
+  bottom: 7%;
   background-color: rgba(255, 255, 255, 0.1098039216);
 }
 .about-us__wrapper__mission-section__description-container h1 {
@@ -616,10 +618,15 @@ textarea:focus {
      object-fit: cover;
 }
 
+#London b {
+  color: #8c30a8;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
-  width: 100%;
+  width: 90%;
+  height: 15%;
   display: flex;
   justify-content: space-between;
 }
@@ -642,11 +649,24 @@ textarea:focus {
   color: #f6208f;
 }
 
+.button-active-mark {
+  content: "";
+  display: none;
+  width: 50%;
+  height: 4px;
+  background-color: #f6208f;
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+}
+
 /* Create an active/current tablink class */
 .tab button.active {
-  border-bottom: 3px solid #f6208f;
   color: #f6208f;
-  border-width: 10%;
+}
+
+.btn-mark-active {
+  display: block;
 }
 
 /* Style the tab content */
@@ -658,7 +678,6 @@ textarea:focus {
 }
 .tabcontent p {
   font-size: 1.8rem;
-  line-height: 2.5rem;
   color: #666;
   font-family: "Inter-regular", sans-serif;
   font-weight: 400;
@@ -671,10 +690,18 @@ textarea:focus {
   font-weight: 400;
 }
 .tabcontent ul {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
+  margin-left: 4%;
 }
 .tabcontent ul li {
   list-style-image: url("./assets/images/bullets.png") !important;
+  margin-bottom: 2%;
+}
+.tabcontent ul li b {
+  color: #333333;
+}
+.tabcontent ul .core-tab {
+  margin: 0;
 }
 
 .slide-texts {
@@ -723,7 +750,7 @@ textarea:focus {
   font-family: "Inter-regular", sans-serif;
 }
 .technology-section__content-container__contents__image-section {
-  justify-content: space-between;
+  justify-content: center;
   gap: 2%;
   flex-wrap: wrap;
 }
@@ -745,8 +772,6 @@ textarea:focus {
 .technology-section__content-container__contents__image-section__containers__image-wrapper .image-sizer {
   width: 100%;
   height: auto;
-  border: 4px solid #fff;
-  padding: 18%;
   border-radius: 50%;
 }
 .technology-section__content-container__contents__image-section__containers__heading-description {
@@ -757,6 +782,7 @@ textarea:focus {
   font-size: 2.4rem;
   color: #fff;
   font-weight: 500;
+  margin-bottom: 3%;
 }
 .technology-section__content-container__contents__image-section__containers__heading-description p {
   font-size: 1.6rem;
@@ -765,19 +791,18 @@ textarea:focus {
 
 .services-section {
   padding-top: 3.5%;
-  padding-left: 4.5%;
   background-color: #fbfbfb;
   overflow-x: hidden;
-  padding-right: 2.3rem;
   padding-bottom: 3.5%;
 }
 .services-section__parent-container {
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-areas: "service1 service1 service2 service2 service3 service3" ". service4 service4 service5 service5 . ";
-  row-gap: 4rem;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  gap: 3rem;
+  margin-top: 5.2%;
 }
 .services-section__parent-container__slides {
   transition: 0.3s ease;
@@ -800,30 +825,36 @@ textarea:focus {
   grid-area: service5;
 }
 .services-section__parent-container__slides .visible-content .heading {
-  display: none;
+  opacity: 1;
   position: absolute;
-  top: 85.5%;
+  z-index: 2;
   width: 100%;
   padding: 5%;
+  bottom: 0;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom-left-radius: 2.5rem;
   border-bottom-right-radius: 2.5rem;
   text-align: center;
   color: #fff;
-  font-size: 3.2rem;
   font-family: "Inter-semi-bold";
+  transition: 0.3s ease;
   background: linear-gradient(93.11deg, #5c009f 17.01%, #9f2699 107.15%);
 }
-.services-section__parent-container__slides .visible-content .image-wrapper {
-  position: relative;
+.services-section__parent-container__slides .visible-content .heading h1 {
+  font-size: 3.2rem;
 }
 .services-section__parent-container__slides .hidden-content {
+  padding: 5.1%;
+  z-index: 1;
   cursor: pointer;
   color: #fff;
-  bottom: 0%;
+  bottom: -65px;
   height: 15%;
   width: 100%;
   overflow: hidden;
-  padding: 1.2rem;
   background: linear-gradient(93.11deg, rgba(92, 0, 159, 0.93) 17.01%, rgba(159, 38, 153, 0.93) 107.15%);
   border-radius: 2.5rem;
   border-top-left-radius: 0px;
@@ -834,7 +865,6 @@ textarea:focus {
   font-size: 3.2rem;
   font-family: "Inter-semi-bold";
   padding-bottom: 2%;
-  padding-top: 3%;
   display: flex;
   align-items: start;
 }
@@ -845,7 +875,7 @@ textarea:focus {
   display: none;
 }
 .services-section__parent-container__slides .hidden-content ul li {
-  padding-bottom: 2.3rem;
+  padding-bottom: 1.3rem;
   list-style-image: url("./assets/images/bullets.png") !important;
 }
 
@@ -855,6 +885,7 @@ textarea:focus {
   overflow: hidden;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
+  bottom: 0;
 }
 
 .services-section__parent-container__slides:hover .hidden-content > ul {
@@ -865,8 +896,16 @@ textarea:focus {
   transition: 0.3s ease;
 }
 
+.services-section__parent-container__slides:hover .visible-content > .image-wrapper > .heading {
+  opacity: 0;
+  transition: 0.3s ease;
+  z-index: 0;
+}
+
 .services-headers {
   margin-bottom: 3.3rem;
+  width: 90%;
+  margin: 0 auto;
 }
 .services-headers h1 {
   font-family: "Inter-semi-bold", sans-serif;
@@ -921,6 +960,7 @@ textarea:focus {
   justify-content: center;
 }
 .naics-section__naics-wrapper__parent-container {
+  position: relative;
   width: 31%;
   display: flex;
   gap: 1%;
@@ -944,40 +984,40 @@ textarea:focus {
   font-size: 2.5rem;
   font-family: "InterBold";
   font-weight: 700;
-  margin: 0;
 }
 .naics-section__naics-wrapper__parent-container__naics-coin:hover {
   scale: 1.05;
   transition: 0.3s ease;
 }
 .naics-section__naics-wrapper__parent-container__description {
-  background-image: url("./assets/images/updated-nais.png");
+  background-image: url("./assets/images/nias-update.png");
   height: 26.1rem;
   width: 26.1rem;
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 5%;
   padding-left: 5%;
   text-align: left;
+  z-index: 1;
 }
 .naics-section__naics-wrapper__parent-container__description p {
   font-size: 2rem;
 }
 
 .certificate-sections {
-  padding-left: 4.5%;
   padding-top: 6.5%;
-  padding-bottom: 7%;
   background: url("./assets/images/naics-pattern.png");
   background-repeat: no-repeat;
   background-size: 35%;
   background-position: right top;
 }
 .certificate-sections__wrapper {
-  width: 82%;
+  width: 84%;
+  margin: 0 auto;
 }
 .certificate-sections__wrapper__certificate-header h1 {
   font-size: 6.4rem;
@@ -995,12 +1035,12 @@ textarea:focus {
   gap: 5%;
 }
 .certificate-sections__wrapper__certificate-wrapper__certificate-container {
-  width: 50%;
+  width: 40%;
 }
 .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
-  width: 10%;
+  width: 8%;
   margin-top: 2%;
-  left: 17%;
+  left: 20%;
 }
 .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
   color: #000000;
@@ -1017,7 +1057,7 @@ textarea:focus {
   color: #c8c6c6;
 }
 .certificate-sections__wrapper__certificate-wrapper__certificate-card-container {
-  width: 50%;
+  width: 60%;
   position: relative;
 }
 .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
@@ -1026,8 +1066,8 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   border-radius: 1.4rem;
-  padding: 6.2rem 2.8rem 4.7rem 2rem;
-  background: linear-gradient(134.97deg, #ffffff -13.92%, rgb(255, 170, 251) 70.2%);
+  padding: 5.4rem 5.4rem 6.7rem 5.4rem;
+  background: linear-gradient(314deg, #f9f9f9 20.08%, rgba(255, 170, 251, 0.3803921569) 88.29%);
 }
 .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header {
   padding-bottom: 2.3rem;
@@ -1037,7 +1077,7 @@ textarea:focus {
   font-size: 3.2rem;
   font-weight: 700;
   font-family: "InterBold", sans-serif;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details {
   display: flex;
@@ -1119,18 +1159,18 @@ textarea:focus {
 .footer-section__footer-wrapper__footer-menu ul li {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
-  font-size: 2.4rem;
+  gap: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
   font-family: "Inter-regular", sans-serif;
   color: #fff;
   margin-bottom: 3rem;
 }
 .footer-section__footer-wrapper__footer-menu ul li .logo-parent {
-  min-height: 6.6rem;
-  min-width: 6.6rem;
-  max-height: 6.6rem;
-  max-width: 6.6rem;
+  min-height: 4.8rem;
+  min-width: 4.8rem;
+  max-height: 4.8rem;
+  max-width: 4.8rem;
 }
 .footer-section__footer-wrapper__footer-menu ul li span a {
   color: #fff;
@@ -1169,6 +1209,7 @@ textarea:focus {
   font-size: 1.4rem;
   font-weight: 400;
   font-family: "Inter-regular", sans-serif;
+  margin-bottom: 0;
 }
 .footer-section__get-in-touch__form-container form .captcha-section-parent {
   display: flex;
@@ -1189,7 +1230,7 @@ textarea:focus {
 .footer-section__get-in-touch__form-container form .captcha-container {
   display: flex;
   width: 50%;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 2rem;
   border: 1px solid #d9d9d9;
@@ -1213,8 +1254,8 @@ textarea:focus {
   width: 100%;
   background-color: rgba(178, 178, 178, 0.3411764706);
   border: none;
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
   margin-top: 3rem;
   border-radius: 1rem;
   color: #000;
@@ -1290,9 +1331,9 @@ textarea:focus {
   padding-bottom: 20%;
   padding-left: 4.5%;
 }
-.industry-section h2 {
+.industry-section h1 {
   font-size: clamp(15px, 3.5vw, 67px);
-  margin-bottom: clamp(15px, 1.31vw, 25px);
+  font-weight: 600;
   color: #000000;
 }
 .industry-section .industry-content-desc {
@@ -1301,21 +1342,25 @@ textarea:focus {
   font-weight: 400;
   margin-bottom: clamp(25px, 4.54vw, 87px);
 }
+.industry-section .industry-card-mobile {
+  display: none;
+}
 .industry-section .industry-card-container {
   display: flex;
   padding-left: 3.75vw;
 }
 .industry-section .industry-card-container .industry-card {
   background: linear-gradient(136.56deg, #5c009f 2.75%, #9f2699 93.57%);
+  display: flex;
+  flex-direction: column;
   border-radius: clamp(12px, 2.09vw, 40px);
   max-width: 331px;
   width: 19.8%;
   min-width: 200px;
-  gap: 2.14vw;
-  padding-top: 1.51vw;
-  padding-left: 1.354vw;
-  height: 18.7vw;
-  max-height: 359px;
+  padding: 1.51vw;
+  gap: 5%;
+  height: 20.7vw;
+  max-height: 400px;
   min-height: 270px;
   flex-shrink: 0;
 }
@@ -1325,14 +1370,14 @@ textarea:focus {
 }
 .industry-section .industry-card-container .industry-card h3 {
   color: #fff;
-  line-height: 1.4;
   width: 80%;
   font-size: 1.25vw;
+  margin-bottom: 4%;
 }
 .industry-section .industry-card-container .industry-card .industry-card-desc {
-  font-size: 0.68vw;
+  font-size: 0.8vw;
   color: #fff;
-  width: 85%;
+  line-height: 18px;
 }
 .industry-section .industry-card-container .industry-card:hover .img-wrapper > img {
   transition: 0.3s ease;
@@ -1350,7 +1395,7 @@ textarea:focus {
   transform: translate(44.08vw, -25.34vw);
 }
 .industry-section .industry-card-container .industry-card-5 {
-  transform: translate(35.41vw, 10.625vw);
+  transform: translate(31.41vw, 10.625vw);
 }
 .industry-section .industry-card-container .industry-card-6 {
   transform: translate(32.14vw, -17.11vw);
@@ -1359,13 +1404,14 @@ textarea:focus {
   width: 90%;
 }
 
-#contact {
+.contact-form-section {
   padding-top: 6%;
 }
 
 @media screen and (max-width: 1400px) {
   .industry-section .industry-card-container .industry-card .industry-card-desc {
-    font-size: 10px;
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -1377,6 +1423,7 @@ textarea:focus {
   }
   .industry-section .industry-card-container .industry-card .industry-card-desc {
     font-size: 10px;
+    line-height: 14px;
   }
   .industry-section .industry-card-container .industry-card-2 {
     transform: translatex(5.2vw);
@@ -1393,93 +1440,56 @@ textarea:focus {
 }
 @media screen and (max-width: 1024px) {
   .industry-section .industry-card-container {
-    justify-content: center;
-    gap: 3.91vw;
-    margin-bottom: 30px;
-    padding-inline: 0;
+    display: none;
   }
-  .industry-section .industry-card-container .industry-card {
-    min-width: 26%;
-    min-height: 280px;
+  .industry-section .industry-card-mobile {
+    display: flex;
+    gap: 3%;
+  }
+  .industry-section .industry-card-mobile .industry-card {
+    background: linear-gradient(136.56deg, #5c009f 2.75%, #9f2699 93.57%);
+    width: 30%;
+    margin-bottom: 3%;
     border-radius: 10px;
-    padding-bottom: 2vw;
+    padding: 3%;
+    color: #ffffff;
   }
-  .industry-section .industry-card-container .industry-card h3 {
-    font-size: 14px;
+  .industry-section .industry-card-mobile .industry-card h3 {
+    font-size: 2rem;
+    margin: 5% 0;
   }
-  .industry-section .industry-card-container .industry-card .industry-card-desc {
-    font-size: 11px;
-    width: 90%;
+  .industry-section .industry-card-mobile .industry-card p {
+    font-size: 1.4rem;
   }
-  .industry-section .industry-card-container .industry-card img {
-    transition: 0s;
-  }
-  .industry-section .industry-card-container .industry-card:hover > img {
-    transform: rotateY(0deg);
-    transition: 0s;
-  }
-  .industry-section .industry-card-container .industry-card-1 {
-    transform: translate(0);
-  }
-  .industry-section .industry-card-container .industry-card-2 {
-    transform: translate(0);
-  }
-  .industry-section .industry-card-container .industry-card-3 {
-    transform: translate(0);
-  }
-  .industry-section .industry-card-container .industry-card-4 {
-    transform: translate(0);
-  }
-  .industry-section .industry-card-container .industry-card-5 {
-    transform: translate(0);
-  }
-  .industry-section .industry-card-container .industry-card-6 {
-    transform: translate(0);
+  .industry-section .industry-card-mobile .industry-card .img-wrapper {
+    width: 30%;
   }
 }
 @media screen and (max-width: 768px) {
-  .industry-section .industry-card-wrapper {
-    display: inline-flex;
-  }
-  .industry-section .industry-card-wrapper .industry-card-container {
-    display: inline-flex;
-    justify-content: flex-start;
-    gap: 3.91vw;
-    flex-wrap: wrap;
-  }
-  .industry-section .industry-card-wrapper .industry-card-container .industry-card {
-    width: 90%;
-    border-radius: 5px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 20px;
+  .industry-section .industry-card-mobile .industry-card {
+    width: 45%;
   }
 }
 @media screen and (max-width: 576px) {
-  .industry-section .industry-card-wrapper {
-    display: block;
+  .industry-section .industry-card-mobile .industry-card {
+    width: 95%;
   }
-  .industry-section .industry-card-wrapper .industry-card-container {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3.91vw;
-    flex-wrap: wrap;
-    margin-right: 3%;
-  }
-  .industry-section .industry-card-wrapper .industry-card-container .industry-card {
-    width: 100%;
-    border-radius: 5px;
-    min-height: 250px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 20px;
-  }
-  .industry-section .industry-card-container .industry-card .img-wrapper {
+  .industry-section .industry-card-mobile .industry-card .img-wrapper {
     width: 15%;
   }
-  .industry-section .industry-card-container {
-    padding-inline: unset;
+}
+@media screen and (max-width: 425px) {
+  .industry-section .industry-card-mobile .industry-card {
+    width: 95%;
+  }
+  .industry-section .industry-card-mobile .industry-card h3 {
+    font-size: 1.7rem;
+  }
+  .industry-section .industry-card-mobile .industry-card p {
+    font-size: 1.3rem;
+  }
+  .industry-section .industry-card-mobile .industry-card .img-wrapper {
+    width: 15%;
   }
 }
 .mobile-getintouch {
@@ -1505,14 +1515,8 @@ textarea:focus {
     padding-left: 28%;
     padding-right: 5%;
   }
-  .about-us__wrapper {
-    height: 790px;
-  }
   .about-us__wrapper__tabs-section {
-    padding-top: 0;
-  }
-  #contact {
-    padding-top: 15%;
+    padding-top: 5%;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -1526,6 +1530,9 @@ textarea:focus {
     margin-top: 1.4rem;
     font-size: 2.5rem;
   }
+  .home-section__wrapper a {
+    width: 30%;
+  }
   .home-section__wrapper a button {
     padding-right: 3%;
     padding-left: 3%;
@@ -1538,7 +1545,6 @@ textarea:focus {
   }
   .about-us__wrapper {
     width: 90%;
-    height: 770px;
   }
   .about-us__wrapper__description__section h1 {
     font-size: 6.4rem;
@@ -1550,7 +1556,7 @@ textarea:focus {
     padding-top: 5rem;
   }
   .about-us__wrapper__description__section__heading {
-    margin-top: 15%;
+    margin-top: 2%;
   }
   .technology-section {
     padding: 5% 0%;
@@ -1571,6 +1577,7 @@ textarea:focus {
   .technology-section__content-container__contents__image-section__containers {
     width: 30%;
     height: 23rem;
+    margin-bottom: 2%;
   }
   .technology-section__content-container__contents__image-section__containers__heading-description h4 {
     font-size: 2.2rem;
@@ -1589,14 +1596,12 @@ textarea:focus {
     height: 6rem;
     width: 6rem;
   }
-  .services-section__parent-container {
-    row-gap: 2rem;
-  }
   .heading h1 {
     font-size: 2rem;
   }
-  .services-section__parent-container__slides .hidden-content h1 {
-    font-size: 2rem;
+  .services-section__parent-container__slides .hidden-content h1,
+  .services-section__parent-container__slides .visible-content .heading h1 {
+    font-size: 2.8rem;
   }
   .services-section__parent-container__slides .hidden-content ul {
     font-size: 1.6rem;
@@ -1645,7 +1650,7 @@ textarea:focus {
     margin-bottom: 3%;
   }
   .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
-    left: 20%;
+    left: 18%;
   }
   .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
     font-size: 4.1rem;
@@ -1682,12 +1687,6 @@ textarea:focus {
     padding: 3.5rem;
     bottom: 12%;
   }
-  .footer-section__get-in-touch__form-container form input,
-  .footer-section__get-in-touch__form-container form textarea {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 3rem;
-  }
   .naics-section__naics-wrapper__parent-container__naics-coin {
     width: 15.6rem;
     height: 15.6rem;
@@ -1695,6 +1694,9 @@ textarea:focus {
   .naics-section__naics-wrapper__parent-container__description {
     height: 24.1rem;
     width: 24.1rem;
+  }
+  .contact-form-section {
+    padding-top: 10%;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -1714,7 +1716,7 @@ textarea:focus {
     width: 90%;
   }
   .about-us__wrapper__description {
-    width: 60%;
+    width: 50%;
     padding: 4.6rem;
   }
   .about-us__wrapper__description__section h1 {
@@ -1722,13 +1724,13 @@ textarea:focus {
     padding-bottom: 4rem;
   }
   .about-us__wrapper__description__section p {
-    padding-bottom: 0;
+    padding-bottom: 4rem;
   }
   .about-us__wrapper__tabs-section {
     padding-top: 5rem;
   }
   .about-us__wrapper__mission-section {
-    width: 40%;
+    width: 50%;
     gap: 10rem;
   }
   .about-us__wrapper__mission-section__description-container h1 {
@@ -1776,8 +1778,11 @@ textarea:focus {
   .heading h1 {
     font-size: 1.8rem;
   }
-  .services-section__parent-container__slides .hidden-content h1 {
+  .services-section__parent-container__slides .visible-content .heading h1 {
     font-size: 1.8rem;
+  }
+  .services-section__parent-container__slides .hidden-content h1 {
+    font-size: 2.1rem;
   }
   .services-section__parent-container__slides .hidden-content ul {
     font-size: 1.5rem;
@@ -1867,6 +1872,9 @@ textarea:focus {
     display: flex;
     justify-content: center;
   }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
+    left: 17%;
+  }
 }
 @media screen and (max-width: 1366px) {
   .aside__list--item__link {
@@ -1889,18 +1897,17 @@ textarea:focus {
   }
   .about-us__wrapper {
     width: 90%;
-    height: 675px;
   }
   .about-us__wrapper__description {
     width: 50%;
     padding: 4.6rem;
   }
   .about-us__wrapper__description__section h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-bottom: 2rem;
   }
   .about-us__wrapper__description__section p {
-    padding-bottom: 0;
+    padding-bottom: 3rem;
     font-size: 1.6rem;
   }
   .about-us__wrapper__tabs-section {
@@ -1965,7 +1972,7 @@ textarea:focus {
     font-size: 2rem;
   }
   .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
-    left: 21%;
+    left: 17%;
   }
   .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
     font-size: 3.8rem;
@@ -2015,10 +2022,6 @@ textarea:focus {
   .footer-section__get-in-touch__form-container form .captcha-container h1 {
     font-size: 2rem;
   }
-  .footer-section__get-in-touch__form-container form input,
-  .footer-section__get-in-touch__form-container form textarea {
-    margin-top: 3rem;
-  }
   .footer-section__get-in-touch__form-container form button {
     width: 90%;
     margin: 0 auto;
@@ -2027,6 +2030,9 @@ textarea:focus {
   }
   .tab button {
     font-size: 2rem;
+  }
+  .tabcontent {
+    min-height: 350px;
   }
   .technology-section .technology-content-wrapper {
     position: absolute;
@@ -2038,9 +2044,6 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 1280px) {
-  .about-us__wrapper {
-    height: 700px;
-  }
   .home-section__wrapper a button {
     font-size: 1.4rem;
   }
@@ -2063,14 +2066,11 @@ textarea:focus {
     width: 10.6rem;
     height: 10.6rem;
   }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
-    left: 21%;
-  }
-  #contact {
-    padding-top: 18%;
-  }
 }
 @media screen and (max-width: 1180px) {
+  .tab button {
+    font-size: 1.75rem;
+  }
   .certificate-sections__wrapper {
     flex-direction: column;
   }
@@ -2109,7 +2109,6 @@ textarea:focus {
   .footer-section__get-in-touch {
     padding: 1.5rem;
     width: 35%;
-    bottom: 25%;
     right: 12%;
   }
   .footer-section__get-in-touch__headers h1 {
@@ -2143,6 +2142,15 @@ textarea:focus {
   }
   .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
     left: 45%;
+  }
+  .field-error {
+    bottom: -30%;
+  }
+  .captch-error {
+    bottom: -41%;
+  }
+  .tab {
+    width: 100%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -2210,6 +2218,10 @@ textarea:focus {
   .about-us__wrapper__mission-section__about-logo-container {
     visibility: visible;
     margin-bottom: 13%;
+  }
+  .tab {
+    height: 45px;
+    width: 100%;
   }
   .technology-section__content-container__contents__heading h1 {
     font-size: 3.5rem;
@@ -2287,6 +2299,9 @@ textarea:focus {
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
     font-size: 2rem;
   }
+  .footer-section__footer-wrapper__footer-logo__logo-wrapper {
+    width: 35%;
+  }
   .footer-section__footer-wrapper__headings {
     font-size: 3rem;
     margin-bottom: 4.1rem;
@@ -2303,9 +2318,9 @@ textarea:focus {
   }
   .footer-section__get-in-touch {
     padding: 1.5rem;
-    width: 35%;
-    bottom: 15%;
-    right: 12%;
+    width: 45%;
+    bottom: 10%;
+    right: 3%;
   }
   .footer-section__get-in-touch__headers h1 {
     font-size: 3rem;
@@ -2337,7 +2352,8 @@ textarea:focus {
     width: 70%;
   }
   .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
-    left: 44%;
+    left: 42%;
+    width: 15%;
   }
   .tab button {
     font-size: 2rem;
@@ -2356,7 +2372,7 @@ textarea:focus {
     font-size: clamp(15px, 3vw, 67px);
   }
   .field-error {
-    bottom: -35%;
+    bottom: -25%;
     font-size: 1.1rem;
   }
   .services-section__parent-container__slides .hidden-content:hover {
@@ -2372,6 +2388,10 @@ textarea:focus {
   }
   .about-us__wrapper__description__section__heading {
     margin-top: 0;
+  }
+  .industry-section .industry-card-container .industry-card {
+    min-height: initial;
+    height: initial;
   }
 }
 @media screen and (max-width: 992px) {
@@ -2522,9 +2542,6 @@ textarea:focus {
   }
   .footer-section__get-in-touch {
     padding: 1.5rem;
-    width: 35%;
-    bottom: 18%;
-    right: 13%;
   }
   .footer-section__get-in-touch__headers h1 {
     font-size: 3rem;
@@ -2575,7 +2592,6 @@ textarea:focus {
     font-size: 2rem;
   }
   .field-error {
-    bottom: -35%;
     font-size: 1.1rem;
   }
   .mobile-swiper-pagination div {
@@ -2595,9 +2611,6 @@ textarea:focus {
   }
   .naics-section__naics-wrapper__naics {
     margin-bottom: 0%;
-  }
-  .footer-section__get-in-touch {
-    bottom: 15%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2701,7 +2714,10 @@ textarea:focus {
     font-size: 1.6rem;
   }
   .services-section__parent-container__slides .hidden-content h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
+  }
+  .services-section__parent-container__slides .visible-content .heading h1 {
+    font-size: 1.4rem;
   }
   .naics-section {
     padding-right: 5%;
@@ -2766,6 +2782,9 @@ textarea:focus {
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
     font-size: 2rem;
   }
+  .footer-section__footer-wrapper__footer-logo__logo-wrapper {
+    width: 45%;
+  }
   .footer-section__footer-wrapper__headings {
     font-size: 3rem;
     margin-bottom: 4.1rem;
@@ -2782,8 +2801,8 @@ textarea:focus {
   }
   .footer-section__get-in-touch {
     padding: 1.5rem;
-    width: 45%;
-    bottom: 15%;
+    width: 49%;
+    bottom: 10%;
     right: 1%;
   }
   .footer-section__get-in-touch__headers h1 {
@@ -2795,9 +2814,11 @@ textarea:focus {
   }
   .footer-section__get-in-touch__form-container form .captcha-container {
     padding: 1rem;
+    justify-content: center;
   }
   .footer-section__get-in-touch__form-container form .captcha-container h1 {
     font-size: 1.4rem;
+    text-align: center;
   }
   .footer-section__get-in-touch__form-container form .captcha-container .reset-wrapper {
     width: 9%;
@@ -2830,7 +2851,7 @@ textarea:focus {
     color: #fff;
   }
   .tab button {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: 3rem;
   }
   .technology-section .technology-content-wrapper {
@@ -2846,7 +2867,6 @@ textarea:focus {
     font-size: clamp(15px, 3vw, 67px);
   }
   .field-error {
-    bottom: -30%;
     font-size: 1.1rem;
   }
   .mobile-getintouch {
@@ -2866,6 +2886,12 @@ textarea:focus {
   }
   .services-section__parent-container__slides .hidden-content {
     height: 20%;
+  }
+  .contact-para {
+    display: none;
+  }
+  .contact-form-section {
+    padding-top: 15%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -2897,7 +2923,7 @@ textarea:focus {
     flex-direction: column;
   }
   .about-us__wrapper__description {
-    padding: 2.6rem;
+    padding: 2.6rem 1.6rem;
   }
   .about-us__wrapper__description__section h1 {
     font-size: 3rem;
@@ -2933,9 +2959,6 @@ textarea:focus {
   .technology-section__content-container__contents__heading p {
     font-size: 1.4rem;
   }
-  .technology-section__content-container__contents__image-section__containers__image-wrapper .image-sizer {
-    border: 2px solid #fff;
-  }
   .technology-section__content-container__contents__image-section__containers__heading-description h4 {
     font-size: 1.8rem;
   }
@@ -2953,12 +2976,6 @@ textarea:focus {
   }
   .heading h1 {
     font-size: 1.3rem;
-  }
-  .services-section__parent-container__slides .visible-content .heading {
-    top: 87.5%;
-  }
-  .services-section__parent-container__slides .hidden-content {
-    padding: 2.2rem;
   }
   .services-section__parent-container {
     grid-template-areas: "service1 service1 service1 service1 service1 service1" "service2 service2 service2 service2 service2 service2" "service3 service3 service3 service3 service3 service3" "service4 service4 service4 service4 service4 service4" "service5 service5 service5 service5 service5 service5";
@@ -2983,6 +3000,7 @@ textarea:focus {
   }
   .certificate-sections {
     padding-top: 10.5%;
+    padding-bottom: 7%;
   }
   .certificate-sections__wrapper {
     flex-direction: column;
@@ -3062,8 +3080,7 @@ textarea:focus {
     margin-top: 5%;
   }
   .tab button {
-    font-size: 1.8rem;
-    margin-right: 3rem;
+    margin-right: auto;
   }
   .tabcontent p {
     font-size: 1.6rem;
@@ -3119,8 +3136,11 @@ textarea:focus {
   .devops-hidden {
     padding-top: 2rem;
   }
-  #contact {
+  .contact-form-section {
     padding-top: 15%;
+  }
+  .button-active-mark {
+    height: 3px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -3304,8 +3324,7 @@ textarea:focus {
     width: 90%;
   }
   .tab button {
-    font-size: 1.6rem;
-    margin-right: 2rem;
+    font-size: 1.4rem;
   }
   .tabcontent p {
     font-size: 1.2rem;
@@ -3507,7 +3526,6 @@ textarea:focus {
   }
   .tab button {
     font-size: 1.4rem;
-    margin-right: 1.6rem;
   }
   .tabcontent p {
     font-size: 1.2rem;
@@ -3777,9 +3795,11 @@ textarea:focus {
     padding-bottom: 1.1rem;
     width: 90%;
   }
+  .tab {
+    height: 35px;
+  }
   .tab button {
-    font-size: 1.4rem;
-    margin-right: 1.2rem;
+    font-size: 1.2rem;
   }
   .tabcontent p {
     font-size: 1.2rem;

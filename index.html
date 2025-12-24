@@ -163,8 +163,8 @@
         <div class="home-section__video-container position-absolute">
           <video
             id="video1"
-            autoplay
             muted
+            autoplay
             loop
             playsinline
             webkit-playsinline
@@ -254,7 +254,7 @@
           >
             <div class="about-us__wrapper__description__section">
               <div
-                class="about-us__wrapper__description__section__heading d-flex"
+                class="about-us__wrapper__description__section__heading d-flex justify-content-between"
               >
                 <h1>About us</h1>
                 <div class="img-wrapper">
@@ -271,37 +271,50 @@
                   Cybersecurity, and Software Development.
                 </span>
               </p>
+              <img src="./assets/images/about-us-line.png" alt="" />
             </div>
             <div class="about-us__wrapper__tabs-section">
               <div class="tab">
                 <button
-                  class="tablinks active"
+                  class="tablinks position-relative active"
                   onclick="openCity(event, 'London')"
                 >
                   Our Mission
+                  <p
+                    class="button-active-mark position-absolute btn-mark-active"
+                  ></p>
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">
+                <button
+                  class="tablinks position-relative"
+                  onclick="openCity(event, 'Paris')"
+                >
                   Why KernelTeck?
+                  <p class="button-active-mark position-absolute"></p>
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                <button
+                  class="tablinks position-relative"
+                  onclick="openCity(event, 'Tokyo')"
+                >
                   Core Values
+                  <p class="button-active-mark position-absolute"></p>
                 </button>
               </div>
 
               <div id="London" class="tabcontent">
                 <p>
-                  Our mission is to deliver secure, intelligent, and
-                  transformative IT solutions that empower organizations to
-                  achieve operational excellence. Through a foundation of
-                  innovation, reliability, and integrity, we drive mission
-                  success and long-term technological advancement.
+                  Our mission is to deliver
+                  <b>Secure, Intelligent, and Transformative IT solutions</b>
+                  that empower organizations to achieve operational excellence.
+                  Through a foundation of
+                  <b>innovation, reliability, and integrity,</b> we drive
+                  mission success and long-term technological advancement.
                 </p>
               </div>
 
               <div id="Paris" class="tabcontent">
                 <ul>
                   <li>
-                    <b> Veteran-owned leadership :</b> mission-driven,
+                    <b> Veteran-owned leadership :</b> Mission-driven,
                     disciplined, and accountable.
                   </li>
                   <li>
@@ -313,11 +326,11 @@
                     secure-by-design practices.
                   </li>
                   <li>
-                    <b>Scalable delivery :</b> from prototypes to enterprise
+                    <b>Scalable delivery :</b> From prototypes to enterprise
                     production.
                   </li>
                   <li>
-                    <b>Client-centric approach :</b> transparent and
+                    <b>Client-centric approach :</b> Transparent and
                     collaborative engagements.
                   </li>
                 </ul>
@@ -325,7 +338,7 @@
 
               <div id="Tokyo" class="tabcontent">
                 <ul>
-                  <li>
+                  <li class="core-tab">
                     <div class="wrapper d-flex align-items-center">
                       <div class="img-wrapper">
                         <img
@@ -336,7 +349,7 @@
                       <b>Integrity</b>
                     </div>
                   </li>
-                  <li>
+                  <li class="core-tab">
                     <div class="wrapper d-flex align-items-center">
                       <div class="img-wrapper">
                         <img
@@ -347,7 +360,7 @@
                       <b>Innovation</b>
                     </div>
                   </li>
-                  <li>
+                  <li class="core-tab">
                     <div class="wrapper d-flex align-items-center">
                       <div class="img-wrapper">
                         <img
@@ -358,7 +371,7 @@
                       <b>Service</b>
                     </div>
                   </li>
-                  <li>
+                  <li class="core-tab">
                     <div class="wrapper d-flex align-items-center">
                       <div class="img-wrapper">
                         <img
@@ -412,8 +425,8 @@
             >
               <video
                 id="video2"
-                autoplay
                 muted
+                autoplay
                 loop
                 playsinline
                 webkit-playsinline
@@ -435,8 +448,8 @@
         <div class="services-headers">
           <h1>Services</h1>
           <p>
-            Specialized IT capabilities designed to meet the evolving needs of
-            federal and <br />state agencies
+            Specialized IT capabilities designed to meet the evolving <br />
+            needs of federal and state agencies
           </p>
         </div>
         <div class="services-section__parent-container">
@@ -480,8 +493,10 @@
               </div>
             </div>
             <div class="hidden-content position-absolute">
-              <h1>Cloud Computing & Infrastructure</h1>
-
+              <h1>
+                Cloud Computing & <br />
+                Infrastructure
+              </h1>
               <ul>
                 <li>Cloud-Native Platforms</li>
                 <li>Multi-Cloud Strategies</li>
@@ -506,7 +521,10 @@
               </div>
             </div>
             <div class="hidden-content position-absolute devops-hidden">
-              <h1>Software Development & DevSecOps</h1>
+              <h1>
+                Software Development & <br />
+                DevSecOps
+              </h1>
 
               <ul>
                 <li>Agile Development</li>
@@ -574,7 +592,7 @@
         <div class="technology-section__content-container">
           <div class="technology-section__content-container__contents">
             <div
-              class="technology-section__content-container__contents__heading"
+              class="technology-section__content-container__contents__heading text-center"
             >
               <h1>Technologies & Expertise</h1>
               <p>
@@ -630,10 +648,7 @@
                 >
                   .
                   <div class="image-sizer">
-                    <img
-                      src="./assets/images/ai-logo-tech.webp"
-                      alt="ai-logo-tech"
-                    />
+                    <img src="./assets/images/ai.webp" alt="ai-logo-tech" />
                   </div>
                 </div>
                 <div
@@ -669,7 +684,7 @@
       </section>
       <!-- industry section -->
       <section id="industry" class="industry-section">
-        <h2 class="fw-semibold">Industries We Serve</h2>
+        <h1 class="fw-semibold">Industries We Serve</h1>
         <p class="industry-content-desc">
           We Work across modern stacks & platforms to deliver pratical, secure
           solutions.
@@ -773,6 +788,100 @@
                   success.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="industry-card-mobile flex-wrap">
+          <div class="industry-card industry-card-1">
+            <div class="img-wrapper">
+              <img src="./assets/images/highcourt.svg" alt="government" />
+            </div>
+            <div class="industry-card-content-container">
+              <h3 class="fw-semibold">Federal, State & Local Government</h3>
+              <p class="industry-card-desc">
+                KernelTeck partners with government agencies to modernize legacy
+                systems, enhance cybersecurity, and deliver mission-focused
+                digital transformation Our SDVOSB status allows us to provide
+                agile, secure, and compliant IT solutions tailored to public
+                sector needs.
+              </p>
+            </div>
+          </div>
+          <div class="industry-card industry-card-2">
+            <div class="img-wrapper">
+              <img src="./assets/images/health.svg" alt="health" />
+            </div>
+            <div class="industry-card-content-container">
+              <h3 class="fw-semibold">Healthcare & Life Sciences</h3>
+              <p class="industry-card-desc">
+                We help healthcare organizations leverage cloud, AI, and data
+                analytics to improve patient outcomes and operational
+                efficiency. Our solutions ensure regulatory compliance while
+                enabling secure, data-driven innovation in clinical and research
+                environments.
+              </p>
+            </div>
+          </div>
+          <div class="industry-card industry-card-3">
+            <div class="img-wrapper">
+              <img src="./assets/images/dollar.svg" alt="dollar" />
+            </div>
+            <div class="industry-card-content-container">
+              <h3 class="fw-semibold">Finance & Insurance</h3>
+              <p class="industry-card-desc">
+                KernelTeck supports financial institutions with scalable,
+                secure, and compliant digital infrastructure. We specialize in
+                automation, data analytics, and cybersecurity to strengthen risk
+                management and enhance customer experience.
+              </p>
+            </div>
+          </div>
+          <div class="industry-card industry-card-4">
+            <div class="img-wrapper">
+              <img src="./assets/images/graduate.svg" alt="education" />
+            </div>
+            <div class="industry-card-content-container">
+              <h3 class="fw-semibold">Education & Research</h3>
+              <p class="industry-card-desc">
+                We empower educational institutions and research organizations
+                with advanced technology platforms that foster collaboration,
+                digital learning, and data-driven insights. Our solutions
+                support innovation, accessibility, and long-term institutional
+                growth.
+              </p>
+            </div>
+          </div>
+          <div class="industry-card industry-card-5">
+            <div class="img-wrapper">
+              <img src="./assets/images/group.svg" alt="group" />
+            </div>
+            <div class="industry-card-content-container">
+              <h3 class="fw-semibold">Energy & Public Utilities</h3>
+              <p class="industry-card-desc">
+                KernelTeck delivers technology solutions that enhance
+                efficiency, resilience, and sustainability in the energy and
+                utilities sector. From data-driven grid optimization to IoT and
+                cloud transformation, we help modernize critical infrastructure.
+              </p>
+            </div>
+          </div>
+          <div class="industry-card industry-card-6">
+            <div class="img-wrapper">
+              <img
+                src="./assets/images/information-technology.svg"
+                alt="information-technology"
+              />
+            </div>
+            <div class="industry-card-content-container">
+              <h3 class="fw-semibold">
+                Information Technology & Workforce Solutions
+              </h3>
+              <p class="industry-card-desc">
+                KernelTeck provides end-to-end IT staffing and workforce
+                solutions, connecting organizations with skilled professionals
+                across emerging technologies. We deliver flexible,
+                high-performing teams that drive innovation and project success.
+              </p>
             </div>
           </div>
         </div>
@@ -902,7 +1011,9 @@
       <!-- certificates section -->
       <div id="certificates" class="certificate-sections">
         <div class="certificate-sections__wrapper">
-          <div class="certificate-sections__wrapper__certificate-header">
+          <div
+            class="certificate-sections__wrapper__certificate-header text-center"
+          >
             <h1>Certifications & Business Identifers</h1>
             <p>
               We are committed to excellence and compliance with federal
@@ -928,7 +1039,7 @@
                       class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
                     >
                       <img
-                        src="./assets/images//new-certificater.webp"
+                        src="./assets/images/updated-certificate.webp"
                         alt="new-certificater"
                       />
                     </div>
@@ -940,7 +1051,7 @@
                       class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
                     >
                       <img
-                        src="./assets/images//new-certificater.webp"
+                        src="./assets/images/updated-certificate.webp"
                         alt="new-certificater"
                       />
                     </div>
@@ -952,7 +1063,7 @@
                       class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
                     >
                       <img
-                        src="./assets/images//new-certificater.webp"
+                        src="./assets/images/updated-certificate.webp"
                         alt="new-certificater"
                       />
                     </div>
@@ -964,7 +1075,7 @@
                       class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
                     >
                       <img
-                        src="./assets/images//new-certificater.webp"
+                        src="./assets/images/updated-certificate.webp"
                         alt="new-certificater"
                       />
                     </div>
@@ -976,7 +1087,7 @@
                       class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
                     >
                       <img
-                        src="./assets/images//new-certificater.webp"
+                        src="./assets/images/updated-certificate.webp"
                         alt="new-certificater"
                       />
                     </div>
@@ -988,7 +1099,7 @@
                       class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
                     >
                       <img
-                        src="./assets/images//new-certificater.webp"
+                        src="./assets/images/updated-certificate.webp"
                         alt="new-certificater"
                       />
                     </div>
@@ -1000,7 +1111,7 @@
                       class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
                     >
                       <img
-                        src="./assets/images//new-certificater.webp"
+                        src="./assets/images/updated-certificate.webp"
                         alt="new-certificater"
                       />
                     </div>
@@ -1012,7 +1123,7 @@
                       class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
                     >
                       <img
-                        src="./assets/images//new-certificater.webp"
+                        src="./assets/images/updated-certificate.webp"
                         alt="new-certificater"
                       />
                     </div>
@@ -1024,7 +1135,7 @@
                       class="certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__swiper-wrapper__swiper-slide__image-wrapper"
                     >
                       <img
-                        src="./assets/images//new-certificater.webp"
+                        src="./assets/images/updated-certificate.webp"
                         alt="new-certificater"
                       />
                     </div>
@@ -1105,7 +1216,7 @@
         </div>
       </div>
       <!-- contact section -->
-      <section id="contact">
+      <section id="contact" class="contact-form-section">
         <div class="footer-section position-relative">
           <div class="footer-section__get-in-touch" id="contact-form">
             <div class="footer-section__get-in-touch__headers">
@@ -1144,7 +1255,11 @@
                     aria-live="polite"
                   ></p>
                 </div>
-                <textarea name="message" placeholder="Your Message"></textarea>
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  class=""
+                ></textarea>
                 <div class="captcha-section-parent">
                   <div class="captcha-container">
                     <h1>YR890</h1>
@@ -1174,8 +1289,8 @@
           <div class="footer-section__video-container position-absolute">
             <video
               id="video3"
-              autoplay
               muted
+              autoplay
               loop
               playsinline
               webkit-playsinline
@@ -1206,8 +1321,8 @@
             </div>
             <div class="footer-section__footer-wrapper__headings">
               <p>
-                Service-Disabled Veteran-Owned Small Business delivering
-                advanced
+                Service-Disabled Veteran-Owned Small <br class="contact-para" />
+                Business delivering advanced
                 <span> IT solutions. </span>
               </p>
             </div>
