@@ -1,0 +1,305 @@
+.aside {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2.2rem 0rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+  transition: transform ease 0.4s;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside.hide {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.aside .header--wrapper {
+  width: 100%;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.aside__logo__wrapper {
+  height: 4rem;
+}
+.aside__logo img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.aside__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.aside__list--item {
+  display: inline-block;
+}
+.aside__list--item__link {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000000;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.aside__list--item__link:hover {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-color: #f6208f;
+}
+.aside__list--item__link.active {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-color: #f6208f;
+}
+.aside__list--item__link.active::after {
+  display: inline-block;
+}
+.aside__list--item__link::after {
+  content: "";
+  width: 30%;
+  height: 0.3rem;
+  background-color: #f6208f;
+  position: absolute;
+  left: 0rem;
+  bottom: 0rem;
+  transform: translateY(250%);
+  display: none;
+}
+.aside__scrollDownBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.aside__scrollDownBtn img {
+  height: 1.2rem;
+}
+.aside__scrollDownBtn span {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #666666;
+}
+.aside__hamburger {
+  display: none;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+}
+.aside__hamburger span {
+  display: inline-block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #111111;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.aside__hamburger span:nth-of-type(1) {
+  width: 100%;
+  transform: translateY(-500%);
+}
+.aside__hamburger span:nth-of-type(2) {
+  width: 60%;
+  transform: translateY(-50%);
+}
+.aside__hamburger span:nth-of-type(3) {
+  width: 60%;
+  transform: translateY(450%);
+}
+.aside__hamburger.active span:nth-of-type(1) {
+  transform: translateY(-50%) rotate(315deg);
+}
+.aside__hamburger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.aside__hamburger.active span:nth-of-type(3) {
+  width: 100%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/** Min Width 1536 **/
+@media (min-width: 1536px) {
+  .aside__logo img {
+    width: auto;
+    height: 100%;
+  }
+  .aside__list--item__link {
+    font-size: 1.9rem;
+  }
+  .aside__scrollDownBtn img {
+    height: 1.5rem;
+  }
+  .aside__scrollDownBtn span {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #666666;
+  }
+}
+/** Max Width 1278.99px **/
+@media (max-width: 1278.99px) {
+  .aside {
+    padding: 2rem 0rem;
+  }
+  .aside__logo img {
+    height: 3.6rem;
+  }
+  .aside__list--item__link {
+    font-size: 1.3rem;
+  }
+  .aside__scrollDownBtn img {
+    height: 1.2rem;
+  }
+  .aside__scrollDownBtn span {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #666666;
+  }
+}
+/** Max Width 1023.99px **/
+@media (max-width: 1023.99px) {
+  .aside__list--item__link {
+    font-size: 1.6rem;
+  }
+  .aside__list--item__link::after {
+    content: "";
+    width: 30%;
+    height: 0.3rem;
+    transform: translateY(250%);
+  }
+  .aside__scrollDownBtn img {
+    height: 1.2rem;
+  }
+  .aside__scrollDownBtn span {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #666666;
+  }
+}
+/** Max Width 767.99px **/
+@media (max-width: 767.99px) {
+  .aside {
+    width: 100%;
+    padding: 1.8rem 0rem;
+    flex-direction: row;
+    position: sticky;
+    top: 0rem;
+    left: 0rem;
+    height: auto;
+    justify-content: space-between;
+    z-index: 999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .aside .wrapper {
+    position: static;
+  }
+  .aside__logo {
+    width: auto;
+    left: 5%;
+  }
+  .aside__logo img {
+    width: auto;
+    height: 3.2rem;
+  }
+  .aside__list {
+    position: absolute;
+    padding-bottom: 1rem;
+    left: 0rem;
+    bottom: -1.6rem;
+    transform: translate(-100%, 100%);
+    background-color: #ffffff;
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition-duration: 150ms;
+    display: flex;
+    flex-direction: column;
+  }
+  .aside__list--item {
+    width: 100%;
+  }
+  .aside__list--item__link {
+    padding: 1.2rem 1.8rem 1.2rem 3rem;
+  }
+  .aside__list--item__link:hover {
+    background-image: linear-gradient(to right bottom, var(--primary-color), var(--secondary-color));
+    background-clip: unset;
+    color: #ffffff;
+  }
+  .aside__list--item__link.active::after {
+    display: none;
+  }
+  .aside__list--item:not(:last-child) .aside__list--item__link {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  }
+  .aside__list.active {
+    transform: translate(0%, 100%);
+  }
+  .aside__scrollDownBtn {
+    display: none;
+  }
+  .aside__hamburger {
+    display: inline-block;
+  }
+}
+/** Max Width  639.99px **/
+@media (max-width: 639.99px) {
+  .aside {
+    padding: 1.6rem 0rem;
+  }
+  .aside__logo img {
+    height: 3rem;
+  }
+  .aside__list--item__link {
+    padding: 1.2rem 1.8rem 1.2rem 2rem;
+  }
+  .aside__hamburger {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .aside .header--wrapper {
+    padding: 0 2rem;
+  }
+}
+@-moz-document url-prefix() {
+  .aside {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .aside__logo__wrapper {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative !important;
+    margin-top: -20% !important;
+  }
+  .aside__logo__wrapper p {
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 0;
+    position: absolute !important;
+    bottom: -14px !important;
+  }
+}/*# sourceMappingURL=aside.css.map */

@@ -111,7 +111,7 @@ function setupContactValidation(form) {
     if (captchaPlaceholder) {
       captchaPlaceholder.parentNode.insertBefore(
         captchaInput,
-        captchaPlaceholder
+        captchaPlaceholder,
       );
     } else {
       // attempt to append near the captcha element
@@ -181,7 +181,7 @@ function setupContactValidation(form) {
         } else {
           f.el.insertAdjacentElement(
             "afterend",
-            createError(f.name + " is required")
+            createError(f.name + " is required"),
           );
         }
         if (!firstInvalid) firstInvalid = f.el;
@@ -204,7 +204,7 @@ function setupContactValidation(form) {
       } else {
         email.insertAdjacentElement(
           "afterend",
-          createError("Please enter a valid email")
+          createError("Please enter a valid email"),
         );
       }
       if (!firstInvalid) firstInvalid = email;
@@ -237,7 +237,7 @@ function setupContactValidation(form) {
     }
 
     const successMsg = createSuccess(
-      "Message sent successfully. We'll contact you soon."
+      "Message sent successfully. We'll contact you soon.",
     );
 
     contactUsApi(form, createSuccess, createError, genCaptcha, clearErrors);
@@ -250,7 +250,7 @@ async function contactUsApi(
   createSuccess,
   createError,
   genCaptcha,
-  clearErrors
+  clearErrors,
 ) {
   const formData = new FormData(form);
   form.querySelector("#getintouch-submit-button").disabled = true;
@@ -268,7 +268,7 @@ async function contactUsApi(
     const data = await response.json();
     if (data.status == "success") {
       const successMsg = createSuccess(
-        "Message sent successfully. We'll contact you soon."
+        "Message sent successfully. We'll contact you soon.",
       );
       form.appendChild(successMsg);
 
@@ -304,7 +304,7 @@ async function contactUsApi(
 // Initialize validation for the footer form and the dialog form
 try {
   const footerForm = document.querySelector(
-    ".footer-section__get-in-touch__form-container form"
+    ".footer-section__get-in-touch__form-container form",
   );
   if (footerForm) setupContactValidation(footerForm);
   const dialogForm = document.querySelector("dialog form");
@@ -387,7 +387,7 @@ scrollTopBtn.addEventListener("click", (e) => {
 });
 
 let scrollBottom = document.querySelector(
-  ".home-section__wrapper__scroll-down"
+  ".home-section__wrapper__scroll-down",
 );
 let capabilities = document.getElementById("capabilities-button");
 
@@ -488,7 +488,7 @@ navLinks.forEach((link) => {
         navLinks.forEach((navLink) => {
           navLink.classList.toggle(
             "active",
-            navLink.getAttribute("data-nav") === currentId
+            navLink.getAttribute("data-nav") === currentId,
           );
         });
       }
@@ -514,11 +514,11 @@ const observerCallback = (entries) => {
       (acc, curr) => {
         const rect = curr.target.getBoundingClientRect();
         const center = Math.abs(
-          window.innerHeight / 2 - (rect.top + rect.height / 2)
+          window.innerHeight / 2 - (rect.top + rect.height / 2),
         );
         return center < acc.center ? { section: curr.target, center } : acc;
       },
-      { section: null, center: Infinity }
+      { section: null, center: Infinity },
     );
 
     if (closest.section) {
@@ -584,3 +584,69 @@ window.addEventListener("scroll", () => {
 // video.forEach((vid) => {
 //   vid.play();
 // });
+
+var listArray = ["slide1", "slide2", "slide3"];
+var mySwiper = new Swiper(".swiper-container", {
+  // Optional parameters
+  loop: true,
+  autoplayDisableOnInteraction: false,
+  slidesPerView: 1,
+  autoHeight: true,
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: "true",
+    type: "bullets",
+    renderBullet: function (index, className) {
+      return (
+        '<span class="' +
+        className +
+        '">' +
+        "<em>" +
+        "</em>" +
+        "<i></i>" +
+        "<b></b>" +
+        "</span>"
+      );
+    },
+  },
+});
+
+// new TypeIt("#home-type-writting", {
+//   strings: "This is my string!",
+//   speed: 75,
+//   loop: true,
+// }).go();
+
+var app = document.getElementById("typewrite");
+var typewriter = new Typewriter(app, { loop: true });
+typewriter
+  .typeString("Generative AI")
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString("Agentic AI")
+  .pauseFor(1000)
+  .deleteChars(7)
+  .deleteAll()
+  .typeString("Intelligent Automation")
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString("Cloud Intelligence")
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString("Next-Gen AI")
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString("Data & Security")
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString("Consulting & Strategy")
+  .pauseFor(1000)
+  .deleteAll()
+  .start();

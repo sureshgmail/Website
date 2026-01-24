@@ -1,0 +1,3457 @@
+@media screen and (max-width: 1778px) {
+  .naics-section__naics-wrapper__naics__naics-description::after {
+    left: 59%;
+    top: -3%;
+  }
+  .naics-section__naics-wrapper__naics__naics-coin::after {
+    left: 68%;
+    top: 119%;
+  }
+  .naics-section__naics-wrapper__naics__naics-description p {
+    padding-left: 28%;
+    padding-right: 5%;
+  }
+  .about-us__wrapper {
+    // height: calc(626px + 164px);
+  }
+  .about-us__wrapper__tabs-section {
+    padding-top: 5%;
+  }
+  .contact-form-section {
+    // padding-top: 15%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .home-section {
+    &__wrapper {
+      h2 {
+        font-size: 5rem;
+      }
+      h1 {
+        font-size: 7rem;
+      }
+      p {
+        margin-top: 1.4rem;
+        font-size: 2.5rem;
+      }
+      a {
+        width: 30%;
+        button {
+          // width: 30%
+          padding-right: 3%;
+          padding-left: 3%;
+          padding-top: 1.8rem;
+          padding-bottom: 1.8rem;
+          padding: 1rem 3%;
+          span {
+            svg {
+              height: 75%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-us {
+    &__wrapper {
+      width: 90%;
+      // height: calc(626px + 144px);
+      &__description {
+        &__section {
+          h1 {
+            font-size: 6.4rem;
+            // padding-bottom: 4rem;
+          }
+          p {
+            padding-bottom: 5rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 5rem;
+      }
+    }
+  }
+  .about-us__wrapper__description__section__heading {
+    margin-top: 2%;
+  }
+  .technology-section {
+    padding: 5% 0%;
+    &__content-container {
+      width: 80%;
+      &__contents {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        &__heading {
+          h1 {
+            font-size: 5rem;
+          }
+          p {
+            font-size: 1.8rem;
+          }
+        }
+        &__image-section {
+          &__containers {
+            width: 30%;
+            height: 23rem;
+            margin-bottom: 2%;
+
+            &__image-wrapper {
+              .image-sizer {
+                img {
+                }
+              }
+            }
+            &__heading-description {
+              h4 {
+                font-size: 2.2rem;
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .services-section {
+    padding-top: 5.5%;
+  }
+  .services-headers h1 {
+    font-size: 6.5rem;
+  }
+  .services-headers p {
+    font-size: 2.1rem;
+  }
+  .services-next,
+  .services-prev {
+    height: 6rem;
+    width: 6rem;
+  }
+  .services-section__parent-container {
+    // row-gap: 2rem;
+  }
+  .heading {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .services-section__parent-container__slides .hidden-content h1,
+  .services-section__parent-container__slides .visible-content .heading h1 {
+    font-size: 2.8rem;
+  }
+  .services-section__parent-container__slides .hidden-content ul {
+    font-size: 1.6rem;
+  }
+  .hidden-content .tech-logo {
+    transition: none;
+  }
+  .technology-card-img-wrapper:hover .tech-logo {
+    // transition: none;
+    // transform: rotateY(0);
+  }
+  .naics-section {
+    background-color: #f9f9f9;
+    padding-top: 5.5%;
+    &__naics-headings {
+      margin-left: 5%;
+      h1 {
+        font-size: 6.2rem;
+      }
+      p {
+      }
+    }
+    &__naics-wrapper {
+      width: 85%;
+      &__naics {
+        &__naics-coin {
+          width: 22.6rem;
+          height: 22.6rem;
+          left: 3%;
+
+          P {
+          }
+          &::after {
+            left: 71%;
+            top: 127%;
+          }
+        }
+        &__naics-description {
+          &::after {
+            left: 56%;
+          }
+          p {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections {
+    padding-top: 4.5%;
+    &__wrapper {
+      width: 90%;
+      &__certificate-header {
+        h1 {
+          font-size: 5.2rem;
+        }
+        p {
+          margin-bottom: 3%;
+        }
+      }
+      &__certificate-wrapper {
+        &__certificate-container {
+          &__swiper__pagination {
+            left: 18%;
+            &__next-btn {
+              &::after {
+                font-size: 4.1rem;
+              }
+            }
+            &__before-btn {
+              &::after {
+                font-size: 4.1rem;
+              }
+            }
+          }
+        }
+        &__certificate-card-container {
+          &__certificate-card {
+            top: 8%;
+
+            &__card-header {
+              h1 {
+                font-size: 3rem;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.8rem;
+                }
+                h1 {
+                  font-size: 2.4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      padding-top: 3%;
+      &__footer-logo {
+        &__logo-wrapper {
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__get-in-touch {
+      padding: 3.5rem;
+      bottom: 12%;
+      &__headers {
+        h1 {
+        }
+        p {
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            .user-captcha-container {
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            .reset-wrapper {
+            }
+          }
+          input,
+          textarea {
+            // padding-top: 2rem;
+            // padding-bottom: 2rem;
+            // margin-top: 3rem;
+          }
+          textarea {
+          }
+          button {
+          }
+        }
+      }
+    }
+  }
+  .tab button {
+    // margin-right: 3rem;
+  }
+  .naics-section {
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+      }
+      p {
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        &__naics-coin {
+          width: 15.6rem;
+          height: 15.6rem;
+          p {
+          }
+        }
+        &__description {
+          height: 24.1rem;
+          width: 24.1rem;
+          p {
+          }
+        }
+      }
+    }
+  }
+  .contact-form-section {
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .home-section {
+    &__wrapper {
+      h2 {
+        font-size: 4.55rem;
+      }
+      h1 {
+        font-size: 6rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      a {
+        button {
+          // width: 33%;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  .about-us {
+    &__wrapper {
+      width: 90%;
+      // height: calc(626px + 74px);
+      &__description {
+        width: 50%;
+        padding: 4.6rem;
+        &__section {
+          h1 {
+            font-size: 6rem;
+            padding-bottom: 4rem;
+          }
+          p {
+            padding-bottom: 4rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 5rem;
+      }
+      &__mission-section {
+        width: 50%;
+        gap: 10rem;
+
+        &__description-container {
+          h1 {
+            font-size: 2.8rem;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  .technology-section {
+    &__content-container {
+      width: 85%;
+      &__contents {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        &__heading {
+          h1 {
+            font-size: 4rem;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+        &__image-section {
+          &__containers {
+            width: 30%;
+
+            &__image-wrapper {
+              .image-sizer {
+                img {
+                }
+              }
+            }
+            &__heading-description {
+              h4 {
+                font-size: 2rem;
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .services-section {
+    padding-top: 5.5%;
+  }
+  .services-headers h1 {
+    font-size: 4.5rem;
+  }
+  .services-headers p {
+    font-size: 2rem;
+  }
+  .services-next,
+  .services-prev {
+    height: 6rem;
+    width: 6rem;
+  }
+  .services-section__parent-container {
+    row-gap: 2rem;
+  }
+  .heading {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  .services-section__parent-container__slides .visible-content .heading h1 {
+    font-size: 1.8rem;
+  }
+  .services-section__parent-container__slides .hidden-content h1 {
+    font-size: 2.1rem;
+  }
+  .services-section__parent-container__slides .hidden-content ul {
+    font-size: 1.5rem;
+  }
+  .industry-section h1 {
+    font-size: 4.2rem;
+  }
+  .industry-section .industry-content-desc {
+    font-size: 2rem;
+  }
+  .naics-section {
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+        font-size: 4.2rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        justify-content: center;
+        &__naics-coin {
+          width: 12.6rem;
+          height: 12.6rem;
+          p {
+            font-size: 1.8rem;
+          }
+        }
+        &__description {
+          height: 21.1rem;
+          width: 21.1rem;
+          p {
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections {
+    padding-top: 4.5%;
+    &__wrapper {
+      width: 95%;
+
+      &__certificate-header {
+        h1 {
+          font-size: 4.2rem;
+        }
+        p {
+          margin-bottom: 3%;
+          font-size: 2rem;
+        }
+      }
+      &__certificate-wrapper {
+        &__certificate-container {
+          &__swiper__pagination {
+            &__next-btn {
+              &::after {
+                font-size: 3.8rem;
+                font-weight: 600;
+              }
+            }
+            &__before-btn {
+              &::after {
+                font-size: 3.8rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        &__certificate-card-container {
+          &__certificate-card {
+            top: 8%;
+
+            &__card-header {
+              h1 {
+                font-size: 2.5rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.8rem;
+                }
+                h1 {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      &__footer-logo {
+        &__logo-wrapper {
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          font-size: 2.6rem;
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__get-in-touch {
+      padding: 2.5rem;
+      &__headers {
+        h1 {
+          font-size: 3.8rem;
+        }
+        p {
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            .user-captcha-container {
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            padding: 2rem;
+            h1 {
+              font-size: 2rem;
+            }
+            .reset-wrapper {
+            }
+          }
+          input,
+          textarea {
+            margin-top: 2rem;
+          }
+          textarea {
+          }
+          button {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
+    left: 17%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .aside__list--item__link {
+    font-size: 1.5rem !important;
+  }
+  .aside__list--item__link.active {
+    font-size: 1.5rem !important;
+  }
+
+  .home-section {
+    &__wrapper {
+      h2 {
+        font-size: 4rem;
+      }
+      h1 {
+        font-size: 5.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      a {
+        button {
+          font-size: 1.6rem;
+          // width: 30%;
+          span {
+            // width: 8%;
+          }
+        }
+      }
+    }
+  }
+  .about-us {
+    &__wrapper {
+      width: 90%;
+      // height: calc(626px + 49px);
+      &__description {
+        width: 50%;
+        padding: 4.6rem;
+        &__section {
+          h1 {
+            font-size: 4rem;
+            padding-bottom: 2rem;
+          }
+          p {
+            padding-bottom: 3rem;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 3rem;
+      }
+      &__mission-section {
+        width: 50%;
+        gap: 10rem;
+
+        &__description-container {
+          h1 {
+            font-size: 2.6rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  .services-section {
+    padding-top: 5.5%;
+  }
+  .services-headers h1 {
+    font-size: 4.5rem;
+  }
+  .services-headers p {
+    font-size: 2rem;
+  }
+  .services-next,
+  .services-prev {
+    height: 6rem;
+    width: 6rem;
+  }
+  .services-section__parent-container__slides .visible-content .heading {
+    border-bottom-left-radius: 1.7rem;
+    border-bottom-right-radius: 1.7rem;
+  }
+  .naics-section {
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+      }
+      p {
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        justify-content: center;
+        &__naics-coin {
+          width: 12.6rem;
+          height: 12.6rem;
+          p {
+            font-size: 1.6rem;
+          }
+        }
+        &__description {
+          height: 21.1rem;
+          width: 21.1rem;
+          p {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections {
+    padding-top: 4.5%;
+    &__wrapper {
+      width: 95%;
+
+      &__certificate-header {
+        h1 {
+          font-size: 4.2rem;
+        }
+        p {
+          margin-bottom: 3%;
+          font-size: 2rem;
+        }
+      }
+      &__certificate-wrapper {
+        &__certificate-container {
+          &__swiper__pagination {
+            left: 17%;
+            &__next-btn {
+              &::after {
+                font-size: 3.8rem;
+                font-weight: 600;
+              }
+            }
+            &__before-btn {
+              &::after {
+                font-size: 3.8rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        &__certificate-card-container {
+          &__certificate-card {
+            top: 8%;
+
+            &__card-header {
+              h1 {
+                font-size: 2.5rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.8rem;
+                }
+                h1 {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      &__footer-logo {
+        &__logo-wrapper {
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          font-size: 2.6rem;
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__get-in-touch {
+      padding: 2.5rem;
+
+      &__headers {
+        h1 {
+          font-size: 3.8rem;
+        }
+        p {
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            .user-captcha-container {
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            padding: 2rem;
+            h1 {
+              font-size: 2rem;
+            }
+            .reset-wrapper {
+            }
+          }
+          input,
+          textarea {
+            // margin-top: 3rem;
+          }
+          textarea {
+          }
+          button {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  .tab button {
+    font-size: 2rem;
+    // margin-right: 3rem;
+  }
+  .tabcontent {
+    min-height: 350px;
+  }
+  .technology-section .technology-content-wrapper {
+    position: absolute;
+    top: 0;
+    inset: clamp(20px, 6.9vw, 168px) clamp(20px, 10.2vw, 233px)
+      clamp(20px, 5.4vw, 141px);
+  }
+  .industry-section h2 {
+    font-size: clamp(15px, 3vw, 67px);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .about-us__wrapper {
+    // height: calc(626px + 200px);
+  }
+  .home-section__wrapper a button {
+    font-size: 1.4rem;
+    // width: 28%;
+    span {
+      // width: 7%;
+      display: block;
+    }
+  }
+
+  .technology-section {
+    &__content-container {
+      &__contents {
+        &__heading {
+          h1 {
+          }
+          p {
+          }
+        }
+        &__image-section {
+          &__containers {
+            width: 30%;
+
+            &__image-wrapper {
+              .image-sizer {
+                img {
+                }
+              }
+            }
+            &__heading-description {
+              h4 {
+                font-size: 2rem;
+              }
+              p {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .naics-section {
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+      }
+      p {
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        justify-content: center;
+        &__naics-coin {
+          width: 10.6rem;
+          height: 10.6rem;
+          p {
+          }
+        }
+        &__description {
+          p {
+          }
+        }
+      }
+    }
+  }
+  // .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
+  //   left: 21%;
+  // }
+  .contact-form-section {
+    // padding-top: 18%;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .tab button {
+    font-size: 1.75rem;
+  }
+  .certificate-sections {
+    // margin-bottom: 30%;
+
+    &__wrapper {
+      flex-direction: column;
+
+      &__certificate-header {
+        h1 {
+          font-size: 4.2rem;
+        }
+        p {
+          margin-bottom: 3%;
+          font-size: 2rem;
+        }
+      }
+      &__certificate-wrapper {
+        flex-direction: column;
+        &__certificate-container {
+          width: 100%;
+          margin-bottom: 10%;
+        }
+        &__certificate-card-container {
+          width: 100%;
+          &__certificate-card {
+            top: 8%;
+
+            &__card-header {
+              h1 {
+                font-size: 2.5rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.8rem;
+                }
+                h1 {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      &__footer-logo {
+        &__logo-wrapper {
+        }
+      }
+      &__headings {
+        p {
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+      }
+    }
+    &__get-in-touch {
+      padding: 1.5rem;
+      width: 35%;
+      // bottom: 25%;
+      right: 12%;
+
+      &__headers {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            .user-captcha-container {
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            padding: 1rem;
+            h1 {
+              font-size: 1.4rem;
+            }
+            .reset-wrapper {
+              width: 9%;
+              margin-bottom: 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+          input,
+          textarea {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+          textarea {
+          }
+          button {
+            font-size: 1.4rem;
+            padding-top: 1.4rem;
+            padding-bottom: 1.4rem;
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
+    left: 45%;
+  }
+  .field-error {
+    bottom: -30%;
+  }
+  .captch-error {
+    bottom: -41%;
+  }
+  .tab {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home-section__wrapper__scroll-down {
+    width: 7% !important;
+  }
+  #page-loader {
+    .img-wrapper {
+      width: 40%;
+      height: 40%;
+    }
+  }
+  .aside__logo {
+    margin-right: 3%;
+  }
+  .aside .header--wrapper {
+    padding: 0 2rem;
+  }
+  .home-section__wrapper__about-logo-container {
+    padding-top: 3%;
+  }
+  .home-section {
+    &__about-logo-container {
+      // display: none;
+    }
+    &__wrapper {
+      width: 90%;
+      h2 {
+        font-size: 4rem;
+      }
+      h1 {
+        font-size: 5.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      a {
+        button {
+          // gap: 10%;
+        }
+      }
+    }
+  }
+  .about-us {
+    padding-top: 5rem;
+    &__wrapper {
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      &__description {
+        width: 100%;
+        height: auto;
+        &__section {
+          h1 {
+            font-size: 5rem;
+            padding-bottom: 2rem;
+          }
+          p {
+            padding-bottom: 0;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 3rem;
+      }
+      &__mission-section {
+        width: 100%;
+        gap: 10rem;
+
+        &__description-container {
+          h1 {
+            font-size: 2.6rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+        &__about-logo-container {
+          visibility: visible;
+          margin-bottom: 13%;
+        }
+      }
+    }
+  }
+  .tab {
+    height: 45px;
+    width: 100%;
+  }
+
+  .technology-section {
+    &__content-container {
+      &__contents {
+        &__heading {
+          h1 {
+            font-size: 3.5rem;
+          }
+          p {
+          }
+        }
+        &__image-section {
+          &__containers {
+            width: 45%;
+            height: 25rem;
+
+            &__image-wrapper {
+              .image-sizer {
+                img {
+                }
+              }
+            }
+            &__heading-description {
+              h4 {
+                font-size: 1.8rem;
+              }
+              p {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .image-sizer:hover.image-sizer > img {
+    transform: rotateY(0deg);
+    transition: 0s ease;
+  }
+  .services-section__parent-container {
+    grid-template-areas:
+      "service1 service1 service1 service2 service2 service2"
+      "service3 service3 service3 service4 service4 service4 " ". service5 service5 service5 service5 .";
+  }
+  .services-section__parent-container__slides .hidden-content:hover {
+    opacity: 1;
+  }
+
+  .naics-section {
+    padding-right: 5%;
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+      }
+      p {
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        width: 45%;
+        justify-content: center;
+        &__naics-coin {
+          width: 10.6rem;
+          height: 10.6rem;
+          p {
+          }
+        }
+        &__description {
+          width: 23.1rem;
+          height: 23.1rem;
+          p {
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections {
+    padding-top: 4.5%;
+    // margin-bottom: 40%;
+
+    &__wrapper {
+      flex-direction: column;
+
+      &__certificate-header {
+        h1 {
+          font-size: 4.2rem;
+        }
+        p {
+          margin-bottom: 3%;
+          font-size: 2rem;
+        }
+      }
+      &__certificate-wrapper {
+        flex-direction: column;
+        &__certificate-container {
+          width: 100%;
+          margin-bottom: 10%;
+        }
+        &__certificate-card-container {
+          width: 100%;
+          &__certificate-card {
+            top: 8%;
+
+            &__card-header {
+              h1 {
+                font-size: 2.5rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.8rem;
+                }
+                h1 {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      &__footer-logo {
+        &__logo-wrapper {
+          width: 35%;
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          font-size: 2.2rem;
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__get-in-touch {
+      padding: 1.5rem;
+      width: 45%;
+      bottom: 10%;
+      right: 3%;
+
+      &__headers {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            .user-captcha-container {
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            padding: 1rem;
+            h1 {
+              font-size: 1.4rem;
+            }
+            .reset-wrapper {
+              width: 9%;
+              margin-bottom: 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+          input,
+          textarea {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+          textarea {
+          }
+          button {
+            font-size: 1.4rem;
+            padding-top: 1.4rem;
+            padding-bottom: 1.4rem;
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
+    left: 42%;
+    width: 15%;
+  }
+  .tab button {
+    font-size: 2rem;
+    margin-right: 3rem;
+  }
+  .technology-section .technology-content-wrapper {
+    position: absolute;
+    top: 0;
+    inset: clamp(20px, 4.9vw, 168px) clamp(20px, 6.2vw, 233px)
+      clamp(20px, 4.4vw, 141px);
+  }
+  .industry-section {
+    background-image: none;
+    padding-bottom: 5%;
+  }
+  .industry-section h2 {
+    font-size: clamp(15px, 3vw, 67px);
+  }
+  .field-error {
+    bottom: -25%;
+    font-size: 1.1rem;
+  }
+
+  .services-section__parent-container__slides .hidden-content:hover {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+  .aside__list--item__link,
+  .aside__list--item__link.active {
+    font-size: 1.3rem !important;
+  }
+  .tabcontent {
+    min-height: auto;
+  }
+  .about-us__wrapper__description__section__heading {
+    margin-top: 0;
+  }
+
+  .industry-section .industry-card-container .industry-card {
+    min-height: initial;
+    height: initial;
+  }
+  .contact-form-section {
+    // padding-top: 15%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .home-section {
+    &__wrapper {
+      width: 90%;
+      h2 {
+        font-size: 4rem;
+      }
+      h1 {
+        font-size: 5.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      a {
+        button {
+        }
+      }
+    }
+  }
+  .about-us {
+    &__wrapper {
+      width: 90%;
+      flex-direction: column;
+      &__description {
+        width: 100%;
+        &__section {
+          h1 {
+            font-size: 5rem;
+            padding-bottom: 2rem;
+          }
+          p {
+            padding-bottom: 0;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 3rem;
+      }
+      &__mission-section {
+        width: 100%;
+        gap: 10rem;
+
+        &__description-container {
+          h1 {
+            font-size: 2.6rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  .services-section {
+    padding-top: 5.5%;
+  }
+  .services-headers h1 {
+    font-size: 4.5rem;
+  }
+  .services-headers p {
+    font-size: 2rem;
+  }
+  .services-next,
+  .services-prev {
+    height: 6rem;
+    width: 6rem;
+  }
+  .naics-section {
+    background-color: #f9f9f9;
+    padding-top: 3.5%;
+    &__naics-headings {
+      margin-left: 5%;
+      h1 {
+        font-size: 4.2rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    &__naics-wrapper {
+      width: 100%;
+      justify-content: center;
+      margin-top: 10%;
+      margin-left: 4%;
+      &__naics {
+        width: 90%;
+        margin-bottom: 8%;
+        justify-content: center;
+        &__naics-coin {
+          left: -10%;
+
+          P {
+          }
+          &::after {
+            left: 76%;
+            top: 122%;
+          }
+        }
+        &__naics-description {
+          width: 80%;
+          &::after {
+            left: 17%;
+          }
+          p {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections {
+    padding-top: 4.5%;
+    // margin-bottom: 40%;
+
+    &__wrapper {
+      flex-direction: column;
+
+      &__certificate-header {
+        h1 {
+          font-size: 4.2rem;
+        }
+        p {
+          margin-bottom: 3%;
+          font-size: 2rem;
+        }
+      }
+      &__certificate-wrapper {
+        flex-direction: column;
+        &__certificate-container {
+          width: 100%;
+        }
+        &__certificate-card-container {
+          width: 100%;
+          &__certificate-card {
+            top: 8%;
+
+            &__card-header {
+              h1 {
+                font-size: 2.5rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.8rem;
+                }
+                h1 {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      &__footer-logo {
+        &__logo-wrapper {
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          font-size: 2.2rem;
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__get-in-touch {
+      padding: 1.5rem;
+      // width: 35%;
+      // bottom: 18%;
+      // right: 13%;
+
+      &__headers {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            .user-captcha-container {
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            padding: 1rem;
+            h1 {
+              font-size: 1.4rem;
+            }
+            .reset-wrapper {
+              width: 9%;
+              margin-bottom: 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+          input,
+          textarea {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+          textarea {
+          }
+          button {
+            font-size: 1.4rem;
+            padding-top: 1.4rem;
+            padding-bottom: 1.4rem;
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+  .tab button {
+    font-size: 2rem;
+    margin-right: 3rem;
+  }
+  .technology-section .technology-content-wrapper {
+    position: absolute;
+    top: 0;
+    inset: clamp(20px, 4.9vw, 168px) clamp(20px, 6.2vw, 233px)
+      clamp(20px, 4.4vw, 141px);
+  }
+  .industry-section {
+    background-image: none;
+    padding-bottom: 5%;
+  }
+  .industry-section h2 {
+    font-size: clamp(15px, 5vw, 67px);
+  }
+  .industry-section .industry-content-desc {
+    font-size: 2rem;
+  }
+  .field-error {
+    // bottom: -35%;
+    font-size: 1.1rem;
+  }
+
+  .mobile-swiper-pagination {
+    div {
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  .industry-section {
+    background-image: none;
+    padding-bottom: 5%;
+  }
+  .naics-section__naics-wrapper__naics__naics-description {
+    height: 70%;
+  }
+  .naics-section__naics-wrapper__naics__naics-description::after {
+    left: 20%;
+  }
+  .naics-section__naics-wrapper__naics {
+    margin-bottom: 0%;
+  }
+
+  .footer-section__get-in-touch {
+    // bottom: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-section__wrapper a {
+    min-width: unset !important;
+  }
+  .home-section__wrapper__about-logo-container__logo1,
+  .home-section__wrapper__about-logo-container__logo2 {
+    width: 20rem;
+    height: 10rem;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .home-section {
+    &__wrapper {
+      width: 95%;
+      h2 {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+      }
+      h1 {
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+      a {
+        min-width: 35%;
+        width: 35%;
+        button {
+          padding-top: 1.2rem;
+          padding-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+  .about-us {
+    &__wrapper {
+      width: 90%;
+      flex-direction: column;
+      &__description {
+        width: 100%;
+        &__section {
+          h1 {
+            font-size: 4rem;
+            padding-bottom: 2rem;
+          }
+          p {
+            padding-bottom: 0;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 3rem;
+      }
+      &__mission-section {
+        width: 100%;
+        gap: 10rem;
+
+        &__description-container {
+          h1 {
+            font-size: 2.6rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .technology-section {
+    &__content-container {
+      &__contents {
+        &__heading {
+          h1 {
+            font-size: 3.5rem;
+          }
+          p {
+          }
+        }
+        &__image-section {
+          &__containers {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 5%;
+            margin-top: 5%;
+            &__image-wrapper {
+              margin-bottom: 5%;
+              justify-content: center;
+              .image-sizer {
+                width: 66%;
+                img {
+                }
+              }
+            }
+            &__heading-description {
+              h4 {
+                font-size: 2rem;
+              }
+              p {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .services-section {
+    padding-top: 5.5%;
+  }
+  .services-headers h1 {
+    font-size: 3.5rem;
+  }
+  .services-headers p {
+    font-size: 1.6rem;
+  }
+  .services-section__parent-container {
+    row-gap: 4rem;
+  }
+  .heading h1 {
+    font-size: 1.6rem;
+  }
+  .services-section__parent-container__slides .hidden-content h1 {
+    font-size: 2rem;
+  }
+  .services-section__parent-container__slides .visible-content .heading h1 {
+    font-size: 1.6rem;
+  }
+  .industry-section .industry-content-desc {
+    font-size: 1.4rem;
+  }
+  .industry-section h1 {
+    font-size: 3.2rem;
+  }
+  .naics-section {
+    padding-right: 5%;
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        width: 45%;
+        justify-content: space-around;
+        &__naics-coin {
+          width: 10.6rem;
+          height: 10.6rem;
+          p {
+          }
+        }
+        &__description {
+          width: 20.1rem;
+          height: 20.1rem;
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .certificate-sections {
+    padding-top: 4.5%;
+    // margin-bottom: 40%;
+
+    &__wrapper {
+      flex-direction: column;
+
+      &__certificate-header {
+        h1 {
+          font-size: 3.2rem;
+        }
+        p {
+          margin-bottom: 3%;
+          font-size: 1.6rem;
+        }
+      }
+      &__certificate-wrapper {
+        flex-direction: column;
+        &__certificate-container {
+          width: 100%;
+          &__swiper__pagination {
+            &__next-btn {
+              &::after {
+                font-size: 3.4rem;
+                font-weight: 600;
+              }
+            }
+            &__before-btn {
+              &::after {
+                font-size: 3.4rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        &__certificate-card-container {
+          width: 100%;
+          &__certificate-card {
+            top: 8%;
+
+            &__card-header {
+              h1 {
+                font-size: 2.5rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.8rem;
+                }
+                h1 {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      &__footer-logo {
+        &__logo-wrapper {
+          width: 45%;
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          font-size: 2rem;
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__get-in-touch {
+      padding: 1.5rem;
+      width: 49%;
+      bottom: 10%;
+      right: 1%;
+
+      &__headers {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 0 !important;
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            .user-captcha-container {
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            padding: 1rem;
+            justify-content: center;
+            h1 {
+              font-size: 1.4rem;
+              text-align: center;
+            }
+            .reset-wrapper {
+              width: 9%;
+              margin-bottom: 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+          input,
+          textarea {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+          textarea {
+          }
+          button {
+            font-size: 1.4rem;
+            padding-top: 1.4rem;
+            padding-bottom: 1.4rem;
+            width: 70%;
+          }
+        }
+      }
+    }
+    &__contact-form-container {
+      background-color: #f8f8f8;
+      padding: 6%;
+      margin-bottom: 10%;
+      button {
+        background: linear-gradient(91.83deg, #1266e2 -15.22%, #b21b8f 134.69%);
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 50%;
+        font-size: 1.4rem;
+        color: #fff;
+      }
+    }
+  }
+  .tab button {
+    font-size: 1.6rem;
+    margin-right: 3rem;
+  }
+  .technology-section .technology-content-wrapper {
+    position: absolute;
+    top: 0;
+    inset: clamp(20px, 4.9vw, 168px) clamp(20px, 6.2vw, 233px)
+      clamp(20px, 13.4vw, 141px);
+  }
+  .industry-section {
+    background-image: none;
+    padding-bottom: 5%;
+  }
+  .industry-section h2 {
+    font-size: clamp(15px, 3vw, 67px);
+  }
+  .field-error {
+    // bottom: -30%;
+    font-size: 1.1rem;
+  }
+
+  .mobile-getintouch {
+    display: block;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30%;
+  }
+  .services-section__parent-container__slides .hidden-content:hover {
+    border-radius: 0.6rem;
+  }
+  .services-section__parent-container__slides .hidden-content {
+    border-radius: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .services-section__parent-container__slides .hidden-content {
+    height: 20%;
+  }
+  .contact-para {
+    display: none;
+  }
+  .contact-form-section {
+    padding-top: 15%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .home-section__wrapper__scroll-down {
+    width: 10% !important;
+  }
+  #page-loader {
+    .img-wrapper {
+      width: 40%;
+      height: 40%;
+    }
+  }
+  .home-section {
+    &__wrapper {
+      width: 95%;
+      h2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+      h1 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      a {
+        width: 50%;
+        button {
+          // width: 45%;
+          span {
+            // margin-left: -10px;
+          }
+        }
+      }
+    }
+  }
+  .about-us {
+    &__wrapper {
+      width: 90%;
+      flex-direction: column;
+      &__description {
+        padding: 2.6rem 1.6rem;
+        &__section {
+          h1 {
+            font-size: 3rem;
+            padding-bottom: 2rem;
+          }
+          p {
+            padding-bottom: 0;
+            font-size: 1.4rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 3rem;
+      }
+      &__mission-section {
+        width: 100%;
+        gap: 3rem;
+
+        &__description-container {
+          padding: 3rem 2.7rem 3rem 2.8rem;
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+        &__missionlogo-wraper {
+          width: 10.4rem;
+        }
+      }
+    }
+  }
+
+  .technology-section {
+    &__content-container {
+      &__contents {
+        &__heading {
+          h1 {
+            font-size: 2.6rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+        &__image-section {
+          &__containers {
+            &__image-wrapper {
+              .image-sizer {
+                img {
+                }
+              }
+            }
+            &__heading-description {
+              h4 {
+                font-size: 1.8rem;
+              }
+              p {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .services-section {
+    padding-top: 5.5%;
+  }
+  .services-headers h1 {
+    font-size: 3.5rem;
+  }
+  .services-section__parent-container__slides .visible-content .heading h1 {
+    font-size: 2.5rem;
+  }
+  .services-section__parent-container__slides .hidden-content h1 {
+    font-size: 2.5rem;
+  }
+  .services-headers p {
+    font-size: 1.6rem;
+  }
+  .heading h1 {
+    font-size: 1.3rem;
+  }
+  .industry-section h1 {
+    font-size: 2.8rem;
+  }
+
+  .services-section__parent-container {
+    grid-template-areas:
+      "service1 service1 service1 service1 service1 service1" "service2 service2 service2 service2 service2 service2"
+      "service3 service3 service3 service3 service3 service3" "service4 service4 service4 service4 service4 service4" "service5 service5 service5 service5 service5 service5";
+  }
+  .naics-section {
+    padding-right: 5%;
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        width: 90%;
+        justify-content: center;
+        &__naics-coin {
+          width: 13.6rem;
+          height: 13.6rem;
+          p {
+          }
+        }
+        &__description {
+          width: 24.1rem;
+          height: 24.1rem;
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections {
+    padding-top: 10.5%;
+    // margin-bottom: 55%;
+    padding-bottom: 7%;
+    &__wrapper {
+      flex-direction: column;
+
+      &__certificate-header {
+        h1 {
+          font-size: 2.8rem;
+        }
+        p {
+          margin-bottom: 6%;
+          font-size: 1.6rem;
+        }
+      }
+      &__certificate-wrapper {
+        flex-direction: column;
+        &__certificate-container {
+          width: 100%;
+          margin-bottom: 15%;
+          &__swiper__pagination {
+            &__next-btn {
+              &::after {
+                font-size: 2.4rem;
+              }
+            }
+            &__before-btn {
+              &::after {
+                font-size: 2.4rem;
+              }
+            }
+          }
+        }
+        &__certificate-card-container {
+          width: 100%;
+          &__certificate-card {
+            top: 8%;
+
+            &__card-header {
+              h1 {
+                font-size: 2.5rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.8rem;
+                }
+                h1 {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      width: 75%;
+      &__footer-logo {
+        &__logo-wrapper {
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          font-size: 1.6rem;
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            .logo-parent {
+              width: 20%;
+              min-height: 4.6rem;
+              min-width: 4.6rem;
+              max-height: 4.6rem;
+              max-width: 4.6rem;
+            }
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .footer-section__get-in-touch {
+      padding: 1.5rem;
+      bottom: 70px;
+      right: 0;
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+
+      z-index: 1;
+      &__headers {
+        margin-top: 5%;
+      }
+    }
+  }
+  .tab button {
+    // font-size: 1.8rem;
+    margin-right: auto;
+  }
+  .tabcontent p {
+    font-size: 1.6rem;
+
+    padding-top: 1rem;
+  }
+
+  .industry-section {
+    background-image: none;
+    padding-bottom: 5%;
+  }
+  .industry-section h2 {
+    font-size: clamp(15px, 6vw, 67px);
+  }
+  .industry-section .industry-content-desc {
+    font-size: 1.6rem;
+    padding-right: 4%;
+  }
+  .field-error {
+    // bottom: -35%;
+    font-size: 1.1rem;
+  }
+
+  .industry-section .industry-card-container .industry-card {
+    max-width: 521px;
+  }
+  .tabcontent li {
+    font-size: 1.6rem;
+  }
+
+  .about-us__wrapper__mission-section__about-logo-container__missionlogo-wraper {
+    width: 7.7rem;
+    height: 8rem;
+  }
+  .footer-section__footer-wrapper {
+    margin-top: -10%;
+  }
+  .footer-section__up-button-wrapper {
+    top: auto;
+  }
+  .footer-section__footer-wrapper__footer-logo__logo-wrapper {
+    width: 50%;
+  }
+  .mobile-logo-wrapper {
+    width: 31% !important;
+    height: 9rem;
+  }
+  .footer-section__footer-wrapper__footer-logo {
+    margin-bottom: 1.5rem;
+  }
+  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
+    left: 38%;
+    width: 20%;
+    padding-top: 6%;
+  }
+
+  .services-section__parent-container__slides .hidden-content:hover {
+    border-radius: 2rem;
+  }
+  .devops-hidden {
+    padding-top: 2rem;
+  }
+  .contact-form-section {
+    padding-top: 15%;
+  }
+
+  .button-active-mark {
+    height: 3px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home-section__wrapper__scroll-down {
+    width: 13% !important;
+    margin-top: 10% !important;
+  }
+  .home-section {
+    &__wrapper {
+      width: 95%;
+      h2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+      h1 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      a {
+        width: 60%;
+        button {
+          // width: 55%;
+        }
+      }
+    }
+  }
+  .about-us {
+    &__wrapper {
+      width: 90%;
+      flex-direction: column;
+      &__description {
+        padding: 2.6rem;
+        &__section {
+          h1 {
+            font-size: 2.6rem;
+            padding-bottom: 2rem;
+          }
+          p {
+            padding-bottom: 0;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 2rem;
+      }
+      &__mission-section {
+        width: 100%;
+        gap: 0rem;
+        padding: 2.5rem;
+
+        &__description-container {
+          padding: 3rem 2.7rem 3rem 2.8rem;
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+        &__missionlogo-wraper {
+          width: 8.4rem;
+        }
+      }
+    }
+  }
+  .technology-section {
+    &__content-container {
+      &__contents {
+        &__heading {
+          padding-top: 10%;
+          h1 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+        &__image-section {
+          &__containers {
+            &__image-wrapper {
+              .image-sizer {
+                width: 80%;
+                img {
+                }
+              }
+            }
+            &__heading-description {
+              h4 {
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .services-section {
+    padding-top: 5.5%;
+  }
+  .services-headers h1 {
+    font-size: 2.8rem;
+  }
+
+  .services-headers p {
+    font-size: 1.4rem;
+  }
+  .services-next,
+  .services-prev {
+    height: 6rem;
+    width: 6rem;
+  }
+  .industry-section h1 {
+    font-size: 2.2rem;
+  }
+  .naics-section {
+    padding-right: 5%;
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        &__naics-coin {
+          p {
+          }
+        }
+        &__description {
+          p {
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections {
+    padding-top: 10.5%;
+    // margin-bottom: 65%;
+
+    &__wrapper {
+      flex-direction: column;
+
+      &__certificate-header {
+        h1 {
+          font-size: 2.8rem;
+        }
+        p {
+          margin-bottom: 6%;
+          font-size: 1.6rem;
+        }
+      }
+      &__certificate-wrapper {
+        flex-direction: column;
+        &__certificate-container {
+          width: 100%;
+        }
+        &__certificate-card-container {
+          width: 100%;
+          &__certificate-card {
+            padding: 4.2rem 2.8rem 2.7rem 3rem;
+
+            &__card-header {
+              h1 {
+                font-size: 2.3rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.4rem;
+                }
+                h1 {
+                  font-size: 1.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      width: 70%;
+      &__footer-logo {
+        &__logo-wrapper {
+          width: 50%;
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          font-size: 1.6rem;
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            .logo-parent {
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__get-in-touch {
+      padding: 1.5rem;
+      width: 50%;
+      bottom: 14%;
+      right: 1%;
+
+      &__headers {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            flex-direction: column;
+            .user-captcha-container {
+              width: 100%;
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            width: 100%;
+            h1 {
+              font-size: 1.4rem;
+            }
+            .reset-wrapper {
+              width: 5%;
+              margin-bottom: 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+          input,
+          textarea {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+          textarea {
+          }
+          button {
+            font-size: 1.2rem;
+            padding-top: 1.1rem;
+            padding-bottom: 1.1rem;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  .tab button {
+    font-size: 1.4rem;
+    // margin-right: 2rem;
+  }
+  .tabcontent p {
+    font-size: 1.2rem;
+
+    padding-top: 1rem;
+  }
+
+  .industry-section {
+    background-image: none;
+    padding-bottom: 5%;
+  }
+  .industry-section h2 {
+    font-size: clamp(28px, 3vw, 67px);
+  }
+  .industry-section .industry-content-desc {
+    font-size: clamp(14px, 1.2vw, 23px);
+  }
+  .field-error {
+    // bottom: -35%;
+    font-size: 1.1rem;
+  }
+
+  .industry-section .industry-card-container .industry-card {
+    max-width: 425px;
+  }
+  .tabcontent li {
+    font-size: 1.2rem;
+  }
+  .services-section__parent-container__slides .hidden-content:hover {
+    border-radius: 1rem;
+  }
+  .devops-hidden {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .home-section {
+    &__wrapper {
+      width: 95%;
+      h2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+      h1 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      a {
+        button {
+        }
+      }
+    }
+  }
+  .about-us {
+    &__wrapper {
+      width: 90%;
+      flex-direction: column;
+      &__description {
+        padding: 2.6rem;
+        &__section {
+          h1 {
+            font-size: 2.6rem;
+            padding-bottom: 2rem;
+          }
+          p {
+            padding-bottom: 0;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 2rem;
+      }
+      &__mission-section {
+        width: 100%;
+        gap: 0rem;
+        padding: 2.5rem;
+
+        &__description-container {
+          padding: 3rem 2.7rem 3rem 2.8rem;
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+        &__missionlogo-wraper {
+          width: 8.4rem;
+        }
+        &__about-logo-container {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .services-section {
+    padding-top: 5.5%;
+  }
+  .services-headers h1 {
+    font-size: 2.2rem;
+  }
+  .services-headers p {
+    font-size: 1.4rem;
+    padding-right: 2%;
+    br {
+      display: none;
+    }
+  }
+  .services-next,
+  .services-prev {
+    height: 6rem;
+    width: 6rem;
+  }
+  .services-section__parent-container__slides .visible-content .heading h1 {
+    font-size: 2rem;
+  }
+  .services-section__parent-container__slides .hidden-content h1 {
+    font-size: 2rem;
+  }
+  .services-section__parent-container__slides .visible-content .heading {
+    padding: 12% 5%;
+  }
+  .certificate-sections {
+    padding-top: 10.5%;
+    // margin-bottom: 75%;
+
+    &__wrapper {
+      flex-direction: column;
+
+      &__certificate-header {
+        h1 {
+          font-size: 2.2rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
+      &__certificate-wrapper {
+        flex-direction: column;
+        &__certificate-container {
+          width: 100%;
+        }
+        &__certificate-card-container {
+          width: 100%;
+          &__certificate-card {
+            padding: 3.2rem 1.8rem 1.7rem 2rem;
+
+            &__card-header {
+              h1 {
+                font-size: 2rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              &__details {
+                p {
+                  font-size: 1.4rem;
+                }
+                h1 {
+                  font-size: 1.6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      &__footer-logo {
+        &__logo-wrapper {
+          width: 50%;
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          font-size: 1.3rem;
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            .logo-parent {
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__get-in-touch {
+      padding: 1.5rem;
+      width: 50%;
+      bottom: 14%;
+      right: 1%;
+
+      &__headers {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            flex-direction: column;
+            .user-captcha-container {
+              width: 100%;
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            width: 100%;
+            h1 {
+              font-size: 1.4rem;
+            }
+            .reset-wrapper {
+              width: 9%;
+              margin-bottom: 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+          input,
+          textarea {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+          textarea {
+          }
+          button {
+            font-size: 1.2rem;
+            padding-top: 1.1rem;
+            padding-bottom: 1.1rem;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  .tab button {
+    font-size: 1.4rem;
+    // margin-right: 1.6rem;
+  }
+  .tabcontent p {
+    font-size: 1.2rem;
+
+    padding-top: 1rem;
+  }
+
+  .industry-section {
+    padding-top: 10%;
+  }
+  .industry-section h2 {
+    font-size: clamp(22px, 3vw, 67px);
+  }
+  .industry-section .industry-content-desc {
+    font-size: clamp(14px, 1.2vw, 23px);
+  }
+  .field-error {
+    // bottom: -35%;
+    font-size: 1.1rem;
+  }
+
+  .industry-section .industry-card-container .industry-card {
+    max-width: 387px;
+  }
+  .footer-section__footer-wrapper {
+    width: 60%;
+  }
+  .mobile-logo-wrapper {
+    width: 31% !important;
+  }
+  .naics-section {
+    padding-right: 5%;
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+      }
+      p {
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        &__naics-coin {
+          width: 11.6rem;
+          height: 11.6rem;
+          p {
+          }
+        }
+        &__description {
+          width: 21.1rem;
+          height: 21.1rem;
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .home-section {
+    &__wrapper {
+      width: 95%;
+      h2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+      h1 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      a {
+        width: 70%;
+        button {
+        }
+      }
+    }
+  }
+  .about-us {
+    &__wrapper {
+      width: 90%;
+      flex-direction: column;
+      &__description {
+        padding: 1.6rem;
+        &__section {
+          h1 {
+            font-size: 2.6rem;
+            padding-bottom: 2rem;
+          }
+          p {
+            padding-bottom: 0;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      &__tabs-section {
+        padding-top: 2rem;
+      }
+      &__mission-section {
+        width: 100%;
+        gap: 0rem;
+        padding: 2.5rem;
+
+        &__description-container {
+          padding: 3rem 2.7rem 3rem 2.8rem;
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+        &__missionlogo-wraper {
+          width: 8.4rem;
+        }
+      }
+    }
+  }
+  .services-section {
+    padding-top: 5.5%;
+  }
+  .services-headers h1 {
+    font-size: 2.2rem;
+  }
+  .services-headers p {
+    font-size: 1.4rem;
+    padding-right: 2%;
+    br {
+      display: none;
+    }
+  }
+  .services-next,
+  .services-prev {
+    height: 6rem;
+    width: 6rem;
+  }
+  .mySwiper2 {
+    padding-top: 15% !important;
+  }
+  .mobile-swiper-pagination {
+    width: 30% !important;
+  }
+  .mobile-swiper-pagination {
+    top: 7% !important;
+  }
+  .naics-section {
+    padding-top: 8.5%;
+    &__naics-headings {
+      margin-left: 5%;
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    &__naics-wrapper {
+      width: 100%;
+      justify-content: center;
+      margin-top: 10%;
+      &__naics {
+        margin-bottom: 9%;
+        height: 16.1rem;
+        &__naics-coin {
+          P {
+            font-size: 1.8rem;
+          }
+          &::after {
+            left: 89%;
+            top: 111%;
+          }
+        }
+        &__naics-description {
+          width: 80%;
+          margin-left: 20%;
+          &::after {
+            left: 34%;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  .certificate-sections {
+    padding-top: 10.5%;
+    // margin-bottom: 75%;
+
+    &__wrapper {
+      flex-direction: column;
+
+      &__certificate-header {
+        h1 {
+          font-size: 2.2rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
+      &__certificate-wrapper {
+        flex-direction: column;
+        &__certificate-container {
+          width: 100%;
+          // margin-bottom: 5%;
+        }
+        &__certificate-card-container {
+          width: 100%;
+          &__certificate-card {
+            padding: 3.2rem 1.8rem 1.7rem 2rem;
+
+            &__card-header {
+              h1 {
+                font-size: 2rem;
+              }
+              .logo-wrapper {
+                width: 10%;
+              }
+            }
+            &__card-details {
+              display: none;
+            }
+            &__mobile-table {
+              display: block;
+              padding: 5%;
+              table {
+                width: 100%;
+                border-spacing: 10px;
+                tbody {
+                  column-gap: 3%;
+                  tr {
+                    border: 10px solid transparent;
+                    td {
+                      font-size: 1.4rem;
+                      font-weight: 400;
+                    }
+                    td {
+                      h1 {
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-section {
+    &__footer-wrapper {
+      &__footer-logo {
+        &__logo-wrapper {
+          width: 50%;
+        }
+      }
+      &__headings {
+        font-size: 3rem;
+        margin-bottom: 4.1rem;
+        p {
+          font-size: 1.3rem;
+          span {
+          }
+        }
+      }
+      &__footer-menu {
+        ul {
+          li {
+            // font-size: 1rem;
+            // margin-bottom: 2rem;
+            .logo-parent {
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+    &__copy-rights {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__get-in-touch {
+      padding: 1.5rem;
+      width: 50%;
+      bottom: 14%;
+      right: 1%;
+
+      &__headers {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+      &__form-container {
+        form {
+          .captcha-section-parent {
+            flex-direction: column;
+            .user-captcha-container {
+              width: 100%;
+              p {
+              }
+            }
+          }
+          .captcha-container {
+            width: 100%;
+            h1 {
+              font-size: 1.4rem;
+            }
+            .reset-wrapper {
+              width: 9%;
+              margin-bottom: 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+          input,
+          textarea {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+          textarea {
+          }
+          button {
+            font-size: 1.2rem;
+            padding-top: 1.1rem;
+            padding-bottom: 1.1rem;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  .tab {
+    height: 35px;
+  }
+  .tab button {
+    font-size: 1.2rem;
+    // margin-right: 1.2rem;
+  }
+  .tabcontent p {
+    font-size: 1.2rem;
+
+    padding-top: 1rem;
+  }
+
+  .industry-section {
+    padding-top: 10%;
+  }
+  .industry-section h2 {
+    font-size: clamp(22px, 3vw, 67px);
+  }
+  .industry-section .industry-content-desc {
+    font-size: clamp(14px, 1.2vw, 23px);
+  }
+  .field-error {
+    // bottom: -35%;
+    font-size: 1.1rem;
+  }
+
+  .industry-section .industry-card-container .industry-card {
+    max-width: 350px;
+  }
+
+  .footer-section__footer-wrapper {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .industry-section .industry-card-wrapper .industry-card-container {
+    padding-right: 4%;
+    margin-right: 0;
+  }
+  .naics-section {
+    padding-right: 5%;
+    &__video-container {
+      video {
+      }
+    }
+    &__naics-headings {
+      h1 {
+      }
+      p {
+      }
+    }
+    &__naics-wrapper {
+      &__parent-container {
+        &__naics-coin {
+          width: 9.6rem;
+          height: 9.6rem;
+          p {
+          }
+        }
+        &__description {
+          width: 19.1rem;
+          height: 19.1rem;
+          p {
+          }
+        }
+      }
+    }
+  }
+  .devops-hidden {
+    padding-top: 2rem;
+  }
+}
+.overlay-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  display: none;
+  z-index: 9;
+}
