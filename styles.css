@@ -2554,3 +2554,17 @@ body {
     padding-top: 2rem !important;
   }
 }/*# sourceMappingURL=styles.css.map */
+
+@media (max-width: 900px) {
+  .services-section__parent-container__slides {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section__parent-container__slides {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
