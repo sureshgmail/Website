@@ -1593,17 +1593,29 @@ textarea:focus {
   .about-us__wrapper {
     width: 90%;
   }
+  .about-us__wrapper__description {
+    width: 50%;
+    padding: 4.6rem;
+  }
   .about-us__wrapper__description__section h1 {
-    font-size: 6.4rem;
+    font-size: 6rem;
+    padding-bottom: 4rem;
   }
   .about-us__wrapper__description__section p {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
   }
   .about-us__wrapper__tabs-section {
     padding-top: 5rem;
   }
-  .about-us__wrapper__description__section__heading {
-    margin-top: 2%;
+  .about-us__wrapper__mission-section {
+    width: 50%;
+    gap: 10rem;
+  }
+  .about-us__wrapper__mission-section__description-container h1 {
+    font-size: 2.8rem;
+  }
+  .about-us__wrapper__mission-section__description-container p {
+    font-size: 1.6rem;
   }
   .technology-section {
     padding: 5% 0%;
@@ -1666,6 +1678,9 @@ textarea:focus {
   .naics-section__naics-headings h1 {
     font-size: 6.2rem;
   }
+  .naics-section__naics-headings p {
+    font-size: 2rem;
+  }
   .naics-section__naics-wrapper {
     width: 85%;
   }
@@ -1695,6 +1710,7 @@ textarea:focus {
   }
   .certificate-sections__wrapper__certificate-header p {
     margin-bottom: 3%;
+    font-size: 2rem;
   }
   .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
     left: 18%;
@@ -1711,182 +1727,6 @@ textarea:focus {
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header h1 {
     font-size: 3rem;
   }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details p {
-    font-size: 1.8rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
-    font-size: 2.4rem;
-  }
-  .footer-section__footer-wrapper {
-    padding-top: 3%;
-  }
-  .footer-section__footer-wrapper__headings {
-    font-size: 3rem;
-    margin-bottom: 4.1rem;
-  }
-  .footer-section__footer-wrapper__footer-menu ul li {
-    font-size: 2rem;
-  }
-  .footer-section__copy-rights p {
-    font-size: 1.6rem;
-  }
-  .footer-section__get-in-touch {
-    padding: 3.5rem;
-    bottom: 12%;
-  }
-  .naics-section__naics-wrapper__parent-container__naics-coin {
-    width: 15.6rem;
-    height: 15.6rem;
-  }
-  .naics-section__naics-wrapper__parent-container__description {
-    height: 24.1rem;
-    width: 24.1rem;
-  }
-  .contact-form-section {
-    padding-top: 10%;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .home-section__wrapper h2 {
-    font-size: 4.55rem;
-  }
-  .home-section__wrapper h1 {
-    font-size: 6rem;
-  }
-  .home-section__wrapper p {
-    font-size: 2rem;
-  }
-  .home-section__wrapper a button {
-    font-size: 1.8rem;
-  }
-  .about-us__wrapper {
-    width: 90%;
-  }
-  .about-us__wrapper__description {
-    width: 50%;
-    padding: 4.6rem;
-  }
-  .about-us__wrapper__description__section h1 {
-    font-size: 6rem;
-    padding-bottom: 4rem;
-  }
-  .about-us__wrapper__description__section p {
-    padding-bottom: 4rem;
-  }
-  .about-us__wrapper__tabs-section {
-    padding-top: 5rem;
-  }
-  .about-us__wrapper__mission-section {
-    width: 50%;
-    gap: 10rem;
-  }
-  .about-us__wrapper__mission-section__description-container h1 {
-    font-size: 2.8rem;
-  }
-  .about-us__wrapper__mission-section__description-container p {
-    font-size: 1.6rem;
-  }
-  .technology-section__content-container {
-    width: 85%;
-  }
-  .technology-section__content-container__contents {
-    padding-top: 4%;
-    padding-bottom: 4%;
-  }
-  .technology-section__content-container__contents__heading h1 {
-    font-size: 4rem;
-  }
-  .technology-section__content-container__contents__heading p {
-    font-size: 1.6rem;
-  }
-  .technology-section__content-container__contents__image-section__containers {
-    width: 30%;
-  }
-  .technology-section__content-container__contents__image-section__containers__heading-description h4 {
-    font-size: 2rem;
-  }
-  .services-section {
-    padding-top: 5.5%;
-  }
-  .services-headers h1 {
-    font-size: 4.5rem;
-  }
-  .services-headers p {
-    font-size: 2rem;
-  }
-  .services-next,
-  .services-prev {
-    height: 6rem;
-    width: 6rem;
-  }
-  .services-section__parent-container {
-    row-gap: 2rem;
-  }
-  .heading h1 {
-    font-size: 1.8rem;
-  }
-  .services-section__parent-container__slides .visible-content .heading h1 {
-    font-size: 1.8rem;
-  }
-  .services-section__parent-container__slides .hidden-content h1 {
-    font-size: 2.1rem;
-  }
-  .services-section__parent-container__slides .hidden-content ul {
-    font-size: 1.5rem;
-  }
-  .industry-section h1 {
-    font-size: 4.2rem;
-  }
-  .industry-section .industry-content-desc {
-    font-size: 2rem;
-  }
-  .naics-section__naics-headings h1 {
-    font-size: 4.2rem;
-  }
-  .naics-section__naics-headings p {
-    font-size: 2rem;
-  }
-  .naics-section__naics-wrapper__parent-container {
-    justify-content: center;
-  }
-  .naics-section__naics-wrapper__parent-container__naics-coin {
-    width: 12.6rem;
-    height: 12.6rem;
-  }
-  .naics-section__naics-wrapper__parent-container__naics-coin p {
-    font-size: 1.8rem;
-  }
-  .naics-section__naics-wrapper__parent-container__description {
-    height: 21.1rem;
-    width: 21.1rem;
-  }
-  .certificate-sections {
-    padding-top: 4.5%;
-  }
-  .certificate-sections__wrapper {
-    width: 95%;
-  }
-  .certificate-sections__wrapper__certificate-header h1 {
-    font-size: 4.2rem;
-  }
-  .certificate-sections__wrapper__certificate-header p {
-    margin-bottom: 3%;
-    font-size: 2rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
-    font-size: 3.8rem;
-    font-weight: 600;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
-    font-size: 3.8rem;
-    font-weight: 600;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
-    top: 8%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header h1 {
-    font-size: 2.5rem;
-  }
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header .logo-wrapper {
     width: 10%;
   }
@@ -1895,6 +1735,9 @@ textarea:focus {
   }
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
     font-size: 2rem;
+  }
+  .footer-section__footer-wrapper {
+    padding-top: 3%;
   }
   .footer-section__footer-wrapper__headings {
     font-size: 3rem;
@@ -1931,172 +1774,16 @@ textarea:focus {
     display: flex;
     justify-content: center;
   }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
-    left: 17%;
-  }
-}
-@media screen and (max-width: 1366px) {
-  .aside__list--item__link {
-    font-size: 1.5rem !important;
-  }
-  .aside__list--item__link.active {
-    font-size: 1.5rem !important;
-  }
-  .home-section__wrapper h2 {
-    font-size: 4rem;
-  }
-  .home-section__wrapper h1 {
-    font-size: 5.5rem;
-  }
-  .home-section__wrapper p {
-    font-size: 2rem;
-  }
-  .home-section__wrapper a button {
-    font-size: 1.6rem;
-  }
-  .about-us__wrapper {
-    width: 90%;
-  }
-  .about-us__wrapper__description {
-    width: 50%;
-    padding: 4.6rem;
-  }
-  .about-us__wrapper__description__section h1 {
-    font-size: 4rem;
-    padding-bottom: 2rem;
-  }
-  .about-us__wrapper__description__section p {
-    padding-bottom: 3rem;
-    font-size: 1.6rem;
-  }
-  .about-us__wrapper__tabs-section {
-    padding-top: 3rem;
-  }
-  .about-us__wrapper__mission-section {
-    width: 50%;
-    gap: 10rem;
-  }
-  .about-us__wrapper__mission-section__description-container h1 {
-    font-size: 2.6rem;
-  }
-  .about-us__wrapper__mission-section__description-container p {
-    font-size: 1.4rem;
-  }
-  .services-section {
-    padding-top: 5.5%;
-  }
-  .services-headers h1 {
-    font-size: 4.5rem;
-  }
-  .services-headers p {
-    font-size: 2rem;
-  }
-  .services-next,
-  .services-prev {
-    height: 6rem;
-    width: 6rem;
-  }
-  .services-section__parent-container__slides .visible-content .heading {
-    border-bottom-left-radius: 1.7rem;
-    border-bottom-right-radius: 1.7rem;
-  }
-  .naics-section__naics-wrapper__parent-container {
-    justify-content: center;
-  }
-  .naics-section__naics-wrapper__parent-container__naics-coin {
-    width: 12.6rem;
-    height: 12.6rem;
-  }
-  .naics-section__naics-wrapper__parent-container__naics-coin p {
-    font-size: 1.6rem;
-  }
-  .naics-section__naics-wrapper__parent-container__description {
-    height: 21.1rem;
-    width: 21.1rem;
-  }
-  .naics-section__naics-wrapper__parent-container__description p {
-    font-size: 1.8rem;
-  }
-  .certificate-sections {
-    padding-top: 4.5%;
-  }
-  .certificate-sections__wrapper {
-    width: 95%;
-  }
-  .certificate-sections__wrapper__certificate-header h1 {
-    font-size: 4.2rem;
-  }
-  .certificate-sections__wrapper__certificate-header p {
-    margin-bottom: 3%;
-    font-size: 2rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
-    left: 17%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
-    font-size: 3.8rem;
-    font-weight: 600;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
-    font-size: 3.8rem;
-    font-weight: 600;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
-    top: 8%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header h1 {
-    font-size: 2.5rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header .logo-wrapper {
-    width: 10%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details p {
-    font-size: 1.8rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
-    font-size: 2rem;
-  }
-  .footer-section__footer-wrapper__headings {
-    font-size: 3rem;
-    margin-bottom: 4.1rem;
-  }
-  .footer-section__footer-wrapper__headings p {
-    font-size: 2.6rem;
-  }
-  .footer-section__footer-wrapper__footer-menu ul li {
-    font-size: 1.8rem;
-  }
-  .footer-section__copy-rights p {
-    font-size: 1.6rem;
-  }
-  .footer-section__get-in-touch {
-    padding: 2.5rem;
-  }
-  .footer-section__get-in-touch__headers h1 {
-    font-size: 3.8rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container {
-    padding: 2rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container h1 {
-    font-size: 2rem;
-  }
-  .footer-section__get-in-touch__form-container form button {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
   .tab button {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .tabcontent {
-    min-height: 350px;
+    min-height: auto;
   }
   .technology-section .technology-content-wrapper {
     position: absolute;
     top: 0;
-    inset: clamp(20px, 6.9vw, 168px) clamp(20px, 10.2vw, 233px) clamp(20px, 5.4vw, 141px);
+    inset: clamp(20px, 4.9vw, 168px) clamp(20px, 6.2vw, 233px) clamp(20px, 4.4vw, 141px);
   }
   .industry-section h2 {
     font-size: clamp(15px, 3vw, 67px);
@@ -2165,6 +1852,20 @@ textarea:focus {
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
     font-size: 2rem;
   }
+  .footer-section__footer-wrapper__headings {
+    font-size: 3rem;
+    margin-bottom: 4.1rem;
+  }
+  .footer-section__footer-wrapper__headings p {
+    font-size: 2.2rem;
+  }
+  .footer-section__footer-wrapper__footer-menu ul li {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .footer-section__copy-rights p {
+    font-size: 1.6rem;
+  }
   .footer-section__get-in-touch {
     padding: 1.5rem;
     width: 35%;
@@ -2201,217 +1902,6 @@ textarea:focus {
   }
   .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
     left: 45%;
-  }
-  .field-error {
-    bottom: -30%;
-  }
-  .captch-error {
-    bottom: -41%;
-  }
-  .tab {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .home-section__wrapper__scroll-down {
-    width: 7% !important;
-  }
-  #page-loader .img-wrapper {
-    width: 40%;
-    height: 40%;
-  }
-  .aside__logo {
-    margin-right: 3%;
-  }
-  .aside .header--wrapper {
-    padding: 0 2rem;
-  }
-  .home-section__wrapper__about-logo-container {
-    padding-top: 3%;
-  }
-  .home-section__wrapper {
-    width: 90%;
-  }
-  .home-section__wrapper h2 {
-    font-size: 4rem;
-  }
-  .home-section__wrapper h1 {
-    font-size: 5.5rem;
-  }
-  .home-section__wrapper p {
-    font-size: 2rem;
-  }
-  .about-us {
-    padding-top: 5rem;
-  }
-  .about-us__wrapper {
-    width: 90%;
-    height: auto;
-    flex-direction: column;
-  }
-  .about-us__wrapper__description {
-    width: 100%;
-    height: auto;
-  }
-  .about-us__wrapper__description__section h1 {
-    font-size: 5rem;
-    padding-bottom: 2rem;
-  }
-  .about-us__wrapper__description__section p {
-    padding-bottom: 0;
-    font-size: 1.6rem;
-  }
-  .about-us__wrapper__tabs-section {
-    padding-top: 3rem;
-  }
-  .about-us__wrapper__mission-section {
-    width: 100%;
-    gap: 10rem;
-  }
-  .about-us__wrapper__mission-section__description-container h1 {
-    font-size: 2.6rem;
-  }
-  .about-us__wrapper__mission-section__description-container p {
-    font-size: 1.4rem;
-  }
-  .about-us__wrapper__mission-section__about-logo-container {
-    visibility: visible;
-    margin-bottom: 13%;
-  }
-  .tab {
-    height: 45px;
-    width: 100%;
-  }
-  .technology-section__content-container__contents__heading h1 {
-    font-size: 3.5rem;
-  }
-  .technology-section__content-container__contents__image-section__containers {
-    width: 45%;
-    height: 25rem;
-  }
-  .technology-section__content-container__contents__image-section__containers__heading-description h4 {
-    font-size: 1.8rem;
-  }
-  .technology-section__content-container__contents__image-section__containers__heading-description p {
-    font-size: 1.4rem;
-  }
-  .image-sizer:hover.image-sizer > img {
-    transform: rotateY(0deg);
-    transition: 0s ease;
-  }
-  .services-section__parent-container {
-    grid-template-areas: "service1 service1 service1 service2 service2 service2" "service3 service3 service3 service4 service4 service4 " ". service5 service5 service5 service5 .";
-  }
-  .services-section__parent-container__slides .hidden-content:hover {
-    opacity: 1;
-  }
-  .naics-section {
-    padding-right: 5%;
-  }
-  .naics-section__naics-wrapper__parent-container {
-    width: 45%;
-    justify-content: center;
-  }
-  .naics-section__naics-wrapper__parent-container__naics-coin {
-    width: 10.6rem;
-    height: 10.6rem;
-  }
-  .naics-section__naics-wrapper__parent-container__description {
-    width: 23.1rem;
-    height: 23.1rem;
-  }
-  .certificate-sections {
-    padding-top: 4.5%;
-  }
-  .certificate-sections__wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-header h1 {
-    font-size: 4.2rem;
-  }
-  .certificate-sections__wrapper__certificate-header p {
-    margin-bottom: 3%;
-    font-size: 2rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container {
-    width: 100%;
-    margin-bottom: 10%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container {
-    width: 100%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
-    top: 8%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header h1 {
-    font-size: 2.5rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header .logo-wrapper {
-    width: 10%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details p {
-    font-size: 1.8rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
-    font-size: 2rem;
-  }
-  .footer-section__footer-wrapper__footer-logo__logo-wrapper {
-    width: 35%;
-  }
-  .footer-section__footer-wrapper__headings {
-    font-size: 3rem;
-    margin-bottom: 4.1rem;
-  }
-  .footer-section__footer-wrapper__headings p {
-    font-size: 2.2rem;
-  }
-  .footer-section__footer-wrapper__footer-menu ul li {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
-  .footer-section__copy-rights p {
-    font-size: 1.6rem;
-  }
-  .footer-section__get-in-touch {
-    padding: 1.5rem;
-    width: 45%;
-    bottom: 10%;
-    right: 3%;
-  }
-  .footer-section__get-in-touch__headers h1 {
-    font-size: 3rem;
-  }
-  .footer-section__get-in-touch__headers p {
-    font-size: 1.2rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container {
-    padding: 1rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container h1 {
-    font-size: 1.4rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container .reset-wrapper {
-    width: 9%;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
-  }
-  .footer-section__get-in-touch__form-container form input,
-  .footer-section__get-in-touch__form-container form textarea {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .footer-section__get-in-touch__form-container form button {
-    font-size: 1.4rem;
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
-    width: 70%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
-    left: 42%;
     width: 15%;
   }
   .tab button {
@@ -2431,7 +1921,6 @@ textarea:focus {
     font-size: clamp(15px, 3vw, 67px);
   }
   .field-error {
-    bottom: -25%;
     font-size: 1.1rem;
   }
   .services-section__parent-container__slides .hidden-content:hover {
@@ -2509,17 +1998,13 @@ textarea:focus {
     width: 6rem;
   }
   .naics-section {
-    background-color: #f9f9f9;
-    padding-top: 3.5%;
-  }
-  .naics-section__naics-headings {
-    margin-left: 5%;
+    padding-right: 5%;
   }
   .naics-section__naics-headings h1 {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
   }
   .naics-section__naics-headings p {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .naics-section__naics-wrapper {
     width: 100%;
@@ -2528,25 +2013,25 @@ textarea:focus {
     margin-left: 4%;
   }
   .naics-section__naics-wrapper__naics {
-    width: 90%;
     margin-bottom: 8%;
-    justify-content: center;
+    height: 16.1rem;
   }
-  .naics-section__naics-wrapper__naics__naics-coin {
-    left: -10%;
+  .naics-section__naics-wrapper__naics__naics-coin P {
+    font-size: 1.8rem;
   }
   .naics-section__naics-wrapper__naics__naics-coin::after {
-    left: 76%;
-    top: 122%;
+    left: 89%;
+    top: 111%;
   }
   .naics-section__naics-wrapper__naics__naics-description {
     width: 80%;
+    margin-left: 20%;
   }
   .naics-section__naics-wrapper__naics__naics-description::after {
-    left: 17%;
+    left: 34%;
   }
   .naics-section__naics-wrapper__naics__naics-description p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .certificate-sections {
     padding-top: 4.5%;
@@ -2560,992 +2045,6 @@ textarea:focus {
   .certificate-sections__wrapper__certificate-header p {
     margin-bottom: 3%;
     font-size: 2rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container {
-    width: 100%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container {
-    width: 100%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
-    top: 8%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header h1 {
-    font-size: 2.5rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header .logo-wrapper {
-    width: 10%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details p {
-    font-size: 1.8rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
-    font-size: 2rem;
-  }
-  .footer-section__footer-wrapper__headings {
-    font-size: 3rem;
-    margin-bottom: 4.1rem;
-  }
-  .footer-section__footer-wrapper__headings p {
-    font-size: 2.2rem;
-  }
-  .footer-section__footer-wrapper__footer-menu ul li {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
-  .footer-section__copy-rights p {
-    font-size: 1.6rem;
-  }
-  .footer-section__get-in-touch {
-    padding: 1.5rem;
-  }
-  .footer-section__get-in-touch__headers h1 {
-    font-size: 3rem;
-  }
-  .footer-section__get-in-touch__headers p {
-    font-size: 1.2rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container {
-    padding: 1rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container h1 {
-    font-size: 1.4rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container .reset-wrapper {
-    width: 9%;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
-  }
-  .footer-section__get-in-touch__form-container form input,
-  .footer-section__get-in-touch__form-container form textarea {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .footer-section__get-in-touch__form-container form button {
-    font-size: 1.4rem;
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
-    width: 70%;
-  }
-  .tab button {
-    font-size: 2rem;
-    margin-right: 3rem;
-  }
-  .technology-section .technology-content-wrapper {
-    position: absolute;
-    top: 0;
-    inset: clamp(20px, 4.9vw, 168px) clamp(20px, 6.2vw, 233px) clamp(20px, 4.4vw, 141px);
-  }
-  .industry-section {
-    background-image: none;
-    padding-bottom: 5%;
-  }
-  .industry-section h2 {
-    font-size: clamp(15px, 5vw, 67px);
-  }
-  .industry-section .industry-content-desc {
-    font-size: 2rem;
-  }
-  .field-error {
-    font-size: 1.1rem;
-  }
-  .mobile-swiper-pagination div {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 834px) {
-  .industry-section {
-    background-image: none;
-    padding-bottom: 5%;
-  }
-  .naics-section__naics-wrapper__naics__naics-description {
-    height: 70%;
-  }
-  .naics-section__naics-wrapper__naics__naics-description::after {
-    left: 20%;
-  }
-  .naics-section__naics-wrapper__naics {
-    margin-bottom: 0%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .home-section__wrapper a {
-    min-width: unset !important;
-  }
-  .home-section__wrapper__about-logo-container__logo1,
-  .home-section__wrapper__about-logo-container__logo2 {
-    width: 20rem;
-    height: 10rem;
-  }
-  .home-section__wrapper__about-logo-container__logo1 img,
-  .home-section__wrapper__about-logo-container__logo2 img {
-    height: 100%;
-    width: auto;
-  }
-  .home-section__wrapper {
-    width: 95%;
-  }
-  .home-section__wrapper h2 {
-    font-size: 3rem;
-    padding-bottom: 2rem;
-  }
-  .home-section__wrapper h1 {
-    font-size: 3.5rem;
-  }
-  .home-section__wrapper p {
-    font-size: 1.6rem;
-  }
-  .home-section__wrapper a {
-    min-width: 35%;
-    width: 35%;
-  }
-  .home-section__wrapper a button {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-  }
-  .about-us__wrapper {
-    width: 90%;
-    flex-direction: column;
-  }
-  .about-us__wrapper__description {
-    width: 100%;
-  }
-  .about-us__wrapper__description__section h1 {
-    font-size: 4rem;
-    padding-bottom: 2rem;
-  }
-  .about-us__wrapper__description__section p {
-    padding-bottom: 0;
-    font-size: 1.6rem;
-  }
-  .about-us__wrapper__tabs-section {
-    padding-top: 3rem;
-  }
-  .about-us__wrapper__mission-section {
-    width: 100%;
-    gap: 10rem;
-  }
-  .about-us__wrapper__mission-section__description-container h1 {
-    font-size: 2.6rem;
-  }
-  .about-us__wrapper__mission-section__description-container p {
-    font-size: 1.4rem;
-  }
-  .technology-section__content-container__contents__heading h1 {
-    font-size: 3.5rem;
-  }
-  .technology-section__content-container__contents__image-section__containers {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-  }
-  .technology-section__content-container__contents__image-section__containers__image-wrapper {
-    margin-bottom: 5%;
-    justify-content: center;
-  }
-  .technology-section__content-container__contents__image-section__containers__image-wrapper .image-sizer {
-    width: 66%;
-  }
-  .technology-section__content-container__contents__image-section__containers__heading-description h4 {
-    font-size: 2rem;
-  }
-  .technology-section__content-container__contents__image-section__containers__heading-description p {
-    font-size: 1.6rem;
-  }
-  .services-section {
-    padding-top: 5.5%;
-  }
-  .services-headers h1 {
-    font-size: 3.5rem;
-  }
-  .services-headers p {
-    font-size: 1.6rem;
-  }
-  .services-section__parent-container {
-    row-gap: 4rem;
-  }
-  .heading h1 {
-    font-size: 1.6rem;
-  }
-  .services-section__parent-container__slides .hidden-content h1 {
-    font-size: 2rem;
-  }
-  .services-section__parent-container__slides .visible-content .heading h1 {
-    font-size: 1.6rem;
-  }
-  .industry-section .industry-content-desc {
-    font-size: 1.4rem;
-  }
-  .industry-section h1 {
-    font-size: 3.2rem;
-  }
-  .naics-section {
-    padding-right: 5%;
-  }
-  .naics-section__naics-headings h1 {
-    font-size: 3.2rem;
-  }
-  .naics-section__naics-headings p {
-    font-size: 1.6rem;
-  }
-  .naics-section__naics-wrapper__parent-container {
-    width: 45%;
-    justify-content: space-around;
-  }
-  .naics-section__naics-wrapper__parent-container__naics-coin {
-    width: 10.6rem;
-    height: 10.6rem;
-  }
-  .naics-section__naics-wrapper__parent-container__description {
-    width: 20.1rem;
-    height: 20.1rem;
-  }
-  .naics-section__naics-wrapper__parent-container__description p {
-    font-size: 1.6rem;
-  }
-  .certificate-sections {
-    padding-top: 4.5%;
-  }
-  .certificate-sections__wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-header h1 {
-    font-size: 3.2rem;
-  }
-  .certificate-sections__wrapper__certificate-header p {
-    margin-bottom: 3%;
-    font-size: 1.6rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container {
-    width: 100%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
-    font-size: 3.4rem;
-    font-weight: 600;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
-    font-size: 3.4rem;
-    font-weight: 600;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container {
-    width: 100%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
-    top: 8%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header h1 {
-    font-size: 2.5rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header .logo-wrapper {
-    width: 10%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details p {
-    font-size: 1.8rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
-    font-size: 2rem;
-  }
-  .footer-section__footer-wrapper__footer-logo__logo-wrapper {
-    width: 45%;
-  }
-  .footer-section__footer-wrapper__headings {
-    font-size: 3rem;
-    margin-bottom: 4.1rem;
-  }
-  .footer-section__footer-wrapper__headings p {
-    font-size: 2rem;
-  }
-  .footer-section__footer-wrapper__footer-menu ul li {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
-  .footer-section__copy-rights p {
-    font-size: 1.6rem;
-  }
-  .footer-section__get-in-touch {
-    padding: 1.5rem;
-    width: 49%;
-    bottom: 10%;
-    right: 1%;
-  }
-  .footer-section__get-in-touch__headers h1 {
-    font-size: 3rem;
-  }
-  .footer-section__get-in-touch__headers p {
-    font-size: 1.2rem;
-    margin-bottom: 0 !important;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container {
-    padding: 1rem;
-    justify-content: center;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container h1 {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container .reset-wrapper {
-    width: 9%;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
-  }
-  .footer-section__get-in-touch__form-container form input,
-  .footer-section__get-in-touch__form-container form textarea {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .footer-section__get-in-touch__form-container form button {
-    font-size: 1.4rem;
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
-    width: 70%;
-  }
-  .footer-section__contact-form-container {
-    background-color: #f8f8f8;
-    padding: 6%;
-    margin-bottom: 10%;
-  }
-  .footer-section__contact-form-container button {
-    background: linear-gradient(91.83deg, #1266e2 -15.22%, #b21b8f 134.69%);
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 50%;
-    font-size: 1.4rem;
-    color: #fff;
-  }
-  .tab button {
-    font-size: 1.6rem;
-    margin-right: 3rem;
-  }
-  .technology-section .technology-content-wrapper {
-    position: absolute;
-    top: 0;
-    inset: clamp(20px, 4.9vw, 168px) clamp(20px, 6.2vw, 233px) clamp(20px, 13.4vw, 141px);
-  }
-  .industry-section {
-    background-image: none;
-    padding-bottom: 5%;
-  }
-  .industry-section h2 {
-    font-size: clamp(15px, 3vw, 67px);
-  }
-  .field-error {
-    font-size: 1.1rem;
-  }
-  .mobile-getintouch {
-    display: block;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 30%;
-  }
-  .services-section__parent-container__slides .hidden-content:hover {
-    border-radius: 0.6rem;
-  }
-  .services-section__parent-container__slides .hidden-content {
-    border-radius: 1rem;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-  }
-  .services-section__parent-container__slides .hidden-content {
-    height: 20%;
-  }
-  .contact-para {
-    display: none;
-  }
-  .contact-form-section {
-    padding-top: 15%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .home-section__wrapper__scroll-down {
-    width: 10% !important;
-  }
-  #page-loader .img-wrapper {
-    width: 40%;
-    height: 40%;
-  }
-  .home-section__wrapper {
-    width: 95%;
-  }
-  .home-section__wrapper h2 {
-    font-size: 2rem;
-    padding-bottom: 2rem;
-  }
-  .home-section__wrapper h1 {
-    font-size: 2.8rem;
-  }
-  .home-section__wrapper p {
-    font-size: 1.4rem;
-  }
-  .home-section__wrapper a {
-    width: 50%;
-  }
-  .about-us__wrapper {
-    width: 90%;
-    flex-direction: column;
-  }
-  .about-us__wrapper__description {
-    padding: 2.6rem 1.6rem;
-  }
-  .about-us__wrapper__description__section h1 {
-    font-size: 3rem;
-    padding-bottom: 2rem;
-  }
-  .about-us__wrapper__description__section p {
-    padding-bottom: 0;
-    font-size: 1.4rem;
-  }
-  .about-us__wrapper__tabs-section {
-    padding-top: 3rem;
-  }
-  .about-us__wrapper__mission-section {
-    width: 100%;
-    gap: 3rem;
-  }
-  .about-us__wrapper__mission-section__description-container {
-    padding: 3rem 2.7rem 3rem 2.8rem;
-  }
-  .about-us__wrapper__mission-section__description-container h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  .about-us__wrapper__mission-section__description-container p {
-    font-size: 1.4rem;
-  }
-  .about-us__wrapper__mission-section__missionlogo-wraper {
-    width: 10.4rem;
-  }
-  .technology-section__content-container__contents__heading h1 {
-    font-size: 2.6rem;
-  }
-  .technology-section__content-container__contents__heading p {
-    font-size: 1.4rem;
-  }
-  .technology-section__content-container__contents__image-section__containers__heading-description h4 {
-    font-size: 1.8rem;
-  }
-  .technology-section__content-container__contents__image-section__containers__heading-description p {
-    font-size: 1.4rem;
-  }
-  .services-section {
-    padding-top: 5.5%;
-  }
-  .services-headers h1 {
-    font-size: 3.5rem;
-  }
-  .services-section__parent-container__slides .visible-content .heading h1 {
-    font-size: 2.5rem;
-  }
-  .services-section__parent-container__slides .hidden-content h1 {
-    font-size: 2.5rem;
-  }
-  .services-headers p {
-    font-size: 1.6rem;
-  }
-  .heading h1 {
-    font-size: 1.3rem;
-  }
-  .industry-section h1 {
-    font-size: 2.8rem;
-  }
-  .services-section__parent-container {
-    grid-template-areas: "service1 service1 service1 service1 service1 service1" "service2 service2 service2 service2 service2 service2" "service3 service3 service3 service3 service3 service3" "service4 service4 service4 service4 service4 service4" "service5 service5 service5 service5 service5 service5";
-  }
-  .naics-section {
-    padding-right: 5%;
-  }
-  .naics-section__naics-headings h1 {
-    font-size: 2.8rem;
-  }
-  .naics-section__naics-headings p {
-    font-size: 1.6rem;
-  }
-  .naics-section__naics-wrapper__parent-container {
-    width: 90%;
-    justify-content: center;
-  }
-  .naics-section__naics-wrapper__parent-container__naics-coin {
-    width: 13.6rem;
-    height: 13.6rem;
-  }
-  .naics-section__naics-wrapper__parent-container__description {
-    width: 24.1rem;
-    height: 24.1rem;
-  }
-  .naics-section__naics-wrapper__parent-container__description p {
-    font-size: 1.6rem;
-  }
-  .certificate-sections {
-    padding-top: 10.5%;
-    padding-bottom: 7%;
-  }
-  .certificate-sections__wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-header h1 {
-    font-size: 2.8rem;
-  }
-  .certificate-sections__wrapper__certificate-header p {
-    margin-bottom: 6%;
-    font-size: 1.6rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container {
-    width: 100%;
-    margin-bottom: 15%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__next-btn::after {
-    font-size: 2.4rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination__before-btn::after {
-    font-size: 2.4rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container {
-    width: 100%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
-    top: 8%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header h1 {
-    font-size: 2.5rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header .logo-wrapper {
-    width: 10%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details p {
-    font-size: 1.8rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
-    font-size: 2rem;
-  }
-  .footer-section__footer-wrapper {
-    width: 75%;
-  }
-  .footer-section__footer-wrapper__headings {
-    font-size: 3rem;
-    margin-bottom: 4.1rem;
-  }
-  .footer-section__footer-wrapper__headings p {
-    font-size: 1.6rem;
-  }
-  .footer-section__footer-wrapper__footer-menu ul li {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
-  .footer-section__footer-wrapper__footer-menu ul li .logo-parent {
-    width: 20%;
-    min-height: 4.6rem;
-    min-width: 4.6rem;
-    max-height: 4.6rem;
-    max-width: 4.6rem;
-  }
-  .footer-section__copy-rights p {
-    font-size: 1.2rem;
-  }
-  .footer-section .footer-section__get-in-touch {
-    padding: 1.5rem;
-    bottom: 70px;
-    right: 0;
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    z-index: 1;
-  }
-  .footer-section .footer-section__get-in-touch__headers {
-    margin-top: 5%;
-  }
-  .tab button {
-    margin-right: auto;
-  }
-  .tabcontent p {
-    font-size: 1.6rem;
-    padding-top: 1rem;
-  }
-  .industry-section {
-    background-image: none;
-    padding-bottom: 5%;
-  }
-  .industry-section h2 {
-    font-size: clamp(15px, 6vw, 67px);
-  }
-  .industry-section .industry-content-desc {
-    font-size: 1.6rem;
-    padding-right: 4%;
-  }
-  .field-error {
-    font-size: 1.1rem;
-  }
-  .industry-section .industry-card-container .industry-card {
-    max-width: 521px;
-  }
-  .tabcontent li {
-    font-size: 1.6rem;
-  }
-  .about-us__wrapper__mission-section__about-logo-container__missionlogo-wraper {
-    width: 7.7rem;
-    height: 8rem;
-  }
-  .footer-section__footer-wrapper {
-    margin-top: -10%;
-  }
-  .footer-section__up-button-wrapper {
-    top: auto;
-  }
-  .footer-section__footer-wrapper__footer-logo__logo-wrapper {
-    width: 50%;
-  }
-  .mobile-logo-wrapper {
-    width: 31% !important;
-    height: 9rem;
-  }
-  .footer-section__footer-wrapper__footer-logo {
-    margin-bottom: 1.5rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container__swiper__pagination {
-    left: 38%;
-    width: 20%;
-    padding-top: 6%;
-  }
-  .services-section__parent-container__slides .hidden-content:hover {
-    border-radius: 2rem;
-  }
-  .devops-hidden {
-    padding-top: 2rem;
-  }
-  .contact-form-section {
-    padding-top: 15%;
-  }
-  .button-active-mark {
-    height: 3px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .home-section__wrapper__scroll-down {
-    width: 13% !important;
-    margin-top: 10% !important;
-  }
-  .home-section__wrapper {
-    width: 95%;
-  }
-  .home-section__wrapper h2 {
-    font-size: 2rem;
-    padding-bottom: 2rem;
-  }
-  .home-section__wrapper h1 {
-    font-size: 2.8rem;
-  }
-  .home-section__wrapper p {
-    font-size: 1.4rem;
-  }
-  .home-section__wrapper a {
-    width: 60%;
-  }
-  .about-us__wrapper {
-    width: 90%;
-    flex-direction: column;
-  }
-  .about-us__wrapper__description {
-    padding: 2.6rem;
-  }
-  .about-us__wrapper__description__section h1 {
-    font-size: 2.6rem;
-    padding-bottom: 2rem;
-  }
-  .about-us__wrapper__description__section p {
-    padding-bottom: 0;
-    font-size: 1.2rem;
-  }
-  .about-us__wrapper__tabs-section {
-    padding-top: 2rem;
-  }
-  .about-us__wrapper__mission-section {
-    width: 100%;
-    gap: 0rem;
-    padding: 2.5rem;
-  }
-  .about-us__wrapper__mission-section__description-container {
-    padding: 3rem 2.7rem 3rem 2.8rem;
-  }
-  .about-us__wrapper__mission-section__description-container h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  .about-us__wrapper__mission-section__description-container p {
-    font-size: 1.4rem;
-  }
-  .about-us__wrapper__mission-section__missionlogo-wraper {
-    width: 8.4rem;
-  }
-  .technology-section__content-container__contents__heading {
-    padding-top: 10%;
-  }
-  .technology-section__content-container__contents__heading h1 {
-    font-size: 2rem;
-  }
-  .technology-section__content-container__contents__heading p {
-    font-size: 1.2rem;
-  }
-  .technology-section__content-container__contents__image-section__containers__image-wrapper .image-sizer {
-    width: 80%;
-  }
-  .services-section {
-    padding-top: 5.5%;
-  }
-  .services-headers h1 {
-    font-size: 2.8rem;
-  }
-  .services-headers p {
-    font-size: 1.4rem;
-  }
-  .services-next,
-  .services-prev {
-    height: 6rem;
-    width: 6rem;
-  }
-  .industry-section h1 {
-    font-size: 2.2rem;
-  }
-  .naics-section {
-    padding-right: 5%;
-  }
-  .naics-section__naics-headings h1 {
-    font-size: 2.2rem;
-  }
-  .naics-section__naics-headings p {
-    font-size: 1.4rem;
-  }
-  .certificate-sections {
-    padding-top: 10.5%;
-  }
-  .certificate-sections__wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-header h1 {
-    font-size: 2.8rem;
-  }
-  .certificate-sections__wrapper__certificate-header p {
-    margin-bottom: 6%;
-    font-size: 1.6rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-container {
-    width: 100%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container {
-    width: 100%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card {
-    padding: 4.2rem 2.8rem 2.7rem 3rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header h1 {
-    font-size: 2.3rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-header .logo-wrapper {
-    width: 10%;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details p {
-    font-size: 1.4rem;
-  }
-  .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
-    font-size: 1.8rem;
-  }
-  .footer-section__footer-wrapper {
-    width: 70%;
-  }
-  .footer-section__footer-wrapper__footer-logo__logo-wrapper {
-    width: 50%;
-  }
-  .footer-section__footer-wrapper__headings {
-    font-size: 3rem;
-    margin-bottom: 4.1rem;
-  }
-  .footer-section__footer-wrapper__headings p {
-    font-size: 1.6rem;
-  }
-  .footer-section__footer-wrapper__footer-menu ul li .logo-parent {
-    width: 20%;
-  }
-  .footer-section__copy-rights p {
-    font-size: 1.6rem;
-  }
-  .footer-section__get-in-touch {
-    padding: 1.5rem;
-    width: 50%;
-    bottom: 14%;
-    right: 1%;
-  }
-  .footer-section__get-in-touch__headers h1 {
-    font-size: 2rem;
-  }
-  .footer-section__get-in-touch__headers p {
-    font-size: 1.1rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-section-parent {
-    flex-direction: column;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-section-parent .user-captcha-container {
-    width: 100%;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container {
-    width: 100%;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container h1 {
-    font-size: 1.4rem;
-  }
-  .footer-section__get-in-touch__form-container form .captcha-container .reset-wrapper {
-    width: 5%;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
-  }
-  .footer-section__get-in-touch__form-container form input,
-  .footer-section__get-in-touch__form-container form textarea {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .footer-section__get-in-touch__form-container form button {
-    font-size: 1.2rem;
-    padding-top: 1.1rem;
-    padding-bottom: 1.1rem;
-    width: 90%;
-  }
-  .tab button {
-    font-size: 1.4rem;
-  }
-  .tabcontent p {
-    font-size: 1.2rem;
-    padding-top: 1rem;
-  }
-  .industry-section {
-    background-image: none;
-    padding-bottom: 5%;
-  }
-  .industry-section h2 {
-    font-size: clamp(28px, 3vw, 67px);
-  }
-  .industry-section .industry-content-desc {
-    font-size: clamp(14px, 1.2vw, 23px);
-  }
-  .field-error {
-    font-size: 1.1rem;
-  }
-  .industry-section .industry-card-container .industry-card {
-    max-width: 425px;
-  }
-  .tabcontent li {
-    font-size: 1.2rem;
-  }
-  .services-section__parent-container__slides .hidden-content:hover {
-    border-radius: 1rem;
-  }
-  .devops-hidden {
-    padding-top: 2rem;
-  }
-}
-@media screen and (max-width: 428px) {
-  .home-section__wrapper {
-    width: 95%;
-  }
-  .home-section__wrapper h2 {
-    font-size: 2rem;
-    padding-bottom: 2rem;
-  }
-  .home-section__wrapper h1 {
-    font-size: 2.8rem;
-  }
-  .home-section__wrapper p {
-    font-size: 1.4rem;
-  }
-  .about-us__wrapper {
-    width: 90%;
-    flex-direction: column;
-  }
-  .about-us__wrapper__description {
-    padding: 2.6rem;
-  }
-  .about-us__wrapper__description__section h1 {
-    font-size: 2.6rem;
-    padding-bottom: 2rem;
-  }
-  .about-us__wrapper__description__section p {
-    padding-bottom: 0;
-    font-size: 1.2rem;
-  }
-  .about-us__wrapper__tabs-section {
-    padding-top: 2rem;
-  }
-  .about-us__wrapper__mission-section {
-    width: 100%;
-    gap: 0rem;
-    padding: 2.5rem;
-  }
-  .about-us__wrapper__mission-section__description-container {
-    padding: 3rem 2.7rem 3rem 2.8rem;
-  }
-  .about-us__wrapper__mission-section__description-container h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  .about-us__wrapper__mission-section__description-container p {
-    font-size: 1.4rem;
-  }
-  .about-us__wrapper__mission-section__missionlogo-wraper {
-    width: 8.4rem;
-  }
-  .about-us__wrapper__mission-section__about-logo-container {
-    width: 50%;
-  }
-  .services-section {
-    padding-top: 5.5%;
-  }
-  .services-headers h1 {
-    font-size: 2.2rem;
-  }
-  .services-headers p {
-    font-size: 1.4rem;
-    padding-right: 2%;
-  }
-  .services-headers p br {
-    display: none;
-  }
-  .services-next,
-  .services-prev {
-    height: 6rem;
-    width: 6rem;
-  }
-  .services-section__parent-container__slides .visible-content .heading h1 {
-    font-size: 2rem;
-  }
-  .services-section__parent-container__slides .hidden-content h1 {
-    font-size: 2rem;
-  }
-  .services-section__parent-container__slides .visible-content .heading {
-    padding: 12% 5%;
-  }
-  .certificate-sections {
-    padding-top: 10.5%;
-  }
-  .certificate-sections__wrapper {
-    flex-direction: column;
-  }
-  .certificate-sections__wrapper__certificate-header h1 {
-    font-size: 2.2rem;
-  }
-  .certificate-sections__wrapper__certificate-header p {
-    font-size: 1.4rem;
   }
   .certificate-sections__wrapper__certificate-wrapper {
     flex-direction: column;
@@ -3571,6 +2070,9 @@ textarea:focus {
   .certificate-sections__wrapper__certificate-wrapper__certificate-card-container__certificate-card__card-details__details h1 {
     font-size: 1.6rem;
   }
+  .footer-section__footer-wrapper {
+    width: 70%;
+  }
   .footer-section__footer-wrapper__footer-logo__logo-wrapper {
     width: 50%;
   }
@@ -3584,9 +2086,6 @@ textarea:focus {
   .footer-section__footer-wrapper__footer-menu ul li {
     font-size: 1.6rem;
     margin-bottom: 2rem;
-  }
-  .footer-section__footer-wrapper__footer-menu ul li .logo-parent {
-    width: 20%;
   }
   .footer-section__copy-rights p {
     font-size: 1.6rem;
@@ -4028,18 +2527,27 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  /* adjust as needed */
+  align-items: stretch;
+  /* Ensures all boxes align vertically */
 }
 
 .services-section__parent-container__slides {
   flex: 0 0 calc(33.333% - 2rem);
-  /* 3 per row, accounting for gap */
   max-width: calc(33.333% - 2rem);
   min-width: 250px;
+  min-height: 1px; /* Safari fix */
   box-sizing: border-box;
   margin-bottom: 2rem;
 }
+.services-section__parent-container {
+  gap: 2rem;
+}
+
+.services-section__parent-container__slides {
+  min-height: 1px;
+  /* Forces Safari to treat flex children correctly */
+}
+
 
 @media screen and (max-width: 390px) {
   .devops-hidden {
