@@ -4024,6 +4024,23 @@ body {
   overflow-x: hidden;
 }
 
+.services-section__parent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  /* adjust as needed */
+}
+
+.services-section__parent-container__slides {
+  flex: 0 0 calc(33.333% - 2rem);
+  /* 3 per row, accounting for gap */
+  max-width: calc(33.333% - 2rem);
+  min-width: 250px;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 390px) {
   .devops-hidden {
     padding-top: 2rem !important;

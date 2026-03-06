@@ -627,6 +627,9 @@ var mySwiper = new Swiper(".swiper-container", {
 var app = document.getElementById("typewrite");
 var typewriter = new Typewriter(app, { loop: true });
 typewriter
+  .typeString("HAZMAT/CBRNe")
+  .pauseFor(1000)
+  .deleteAll()
   .typeString("Generative AI")
   .pauseFor(1000)
   .deleteAll()
