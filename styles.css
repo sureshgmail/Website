@@ -2568,3 +2568,7 @@ body {
     max-width: 50%;
   }
 }
+
+#typewrite {
+  text-transform: none !important;
+}
