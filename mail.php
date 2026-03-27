@@ -150,7 +150,7 @@ try {
 
     $mail = new PHPMailer(true);
 
-    $mail->SMTPDebug = 0;
+    $mail->SMTPDebug = 2;
     $mail->isSMTP();
     
     // Google Workspace SMTP Configuration
