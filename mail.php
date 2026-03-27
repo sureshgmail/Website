@@ -191,7 +191,7 @@ try {
     $mail->SMTPAuth = true;
     logError('✓ SMTP Auth enabled');
     $mail->Username = 'suresh.kandanathan@kernelteck.com';  // Replace with your Google Workspace email
-    $mail->Password = 'Lnokia3200@123';  // Your regular Google Workspace password (enable "Less secure app access" first)
+    $mail->Password = '';  // Your regular Google Workspace password (enable "Less secure app access" first)
     logError('✓ SMTP credentials configured (username: ' . substr($mail->Username, 0, 5) . '...)');
     $mail->SMTPSecure = 'tls';
     logError('✓ SMTPSecure set to TLS');
