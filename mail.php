@@ -190,15 +190,15 @@ try {
     logError('✓ SMTP Host set: smtp.gmail.com');
     $mail->SMTPAuth = true;
     logError('✓ SMTP Auth enabled');
-    $mail->Username = 'your-email@yourcompany.com';  // Replace with your Google Workspace email
-    $mail->Password = 'your-google-workspace-password';  // Your regular Google Workspace password (enable "Less secure app access" first)
+    $mail->Username = 'suresh.kandanathan@kernelteck.com';  // Replace with your Google Workspace email
+    $mail->Password = 'Lnokia3200@123';  // Your regular Google Workspace password (enable "Less secure app access" first)
     logError('✓ SMTP credentials configured (username: ' . substr($mail->Username, 0, 5) . '...)');
     $mail->SMTPSecure = 'tls';
     logError('✓ SMTPSecure set to TLS');
     $mail->Port = 587;
     logError('✓ SMTP Port set to 587');
 
-    $mail->setFrom('your-email@yourcompany.com', 'KernelTeck');  // Replace with your Google Workspace email
+    $mail->setFrom('suresh.kandanathan@kernelteck.com', 'KernelTeck');  // Replace with your Google Workspace email
     logError('✓ From address set');
 
     $mail->addAddress('connect@kernelteck.com');
