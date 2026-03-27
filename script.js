@@ -252,50 +252,100 @@ async function contactUsApi(
   genCaptcha,
   clearErrors,
 ) {
-  const formData = new FormData(form);
-  form.querySelector("#getintouch-submit-button").disabled = true;
-  form.querySelector("#getintouch-submit-button").textContent =
-    "Please Wait...";
+  const submitBtn = form.querySelector("#getintouch-submit-button");
+  
+  // Disable button and show loading state
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Please Wait...";
+
   try {
-    const response = await fetch("mail.php", {
+    // Prepare form data with proper field mapping
+    const formData = new FormData();
+    
+    // Get form fields by placeholder and map to expected field names
+    const nameInput = form.querySelector('input[placeholder="Your Name"]');
+    const emailInput = form.querySelector('input[placeholder="Email Address"]');
+    const organizationInput = form.querySelector('input[placeholder="Organization"]');
+    const messageInput = form.querySelector('textarea[placeholder="Your Message"]');
+    const captchaInput = form.querySelector('input[name="captcha_answer"]');
+
+    // Add fields to FormData with correct PHP field names
+    if (nameInput) formData.append('name', nameInput.value);
+    if (emailInput) formData.append('email', emailInput.value);
+    if (organizationInput) formData.append('organization', organizationInput.value);
+    if (messageInput) formData.append('message', messageInput.value);
+
+    console.log("Sending form data to mail.php...");
+    console.log("Form data contents:", {
+      name: nameInput?.value,
+      email: emailInput?.value,
+      organization: organizationInput?.value,
+      message: messageInput?.value
+    });
+
+    // Use absolute path to ensure correct URL routing
+    const mailEndpoint = window.location.origin + "/mail.php";
+    console.log("Fetch endpoint:", mailEndpoint);
+
+    const response = await fetch(mailEndpoint, {
       method: "POST",
       body: formData,
     });
-    form.querySelector("#getintouch-submit-button").disabled = true;
+
+    console.log("Response status:", response.status);
+    console.log("Response headers:", {
+      contentType: response.headers.get('content-type'),
+      status: response.statusText
+    });
+
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
+
     const data = await response.json();
-    if (data.status == "success") {
+    console.log("Server response:", data);
+
+    if (data.status === "success") {
       const successMsg = createSuccess(
         "Message sent successfully. We'll contact you soon.",
       );
       form.appendChild(successMsg);
 
+      // Reset form and clear fields
+      form.reset();
+      genCaptcha();
+
       // Remove success message after 5 seconds
       setTimeout(() => {
         successMsg.remove();
         clearErrors(form);
-        form.querySelector("#getintouch-submit-button").disabled = false;
-
-        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit";
       }, 5000);
     } else {
-      form.appendChild(createError("Something Went Wrong! Please try again"));
+      // Show server error details if available
+      const errorMsg = data.message || "Something went wrong. Please try again.";
+      form.appendChild(createError(errorMsg));
+
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Submit";
 
       setTimeout(() => {
-        form.querySelector("#getintouch-submit-button").disabled = false;
         clearErrors(form);
       }, 3000);
     }
-    form.querySelector("#getintouch-submit-button").textContent = "Submit";
-    form.reset();
-    genCaptcha();
   } catch (error) {
-    form.appendChild(createError("Something Went Wrong! Please try again"));
-    // BUTTON ACTIVATION FOR FAILED MESSAGE
-    form.querySelector("#getintouch-submit-button").textContent = "Submit";
-    form.querySelector("#getintouch-submit-button").disabled = false;
+    console.error("Form submission error:", error);
+    
+    const errorMsg = error.message || "Network error. Please check your connection and try again.";
+    form.appendChild(createError(errorMsg));
+
+    // Re-enable button
+    submitBtn.textContent = "Submit";
+    submitBtn.disabled = false;
+    
+    genCaptcha();
+
     setTimeout(() => {
       clearErrors(form);
     }, 3000);

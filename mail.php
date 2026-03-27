@@ -4,8 +4,17 @@ require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+// CORS headers to allow cross-origin requests
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
 header('Content-Type: application/json');
 
+// Handle preflight requests
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -143,15 +152,17 @@ try {
 
     $mail->SMTPDebug = 0;
     $mail->isSMTP();
-    $mail->Host = 'mail.devdews.com';
+    
+    // Google Workspace SMTP Configuration
+    $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'sendmail@devdews.com';
-    $mail->Password = 'Wpk&lMV&0sW*';
+    $mail->Username = 'your-email@yourcompany.com';  // Replace with your Google Workspace email
+    $mail->Password = 'your-google-workspace-password';  // Your regular Google Workspace password (enable "Less secure app access" first)
     $mail->SMTPSecure = 'tls';
-    $mail->Port = 26;
+    $mail->Port = 587;
 
 
-    $mail->setFrom('info@devdews.com', 'KernelTeck');
+    $mail->setFrom('your-email@yourcompany.com', 'KernelTeck');  // Replace with your Google Workspace email
 
     $mail->addAddress('connect@kernelteck.com');
 
