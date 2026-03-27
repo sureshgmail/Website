@@ -146,7 +146,7 @@ $body = '<!DOCTYPE html
     </html>';
 
 try {
-
+    ob_start(); // Capture SMTP debug output
 
     $mail = new PHPMailer(true);
 
@@ -178,6 +178,7 @@ try {
 
     $mail->send();
 
+    ob_end_clean(); // Clear debug output on success
     http_response_code(200);
     echo json_encode([
         'status' => 'success',
@@ -185,11 +186,13 @@ try {
     ]);
     exit;
 } catch (Exception $e) {
+    $debugOutput = ob_get_clean(); // Capture debug output on error
     http_response_code(200);
     echo json_encode([
         'status' => 'error',
         'message' => 'Mail sending failed.',
-        'details' => $e->getMessage()
+        'details' => $e->getMessage(),
+        'debug' => $debugOutput // Include SMTP debug info for troubleshooting
     ]);
     exit;
 }
