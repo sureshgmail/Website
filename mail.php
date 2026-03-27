@@ -1,22 +1,42 @@
 <?php
+// Error logging function - MUST be first before any calls to it
+function logError($message, $debugOutput = '') {
+    $logFile = __DIR__ . '/mail_errors.log';
+    $timestamp = date('Y-m-d H:i:s');
+    $logMessage = "[{$timestamp}] {$message}";
+    if ($debugOutput) {
+        $logMessage .= "\nDEBUG OUTPUT:\n{$debugOutput}";
+    }
+    $logMessage .= "\n" . str_repeat('-', 80) . "\n";
+    file_put_contents($logFile, $logMessage, FILE_APPEND);
+}
+
+logError('=== MAIL.PHP EXECUTION STARTED ===');
+
 require 'vendor/autoload.php';
+logError('✓ Vendor autoload.php included successfully');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
+logError('✓ PHPMailer classes imported');
 
 // CORS headers to allow cross-origin requests
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 header('Content-Type: application/json');
+logError('✓ Headers set successfully');
 
 // Handle preflight requests
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    logError('✓ Preflight OPTIONS request handled');
     http_response_code(200);
     exit;
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    logError('✗ Invalid REQUEST_METHOD: ' . $_SERVER['REQUEST_METHOD']);
     http_response_code(405);
     echo json_encode([
         'status' => 'error',
@@ -24,6 +44,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     ]);
     exit;
 }
+
+logError('✓ POST request received');
+logError('POST DATA: ' . json_encode($_POST));
 
 function sanitize($data)
 {
@@ -33,7 +56,7 @@ function sanitize($data)
 $name    = isset($_POST['name'])    ? sanitize($_POST['name'])    : "";
 $email   = isset($_POST['email'])   ? sanitize($_POST['email'])   : "";
 $organization   = isset($_POST['organization'])   ? sanitize($_POST['organization'])   : "";
-
+logError('✓ Form fields extracted: name=' . $name . ', email=' . $email . ', org=' . $organization);
 
 $message = isset($_POST['message']) && !empty($_POST['message']) ? sanitize($_POST['message']) : "-";
 
@@ -55,8 +78,8 @@ if (empty($organization)) {
     $errors['organization'] = "organization number is required.";
 }
 
-
 if (!empty($errors)) {
+    logError('✗ Validation failed: ' . json_encode($errors));
     echo json_encode([
         'status' => 'error',
         'errors' => $errors,
@@ -64,6 +87,8 @@ if (!empty($errors)) {
     ]);
     exit;
 }
+
+logError('✓ Form validation passed');
 
 
 
@@ -145,38 +170,56 @@ $body = '<!DOCTYPE html
     </body>
     </html>';
 
+logError('✓ Email body HTML created successfully');
+
 try {
+    logError('✓ Starting try block - about to initialize PHPMailer');
     ob_start(); // Capture SMTP debug output
+    logError('✓ Output buffering started');
 
     $mail = new PHPMailer(true);
+    logError('✓ PHPMailer instance created');
 
     $mail->SMTPDebug = 2;
+    logError('✓ SMTPDebug set to 2');
     $mail->isSMTP();
+    logError('✓ SMTP mode enabled');
     
     // Google Workspace SMTP Configuration
     $mail->Host = 'smtp.gmail.com';
+    logError('✓ SMTP Host set: smtp.gmail.com');
     $mail->SMTPAuth = true;
+    logError('✓ SMTP Auth enabled');
     $mail->Username = 'your-email@yourcompany.com';  // Replace with your Google Workspace email
     $mail->Password = 'your-google-workspace-password';  // Your regular Google Workspace password (enable "Less secure app access" first)
+    logError('✓ SMTP credentials configured (username: ' . substr($mail->Username, 0, 5) . '...)');
     $mail->SMTPSecure = 'tls';
+    logError('✓ SMTPSecure set to TLS');
     $mail->Port = 587;
-
+    logError('✓ SMTP Port set to 587');
 
     $mail->setFrom('your-email@yourcompany.com', 'KernelTeck');  // Replace with your Google Workspace email
+    logError('✓ From address set');
 
     $mail->addAddress('connect@kernelteck.com');
+    logError('✓ Recipient address added: connect@kernelteck.com');
 
     $mail->addBCC('ramesh@techdew.com');
+    logError('✓ BCC address added');
     //  $mail->addBCC('ramesh1@techdew.com');
     // $mail->addBCC('ramesh2@techdew.com');
     // $mail->addBCC('ramesh3@techdew.com');
 
     $mail->isHTML(true);
+    logError('✓ HTML mode enabled');
     $mail->Subject = 'New Form Submission - KernelTeck';
+    logError('✓ Subject set');
     $mail->Body    = $body;
+    logError('✓ Email body set');
 
-
+    logError('✓ About to call $mail->send()...');
     $mail->send();
+    logError('✓✓✓ EMAIL SENT SUCCESSFULLY ✓✓✓');
 
     ob_end_clean(); // Clear debug output on success
     http_response_code(200);
@@ -184,9 +227,19 @@ try {
         'status' => 'success',
         'message' => 'Form submitted successfully.'
     ]);
+    logError('✓ Success response sent to client');
     exit;
 } catch (Exception $e) {
+    logError('✗✗✗ EXCEPTION CAUGHT ✗✗✗');
     $debugOutput = ob_get_clean(); // Capture debug output on error
+    
+    // Log error to file
+    logError(
+        "Mail sending failed: " . $e->getMessage() . "\nForm Data: Name={$name}, Email={$email}, Organization={$organization}",
+        $debugOutput
+    );
+    logError('✗ Error details logged and response sent to client');
+    
     http_response_code(200);
     echo json_encode([
         'status' => 'error',
@@ -196,3 +249,5 @@ try {
     ]);
     exit;
 }
+
+logError('=== MAIL.PHP EXECUTION COMPLETED ===');
